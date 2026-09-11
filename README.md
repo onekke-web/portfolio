@@ -696,7 +696,7 @@
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">BACKGROUND ART (배경 이미지 5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden md:col-span-2">
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
                                     <img src="https://lh3.googleusercontent.com/d/1LXumIbeHjTUz8aAS6bjZh3v52RWOoEMW" alt="배경 아트 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
                                 </div>
