@@ -48,7 +48,7 @@
         * { box-sizing: border-box; }
         html { 
             scroll-behavior: smooth; 
-            overscroll-behavior-y: none;
+            overscroll-behavior-y: none; /* 최상단/최하단 스크롤 바운스 방지 */
         }
         body {
             margin: 0;
@@ -57,11 +57,11 @@
             font-family: 'Noto Sans KR', sans-serif;
             overflow-x: hidden;
             width: 100%;
-            overscroll-behavior-y: none;
+            overscroll-behavior-y: none; /* 최상단 바운스 방지 */
         }
         ::selection { background: #FFE500; color: #111; }
         
-        /* Custom Cursor (PC 환경 전용) */
+        /* Custom Cursor */
         .custom-cursor {
             position: fixed;
             width: 16px;
@@ -74,12 +74,12 @@
             transition: width .15s ease, height .15s ease, background-color .15s ease;
         }
         .custom-cursor.hover {
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             background-color: #FFE500;
             opacity: 0.85;
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
             .custom-cursor { display: none; }
         }
 
@@ -106,16 +106,15 @@
 
 <!-- HEADER -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-yellowframe-bg/95 backdrop-blur border-b-2 border-yellowframe-dark">
-    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 h-16 flex items-center justify-between">
-        <a href="#top" class="font-mono font-black text-xl tracking-tight hover:opacity-80 transition-opacity">GKEUN<span class="text-yellowframe-dark">.</span></a>
+    <div class="max-w-7xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
+        <a href="#top" class="font-mono font-black text-lg tracking-tight">GKEUN<span class="text-yellowframe-dark">.</span></a>
 
-        <!-- PC / 데스크탑 네비게이션 -->
-        <nav class="hidden md:flex items-center gap-2 lg:gap-4 font-mono text-xs font-bold">
-            <a href="#work" class="border-2 border-transparent hover:border-yellowframe-dark hover:bg-yellowframe-yellow px-3 py-1.5 transition-all">WORK</a>
-            <a href="#process" class="border-2 border-transparent hover:border-yellowframe-dark hover:bg-yellowframe-yellow px-3 py-1.5 transition-all">PROCESS</a>
-            <a href="#gallery" class="border-2 border-transparent hover:border-yellowframe-dark hover:bg-yellowframe-yellow px-3 py-1.5 transition-all">GALLERY</a>
-            <a href="#about" class="border-2 border-transparent hover:border-yellowframe-dark hover:bg-yellowframe-yellow px-3 py-1.5 transition-all">ABOUT</a>
-            <a href="#contact" class="border-2 border-transparent hover:border-yellowframe-dark hover:bg-yellowframe-yellow px-3 py-1.5 transition-all">CONTACT</a>
+        <nav class="hidden md:flex items-center gap-6 font-mono text-xs font-bold">
+            <a href="#work" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">WORK</a>
+            <a href="#process" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">PROCESS</a>
+            <a href="#gallery" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">GALLERY</a>
+            <a href="#about" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">ABOUT</a>
+            <a href="#contact" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">CONTACT</a>
         </nav>
 
         <button id="menuBtn" class="md:hidden text-lg p-1.5" aria-label="메뉴 열기/닫기">
@@ -138,32 +137,33 @@
 <main id="top" class="w-full">
 
 <!-- HERO -->
-<section class="pt-16 border-b-2 border-yellowframe-dark min-h-[85vh] lg:min-h-[90vh] flex items-center">
-    <div class="max-w-7xl mx-auto w-full px-5 md:px-8 lg:px-12 py-16 md:py-24 lg:py-28">
-        <div class="grid md:grid-cols-[1fr_260px] lg:grid-cols-[1fr_300px] gap-10 md:gap-12 lg:gap-16 items-end">
+<section class="pt-14 border-b-2 border-yellowframe-dark">
+    <div class="max-w-7xl mx-auto w-full px-5 md:px-8 py-12 md:py-20">
+        <div class="grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-end">
             <div>
-                <p class="font-mono text-xs md:text-sm font-bold mb-6 tracking-wider">2D ANIMATOR / PORTFOLIO / 2026</p>
-                <h1 class="text-[clamp(3.5rem,10vw,9.5rem)] leading-[0.85] font-black tracking-[-0.06em] uppercase">
+                <p class="font-mono text-xs font-bold mb-4">2D ANIMATOR / PORTFOLIO / 2026</p>
+                <h1 class="text-[clamp(2.5rem,7vw,6rem)] leading-[0.9] font-black tracking-[-0.05em]">
                     FRAME BY<br>
-                    <span class="text-yellowframe-yellow inline-block mt-2" style="-webkit-text-stroke:2px #111; text-shadow: 4px 4px 0 #111;">FRAME</span>
+                    <span class="text-yellowframe-yellow" style="-webkit-text-stroke:2px #111;">FRAME</span>
                 </h1>
-                <div class="mt-8 md:mt-12 max-w-2xl">
-                    <p class="text-xl md:text-2xl lg:text-3xl font-black leading-relaxed">
-                        움직임을 그리고,<br class="md:hidden"> 이야기를 프레임 안에 담습니다.
+                <div class="mt-6 max-w-xl">
+                    <p class="text-base md:text-lg font-bold leading-relaxed">
+                        움직임을 그리고,<br>
+                        이야기를 프레임 안에 담습니다.
                     </p>
-                    <div class="mt-6 flex flex-wrap gap-2.5 font-mono text-xs font-bold">
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-3 py-1.5 shadow-[2px_2px_0_#111]">Character Acting</span>
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-3 py-1.5 shadow-[2px_2px_0_#111]">Key Animation</span>
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-3 py-1.5 shadow-[2px_2px_0_#111]">Storytelling</span>
+                    <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs font-bold">
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Character Acting</span>
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Key Animation</span>
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Storytelling</span>
                     </div>
                 </div>
             </div>
 
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-yellow shadow-frame p-6 w-full">
-                <div class="font-mono text-xs font-bold mb-4">CURRENT STATUS</div>
-                <div class="font-mono text-4xl lg:text-5xl font-black">OPEN</div>
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-yellow shadow-frame p-4 w-full md:w-56">
+                <div class="font-mono text-[10px] font-bold mb-4">CURRENT STATUS</div>
+                <div class="font-mono text-3xl font-black">OPEN</div>
                 <div class="font-mono text-xs font-bold mt-1">FOR WORK</div>
-                <div class="border-t-2 border-yellowframe-dark mt-6 pt-4 text-xs md:text-sm font-bold leading-relaxed">
+                <div class="border-t-2 border-yellowframe-dark mt-4 pt-3 text-xs font-bold">
                     2D ANIMATOR<br>
                     KIM GOEUN
                 </div>
@@ -173,9 +173,9 @@
 </section>
 
 <!-- SELECTED WORK (팀 프로젝트) -->
-<section id="work" class="py-16 md:py-24 lg:py-28">
-    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
-        <div class="flex items-end justify-between mb-10 md:mb-14">
+<section id="work" class="py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="flex items-end justify-between mb-8 md:mb-12">
             <div>
                 <p class="font-mono text-xs font-bold mb-2">01 / TEAM PROJECTS</p>
                 <h2 class="text-4xl md:text-6xl font-black tracking-tight">SELECTED WORK<span class="text-yellowframe-yellow">.</span></h2>
@@ -183,34 +183,34 @@
             <span class="hidden md:block font-mono text-xs font-bold">TEAM WORK (2025 — 2026)</span>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8">
             <!-- TEAM PROJECT 01 -->
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between group">
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/imD6U6dVes8?si=6TZcW1DbJxwKmnde" target="_blank" rel="noopener noreferrer"
-                       class="block border-b-2 border-yellowframe-dark overflow-hidden relative">
-                        <div class="aspect-video bg-yellowframe-dark relative w-full overflow-hidden">
+                       class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
+                        <div class="aspect-video bg-yellowframe-dark relative w-full">
                             <img src="https://cdn.phototourl.com/free/2026-09-10-b8988685-e6b7-4222-815c-c153b166a66a.png"
                                  alt="천재? 탐정 새롬 썸네일" loading="lazy" referrerpolicy="no-referrer"
                                  class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
-                                    <i class="fa-solid fa-play text-sm md:text-base"></i>
+                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-sm"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <div class="p-6 md:p-8">
+                    <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
                                 <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">천재? 탐정 새롬</h3>
                             </div>
-                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2.5 py-1 bg-yellowframe-yellow font-bold">TEAM</span>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-4 leading-relaxed">팀 협업 기반의 단편 애니메이션. 자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 사건을 수사하며 벌어지는 코미디 추리물입니다.</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 협업 기반의 단편 애니메이션. 자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 사건을 수사하며 벌어지는 코미디 추리물입니다.</p>
                         
-                        <div class="mt-6 pt-6 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px] md:text-xs">
+                        <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
                                 <span class="font-bold">원동화, 캐릭터</span>
@@ -226,40 +226,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-6 md:p-8 pt-0">
-                    <button onclick="openPlanModal('saerom')" class="w-full text-center border-2 border-yellowframe-dark py-3 font-mono text-xs md:text-sm font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors shadow-[2px_2px_0_#111]">
+                <div class="p-5 md:p-6 pt-0">
+                    <button onclick="openPlanModal('saerom')" class="w-full text-center border-2 border-yellowframe-dark py-2.5 font-mono text-xs font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors">
                         VIEW TEAM PITCH DECK →
                     </button>
                 </div>
             </div>
 
             <!-- TEAM PROJECT 02 -->
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between group">
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
-                       class="block border-b-2 border-yellowframe-dark overflow-hidden relative">
-                        <div class="aspect-video bg-yellowframe-dark relative w-full overflow-hidden">
+                       class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
+                        <div class="aspect-video bg-yellowframe-dark relative w-full">
                             <img src="https://cdn.phototourl.com/free/2026-09-10-1016abe6-3ec4-4246-b20f-bf31a2160e09.jpg"
                                  alt="괴짜과학자 비키 썸네일" loading="lazy" referrerpolicy="no-referrer"
                                  class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
-                                    <i class="fa-solid fa-play text-sm md:text-base"></i>
+                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-sm"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <div class="p-6 md:p-8">
+                    <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
                                 <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">괴짜과학자 비키</h3>
                             </div>
-                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2.5 py-1 bg-yellowframe-yellow font-bold">TEAM</span>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-4 leading-relaxed">팀 파이프라인으로 제작된 TV 시리즈 프로젝트. 괴짜 과학자 ‘비키’가 음모론을 증명해 나가는 코믹 SF 애니메이션입니다.</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 파이프라인으로 제작된 TV 시리즈 프로젝트. 괴짜 과학자 ‘비키’가 음모론을 증명해 나가는 코믹 SF 애니메이션입니다.</p>
                         
-                        <div class="mt-6 pt-6 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px] md:text-xs">
+                        <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
                                 <span class="font-bold">원동화 작화</span>
@@ -275,8 +275,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-6 md:p-8 pt-0">
-                    <button onclick="openPlanModal('vicky')" class="w-full text-center border-2 border-yellowframe-dark py-3 font-mono text-xs md:text-sm font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors shadow-[2px_2px_0_#111]">
+                <div class="p-5 md:p-6 pt-0">
+                    <button onclick="openPlanModal('vicky')" class="w-full text-center border-2 border-yellowframe-dark py-2.5 font-mono text-xs font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors">
                         VIEW TEAM PITCH DECK →
                     </button>
                 </div>
@@ -286,57 +286,57 @@
 </section>
 
 <!-- PROCESS (개인 프로젝트) -->
-<section id="process" class="py-16 md:py-24 lg:py-28 bg-yellowframe-dark text-yellowframe-bg">
-    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
-        <div class="mb-10 md:mb-14">
+<section id="process" class="py-12 md:py-20 bg-yellowframe-dark text-yellowframe-bg">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="mb-8 md:mb-12">
             <p class="font-mono text-xs font-bold mb-2 text-yellowframe-yellow">02 / PERSONAL WORKFLOW</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">PROCESS<span class="text-yellowframe-yellow">.</span></h2>
-            <p class="mt-4 text-xs md:text-sm lg:text-base text-yellowframe-bg/70 max-w-2xl font-mono">
+            <p class="mt-3 text-xs md:text-sm text-yellowframe-bg/70 max-w-2xl font-mono">
                 개인 프로젝트 구상 시 아이디어 스케치부터 최종 프레임 완성까지 전 과정을 자체 수립한 6단계 파이프라인입니다.
             </p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 font-mono">
-            <div class="border-2 border-yellowframe-bg p-5 flex flex-col justify-between min-h-[140px] bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
-                <span class="text-xs font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01</span>
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-3 font-mono">
+            <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
+                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01</span>
                 <div>
                     <span class="text-lg font-black block">개인 기획</span>
-                    <span class="text-xs opacity-75 font-normal">컨셉 & 콘티</span>
+                    <span class="text-[10px] opacity-75 font-normal">컨셉 & 콘티</span>
                 </div>
             </div>
-            <div class="border-2 border-yellowframe-bg p-5 flex flex-col justify-between min-h-[140px] bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
-                <span class="text-xs font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 02</span>
+            <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
+                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 02</span>
                 <div>
                     <span class="text-lg font-black block">캐릭터</span>
-                    <span class="text-xs opacity-75 font-normal">디자인 & 턴어라운드</span>
+                    <span class="text-[10px] opacity-75 font-normal">디자인 & 턴어라운드</span>
                 </div>
             </div>
-            <div class="border-2 border-yellowframe-bg p-5 flex flex-col justify-between min-h-[140px] bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
-                <span class="text-xs font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 03</span>
+            <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
+                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 03</span>
                 <div>
                     <span class="text-lg font-black block">원화 작화</span>
-                    <span class="text-xs opacity-75 font-normal">키 포즈 & 타이밍</span>
+                    <span class="text-[10px] opacity-75 font-normal">키 포즈 & 타이밍</span>
                 </div>
             </div>
-            <div class="border-2 border-yellowframe-bg p-5 flex flex-col justify-between min-h-[140px] bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
-                <span class="text-xs font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 04</span>
+            <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
+                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 04</span>
                 <div>
                     <span class="text-lg font-black block">동화 보정</span>
-                    <span class="text-xs opacity-75 font-normal">인비트윈 & 클린업</span>
+                    <span class="text-[10px] opacity-75 font-normal">인비트윈 & 클린업</span>
                 </div>
             </div>
-            <div class="border-2 border-yellowframe-bg p-5 flex flex-col justify-between min-h-[140px] bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
-                <span class="text-xs font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 05</span>
+            <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
+                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 05</span>
                 <div>
                     <span class="text-lg font-black block">움직임 검증</span>
-                    <span class="text-xs opacity-75 font-normal">모션 체크 & 튜닝</span>
+                    <span class="text-[10px] opacity-75 font-normal">모션 체크 & 튜닝</span>
                 </div>
             </div>
-            <div class="border-2 border-yellowframe-yellow bg-yellowframe-yellow text-yellowframe-dark p-5 flex flex-col justify-between min-h-[140px]">
-                <span class="text-xs font-bold">STEP 06</span>
+            <div class="border-2 border-yellowframe-yellow bg-yellowframe-yellow text-yellowframe-dark p-4 flex flex-col justify-between">
+                <span class="text-[10px] font-bold">STEP 06</span>
                 <div>
                     <span class="text-lg font-black block">최종 완성</span>
-                    <span class="text-xs opacity-75 font-normal">컴포지팅 & 마스터링</span>
+                    <span class="text-[10px] opacity-75 font-normal">컴포지팅 & 마스터링</span>
                 </div>
             </div>
         </div>
@@ -344,65 +344,65 @@
 </section>
 
 <!-- GALLERY -->
-<section id="gallery" class="py-16 md:py-24 lg:py-28">
-    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+<section id="gallery" class="py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-10">
             <p class="font-mono text-xs font-bold mb-2">03 / GALLERY</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">GALLERY<span class="text-yellowframe-yellow">.</span></h2>
         </div>
 
-        <div class="flex flex-wrap gap-3 mb-10">
-            <button onclick="switchCategory('character')" class="category-btn active font-mono text-xs md:text-sm font-bold border-2 border-yellowframe-dark px-4 py-2 bg-yellowframe-yellow transition-all" data-category="character">CHARACTER DESIGN</button>
-            <button onclick="switchCategory('animating')" class="category-btn font-mono text-xs md:text-sm font-bold border-2 border-yellowframe-dark px-4 py-2 bg-yellowframe-card transition-all" data-category="animating">ANIMATION</button>
-            <button onclick="switchCategory('croquis')" class="category-btn font-mono text-xs md:text-sm font-bold border-2 border-yellowframe-dark px-4 py-2 bg-yellowframe-card transition-all" data-category="croquis">CROQUIS / DRAWING</button>
+        <div class="flex flex-wrap gap-2 mb-8">
+            <button onclick="switchCategory('character')" class="category-btn active font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-yellow" data-category="character">CHARACTER DESIGN</button>
+            <button onclick="switchCategory('animating')" class="category-btn font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-card" data-category="animating">ANIMATION</button>
+            <button onclick="switchCategory('croquis')" class="category-btn font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-card" data-category="croquis">CROQUIS / DRAWING</button>
         </div>
 
         <!-- CHARACTER DESIGN -->
         <div id="cat-character" class="category-content">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 md:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov" alt="캐릭터 일러스트 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #01</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 1)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU" alt="캐릭터 일러스트 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #02</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 2)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD" alt="캐릭터 일러스트 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #03</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 3)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg" alt="캐릭터 일러스트 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #04</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 4)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98" alt="캐릭터 일러스트 5" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #05</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
             </div>
@@ -410,59 +410,59 @@
 
         <!-- ANIMATION -->
         <div id="cat-animating" class="category-content hidden">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 md:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc" alt="애니메이션 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #01</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 1)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1RRU-LhcxPEWFOwaHwVI_XUXcBeTXTuUY" alt="애니메이션 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #02</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 2)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl" alt="애니메이션 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #03</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 3)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE" alt="애니메이션 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #04</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 4)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e" alt="애니메이션 5" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #05</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 5)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO" alt="애니메이션 6" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 bg-yellowframe-card font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #06</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
             </div>
@@ -470,32 +470,32 @@
 
         <!-- CROQUIS / DRAWING -->
         <div id="cat-croquis" class="category-content hidden">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 md:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://cdn.phototourl.com/free/2026-09-10-dcce84bb-b990-4b63-87ca-85afbc07950f.png" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #01</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 1)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://cdn.phototourl.com/free/2026-09-10-8a31e455-5394-4f6a-8adf-9bb88c520208.png" alt="Croquis 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #02</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 2)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://cdn.phototourl.com/free/2026-09-10-806e145f-eab8-40b9-8bc3-01bcec55aecd.png" alt="Croquis 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="p-3 font-mono text-xs font-bold flex items-center justify-between">
+                    <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #03</span>
-                        <span class="text-[10px] text-yellowframe-muted">VIEW</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
             </div>
@@ -504,18 +504,18 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-16 md:py-24 lg:py-28 bg-yellowframe-yellow border-y-2 border-yellowframe-dark">
-    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+<section id="about" class="py-12 md:py-20 bg-yellowframe-yellow border-y-2 border-yellowframe-dark">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <p class="font-mono text-xs font-bold mb-2">04 / ABOUT ME</p>
-        <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 md:mb-12">ABOUT<span class="text-yellowframe-dark">.</span></h2>
+        <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 md:mb-10">ABOUT<span class="text-yellowframe-dark">.</span></h2>
 
-        <div class="grid md:grid-cols-[1fr_2fr] gap-8 md:gap-12 lg:gap-16 items-start">
+        <div class="grid md:grid-cols-[1fr_2fr] gap-8 md:gap-12">
             <div>
-                <p class="text-xl md:text-2xl lg:text-3xl font-black leading-snug">
+                <p class="text-lg md:text-xl font-black leading-snug">
                     안녕하세요, 프레임마다 생동감을 불어넣는 2D 애니메이터 김고은입니다.
                 </p>
             </div>
-            <div class="space-y-4 md:space-y-6 text-sm md:text-base lg:text-lg leading-relaxed font-medium">
+            <div class="space-y-4 text-sm md:text-base leading-relaxed font-medium">
                 <p>
                     캐릭터의 개성과 감정을 섬세하게 포착하여 가시적인 움직임으로 구현하는 것에 깊은 흥미를 느낍니다. 
                     단순히 그림을 그리는 것에 그치지 않고, 서사에 생명력을 부여하는 '액팅(Acting)' 중심의 작화를 지향합니다.
@@ -530,17 +530,17 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-16 md:py-24 lg:py-28">
-    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+<section id="contact" class="py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <p class="font-mono text-xs font-bold mb-2">05 / CONTACT</p>
-        <div class="grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-end">
+        <div class="grid md:grid-cols-[1fr_auto] gap-8 items-end">
             <div>
-                <h2 class="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none">LET'S<br><span class="yellow-marker">WORK TOGETHER.</span></h2>
-                <p class="mt-6 text-xs md:text-sm lg:text-base leading-6 text-yellowframe-muted">작업 문의 및 포트폴리오 관련 연락은 아래 메일로 부탁드립니다.</p>
+                <h2 class="text-4xl md:text-7xl font-black tracking-tight">LET'S<br><span class="yellow-marker">WORK TOGETHER.</span></h2>
+                <p class="mt-4 text-xs md:text-sm leading-6 text-yellowframe-muted">작업 문의 및 포트폴리오 관련 연락은 아래 메일로 부탁드립니다.</p>
             </div>
-            <div class="font-mono font-bold text-xs md:text-sm lg:text-base space-y-3 md:text-right">
-                <a href="mailto:onekke@gmail.com" class="inline-block hover:bg-yellowframe-yellow px-3 py-1.5 transition-colors border border-transparent hover:border-yellowframe-dark">EMAIL: onekke@gmail.com</a><br>
-                <a href="https://x.com/memo__paper_" target="_blank" rel="noopener noreferrer" class="inline-block hover:bg-yellowframe-yellow px-3 py-1.5 transition-colors border border-transparent hover:border-yellowframe-dark">TWITTER: @memo__paper_ →</a>
+            <div class="font-mono font-bold text-xs md:text-sm space-y-2 md:text-right">
+                <a href="mailto:onekke@gmail.com" class="block hover:bg-yellowframe-yellow px-2 py-1 transition-colors">EMAIL: onekke@gmail.com</a>
+                <a href="https://x.com/memo__paper_" target="_blank" rel="noopener noreferrer" class="block hover:bg-yellowframe-yellow px-2 py-1 transition-colors">TWITTER: @memo__paper_ →</a>
             </div>
         </div>
     </div>
@@ -549,43 +549,43 @@
 </main>
 
 <footer class="border-t-2 border-yellowframe-dark bg-yellowframe-card">
-    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-2 font-mono text-[11px] font-bold">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row justify-between gap-2 font-mono text-[10px] font-bold">
         <span>© 2026 KIM GOEUN</span>
         <span>ANIMATION PORTFOLIO / FRAME BY FRAME</span>
     </div>
 </footer>
 
 <!-- PLAN MODAL -->
-<div id="planModal" class="fixed inset-0 z-[100] hidden bg-black/70 p-4 md:p-8 flex items-center justify-center backdrop-blur-sm">
-    <div class="max-w-4xl w-full max-h-[85vh] flex flex-col bg-yellowframe-bg border-2 border-yellowframe-dark shadow-frame">
-        <div class="flex-none flex justify-between items-center bg-yellowframe-yellow border-b-2 border-yellowframe-dark p-4 md:p-5">
+<div id="planModal" class="fixed inset-0 z-[100] hidden bg-black/70 p-4 md:p-6 flex items-center justify-center">
+    <div class="max-w-3xl w-full max-h-[85vh] flex flex-col bg-yellowframe-bg border-2 border-yellowframe-dark shadow-frame">
+        <div class="flex-none flex justify-between items-center bg-yellowframe-yellow border-b-2 border-yellowframe-dark p-3 md:p-4">
             <span id="planModalTitle" class="font-mono font-black text-xs md:text-sm">PITCH DECK</span>
-            <button onclick="closePlanModal()" aria-label="닫기" class="w-8 h-8 md:w-9 md:h-9 border-2 border-yellowframe-dark bg-yellowframe-card hover:bg-yellowframe-dark hover:text-white transition-colors flex items-center justify-center">
-                <i class="fa-solid fa-xmark text-sm md:text-base"></i>
+            <button onclick="closePlanModal()" aria-label="닫기" class="w-7 h-7 md:w-8 md:h-8 border-2 border-yellowframe-dark bg-yellowframe-card hover:bg-yellowframe-dark hover:text-white transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-xmark text-sm"></i>
             </button>
         </div>
-        <div id="planModalBody" class="p-6 md:p-10 overflow-y-auto modal-scroll"></div>
+        <div id="planModalBody" class="p-4 md:p-8 overflow-y-auto modal-scroll"></div>
     </div>
 </div>
 
 <!-- IMAGE MODAL -->
-<div id="imageModal" class="fixed inset-0 z-[110] hidden bg-black/90 p-4 flex items-center justify-center backdrop-blur-sm">
-    <button onclick="closeImageModal()" aria-label="닫기" class="absolute top-6 right-6 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors flex items-center justify-center">
+<div id="imageModal" class="fixed inset-0 z-[110] hidden bg-black/90 p-4 flex items-center justify-center">
+    <button onclick="closeImageModal()" aria-label="닫기" class="absolute top-4 right-4 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
         <i class="fa-solid fa-xmark text-lg"></i>
     </button>
 
-    <button onclick="prevImage()" aria-label="이전 이미지" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors flex items-center justify-center">
-        <i class="fa-solid fa-chevron-left text-lg"></i>
+    <button onclick="prevImage()" aria-label="이전 이미지" class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
+        <i class="fa-solid fa-chevron-left"></i>
     </button>
 
-    <button onclick="nextImage()" aria-label="다음 이미지" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors flex items-center justify-center">
-        <i class="fa-solid fa-chevron-right text-lg"></i>
+    <button onclick="nextImage()" aria-label="다음 이미지" class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
+        <i class="fa-solid fa-chevron-right"></i>
     </button>
 
-    <div class="w-full h-full flex items-center justify-center p-4">
-        <div class="max-w-6xl max-h-[90vh] flex flex-col items-center justify-center">
-            <img id="modalImage" src="" alt="" class="max-w-full max-h-[75vh] object-contain border-2 border-white shadow-2xl">
-            <div id="modalCaption" class="mt-4 bg-yellowframe-yellow border-2 border-yellowframe-dark px-4 py-1.5 font-mono text-xs md:text-sm font-black"></div>
+    <div class="w-full h-full flex items-center justify-center p-2">
+        <div class="max-w-5xl max-h-[90vh] flex flex-col items-center justify-center">
+            <img id="modalImage" src="" alt="" class="max-w-full max-h-[75vh] object-contain border-2 border-white">
+            <div id="modalCaption" class="mt-3 bg-yellowframe-yellow border-2 border-yellowframe-dark px-3 py-1 font-mono text-xs font-black"></div>
         </div>
     </div>
 </div>
@@ -703,7 +703,7 @@
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">BACKGROUND ART (배경 이미지 5종)</p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
                                     <img src="https://lh3.googleusercontent.com/d/1LXumIbeHjTUz8aAS6bjZh3v52RWOoEMW" alt="배경 아트 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
@@ -739,7 +739,7 @@
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">ANIMATION / IN-BETWEEN CUTS (동화 움짤 5종)</p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
                                     <img src="https://lh3.googleusercontent.com/d/1CYIklhtcfj2EoGbcEZ1waY8ijcxf0IcA" alt="동화 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
@@ -802,7 +802,7 @@
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">LIP-SYNC / 립싱크 (5종)</p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
                                     <img src="https://lh3.googleusercontent.com/d/1dYrvTygXIBc5PNWlceu0Rd7a2eXotvVe" alt="립싱크 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
@@ -838,7 +838,7 @@
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">ANIMATION / IN-BETWEEN CUTS (동화 움짤 8종)</p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
                                     <img src="https://lh3.googleusercontent.com/d/1T5oJ9b5pOL-sbcYyIdVmUqM5tc2kiVN7" alt="동화 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
