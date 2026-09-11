@@ -143,9 +143,10 @@
         <div class="grid md:grid-cols-[1fr_260px] lg:grid-cols-[1fr_300px] gap-10 md:gap-12 lg:gap-16 items-end">
             <div>
                 <p class="font-mono text-xs md:text-sm font-bold mb-6 tracking-wider">2D ANIMATOR / PORTFOLIO / 2026</p>
-                <h1 class="text-[clamp(3.5rem,10vw,9.5rem)] leading-[0.85] font-black tracking-[-0.06em] uppercase">
+                <!-- FRAME BY FRAME 타이틀 크기 및 스타일 확대 수정 반영 -->
+                <h1 class="text-[clamp(3.8rem,11vw,12.5rem)] leading-[0.85] font-black tracking-[-0.06em] uppercase">
                     FRAME BY<br>
-                    <span class="text-yellowframe-yellow inline-block mt-2" style="-webkit-text-stroke:2px #111; text-shadow: 4px 4px 0 #111;">FRAME</span>
+                    <span class="text-yellowframe-yellow inline-block mt-2" style="-webkit-text-stroke:3px #111; text-shadow: 6px 6px 0 #111;">FRAME</span>
                 </h1>
                 <div class="mt-8 md:mt-12 max-w-2xl">
                     <p class="text-xl md:text-2xl lg:text-3xl font-black leading-relaxed">
