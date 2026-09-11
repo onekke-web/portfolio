@@ -91,21 +91,30 @@
         .modal-scroll::-webkit-scrollbar-thumb { background: #111; }
 
         
-        @media (min-width: 1280px) {
-    .max-w-7xl {
-        max-width: 1500px !important;
-    }
+.max-w-7xl {
+    width: calc(100% - 64px) !important;
+    max-width: 1800px !important;
 }
 
 @media (min-width: 1600px) {
     .max-w-7xl {
-        max-width: 1600px !important;
+        width: calc(100% - 96px) !important;
+        max-width: 2100px !important;
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+@media (min-width: 1920px) {
+    .max-w-7xl {
+        width: calc(100% - 120px) !important;
+        max-width: 2200px !important;
+    }
+}
+
+@media (min-width: 2400px) {
+    .max-w-7xl {
+        width: calc(100% - 160px) !important;
+        max-width: 2300px !important;
+    }
 }
         
     </style>
