@@ -136,34 +136,33 @@
 
 <main id="top" class="w-full">
 
-<!-- HERO -->
-<section class="pt-14 border-b-2 border-yellowframe-dark">
-    <div class="max-w-7xl mx-auto w-full px-5 md:px-8 py-12 md:py-20">
-        <div class="grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-end">
+<!-- HERO (FRAME BY FRAME 타이포 크기 대폭 확대 수정) -->
+<section class="pt-14 border-b-2 border-yellowframe-dark min-h-[85vh] flex items-center">
+    <div class="max-w-7xl mx-auto w-full px-5 md:px-8 py-16 md:py-24">
+        <div class="grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-end">
             <div>
-                <p class="font-mono text-xs font-bold mb-4">2D ANIMATOR / PORTFOLIO / 2026</p>
-                <h1 class="text-[clamp(2.5rem,7vw,6rem)] leading-[0.9] font-black tracking-[-0.05em]">
+                <p class="font-mono text-xs md:text-sm font-bold mb-6 tracking-wider">2D ANIMATOR / PORTFOLIO / 2026</p>
+                <h1 class="text-[clamp(3.5rem,12vw,9.5rem)] leading-[0.85] font-black tracking-[-0.06em] uppercase">
                     FRAME BY<br>
-                    <span class="text-yellowframe-yellow" style="-webkit-text-stroke:2px #111;">FRAME</span>
+                    <span class="text-yellowframe-yellow inline-block mt-1" style="-webkit-text-stroke:2px #111; text-shadow: 4px 4px 0 #111;">FRAME</span>
                 </h1>
-                <div class="mt-6 max-w-xl">
-                    <p class="text-base md:text-lg font-bold leading-relaxed">
-                        움직임을 그리고,<br>
-                        이야기를 프레임 안에 담습니다.
+                <div class="mt-8 md:mt-12 max-w-2xl">
+                    <p class="text-lg md:text-2xl font-black leading-relaxed">
+                        움직임을 그리고,<br class="md:hidden"> 이야기를 프레임 안에 담습니다.
                     </p>
-                    <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Character Acting</span>
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Key Animation</span>
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Storytelling</span>
+                    <div class="mt-6 flex flex-wrap gap-2.5 font-mono text-xs font-bold">
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-3 py-1.5 shadow-[2px_2px_0_#111]">Character Acting</span>
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-3 py-1.5 shadow-[2px_2px_0_#111]">Key Animation</span>
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-3 py-1.5 shadow-[2px_2px_0_#111]">Storytelling</span>
                     </div>
                 </div>
             </div>
 
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-yellow shadow-frame p-4 w-full md:w-56">
-                <div class="font-mono text-[10px] font-bold mb-4">CURRENT STATUS</div>
-                <div class="font-mono text-3xl font-black">OPEN</div>
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-yellow shadow-frame p-5 w-full md:w-64">
+                <div class="font-mono text-[11px] font-bold mb-4">CURRENT STATUS</div>
+                <div class="font-mono text-4xl font-black">OPEN</div>
                 <div class="font-mono text-xs font-bold mt-1">FOR WORK</div>
-                <div class="border-t-2 border-yellowframe-dark mt-4 pt-3 text-xs font-bold">
+                <div class="border-t-2 border-yellowframe-dark mt-6 pt-4 text-xs md:text-sm font-bold">
                     2D ANIMATOR<br>
                     KIM GOEUN
                 </div>
