@@ -89,6 +89,25 @@
         }
         .modal-scroll::-webkit-scrollbar { width: 6px; }
         .modal-scroll::-webkit-scrollbar-thumb { background: #111; }
+
+        
+        @media (min-width: 1280px) {
+    .max-w-7xl {
+        max-width: 1500px !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .max-w-7xl {
+        max-width: 1600px !important;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+        
     </style>
 </head>
 
@@ -151,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-yellow shadow-frame p-4 w-full md:w-56">
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-yellow shadow-frame p-4 w-full md:w-64 lg:w-72">
                 <div class="font-mono text-[10px] font-bold mb-4">CURRENT STATUS</div>
                 <div class="font-mono text-3xl font-black">OPEN</div>
                 <div class="font-mono text-xs font-bold mt-1">FOR WORK</div>
