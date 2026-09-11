@@ -96,7 +96,7 @@
 <div class="noise"></div>
 <div id="cursor" class="custom-cursor"></div>
 
-<!-- HEADER (높이 축소: h-14) -->
+<!-- HEADER -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-yellowframe-bg/95 backdrop-blur border-b-2 border-yellowframe-dark">
     <div class="max-w-7xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
         <a href="#top" class="font-mono font-black text-lg tracking-tight">GKEUN<span class="text-yellowframe-dark">.</span></a>
@@ -128,7 +128,7 @@
 
 <main id="top" class="w-full">
 
-<!-- HERO (여백 축소 및 제목 크기 조절) -->
+<!-- HERO -->
 <section class="pt-14 border-b-2 border-yellowframe-dark">
     <div class="max-w-7xl mx-auto w-full px-5 md:px-8 py-12 md:py-20">
         <div class="grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-end">
@@ -164,19 +164,19 @@
     </div>
 </section>
 
-<!-- SELECTED WORK (여백: py-12 md:py-20) -->
+<!-- SELECTED WORK (팀 프로젝트) -->
 <section id="work" class="py-12 md:py-20">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="flex items-end justify-between mb-8 md:mb-12">
             <div>
-                <p class="font-mono text-xs font-bold mb-2">01 / SELECTED WORK</p>
+                <p class="font-mono text-xs font-bold mb-2">01 / TEAM PROJECTS</p>
                 <h2 class="text-4xl md:text-6xl font-black tracking-tight">SELECTED WORK<span class="text-yellowframe-yellow">.</span></h2>
             </div>
-            <span class="hidden md:block font-mono text-xs font-bold">2025 — 2026</span>
+            <span class="hidden md:block font-mono text-xs font-bold">TEAM WORK (2025 — 2026)</span>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 md:gap-8">
-            <!-- PROJECT 01 -->
+            <!-- TEAM PROJECT 01 -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/imD6U6dVes8?si=6TZcW1DbJxwKmnde" target="_blank" rel="noopener noreferrer"
@@ -195,16 +195,16 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">PROJECT 01</p>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">천재? 탐정 새롬</h3>
                             </div>
-                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">ANIMATION</span>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 살인사건을 수사하며 벌어지는 코미디 추리 단편 애니메이션.</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 협업 기반의 단편 애니메이션. 자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 사건을 수사하며 벌어지는 코미디 추리물입니다.</p>
                         
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
-                                <span class="block text-yellowframe-muted font-bold">ROLE</span>
+                                <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
                                 <span class="font-bold">원동화, 캐릭터</span>
                             </div>
                             <div>
@@ -220,12 +220,12 @@
                 </div>
                 <div class="p-5 md:p-6 pt-0">
                     <button onclick="openPlanModal('saerom')" class="w-full text-center border-2 border-yellowframe-dark py-2.5 font-mono text-xs font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors">
-                        VIEW PITCH DECK →
+                        VIEW TEAM PITCH DECK →
                     </button>
                 </div>
             </div>
 
-            <!-- PROJECT 02 -->
+            <!-- TEAM PROJECT 02 -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
@@ -244,16 +244,16 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">PROJECT 02</p>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">괴짜과학자 비키</h3>
                             </div>
-                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">ANIMATION</span>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">음모론으로 뒤덮인 현대 사회에서 괴짜 과학자 ‘비키’는 지구 음모론을 증명할 수 있을 것인가?</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 파이프라인으로 제작된 TV 시리즈 프로젝트. 괴짜 과학자 ‘비키’가 음모론을 증명해 나가는 코믹 SF 애니메이션입니다.</p>
                         
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
-                                <span class="block text-yellowframe-muted font-bold">ROLE</span>
+                                <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
                                 <span class="font-bold">원동화 작화</span>
                             </div>
                             <div>
@@ -269,7 +269,7 @@
                 </div>
                 <div class="p-5 md:p-6 pt-0">
                     <button onclick="openPlanModal('vicky')" class="w-full text-center border-2 border-yellowframe-dark py-2.5 font-mono text-xs font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors">
-                        VIEW PITCH DECK →
+                        VIEW TEAM PITCH DECK →
                     </button>
                 </div>
             </div>
@@ -277,38 +277,59 @@
     </div>
 </section>
 
-<!-- PROCESS -->
+<!-- PROCESS (개인 프로젝트) -->
 <section id="process" class="py-12 md:py-20 bg-yellowframe-dark text-yellowframe-bg">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-12">
-            <p class="font-mono text-xs font-bold mb-2 text-yellowframe-yellow">02 / WORKFLOW</p>
+            <p class="font-mono text-xs font-bold mb-2 text-yellowframe-yellow">02 / PERSONAL WORKFLOW</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">PROCESS<span class="text-yellowframe-yellow">.</span></h2>
+            <p class="mt-3 text-xs md:text-sm text-yellowframe-bg/70 max-w-2xl font-mono">
+                개인 프로젝트 구상 시 아이디어 스케치부터 최종 프레임 완성까지 전 과정을 자체 수립한 6단계 파이프라인입니다.
+            </p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-6 gap-3 font-mono">
             <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01</span>
-                <span class="text-lg font-black mt-4">기획</span>
+                <div>
+                    <span class="text-lg font-black block">개인 기획</span>
+                    <span class="text-[10px] opacity-75 font-normal">컨셉 & 콘티</span>
+                </div>
             </div>
             <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 02</span>
-                <span class="text-lg font-black mt-4">캐릭터</span>
+                <div>
+                    <span class="text-lg font-black block">캐릭터</span>
+                    <span class="text-[10px] opacity-75 font-normal">디자인 & 턴어라운드</span>
+                </div>
             </div>
             <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 03</span>
-                <span class="text-lg font-black mt-4">원동화</span>
+                <div>
+                    <span class="text-lg font-black block">원화 작화</span>
+                    <span class="text-[10px] opacity-75 font-normal">키 포즈 & 타이밍</span>
+                </div>
             </div>
             <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 04</span>
-                <span class="text-lg font-black mt-4">동화</span>
+                <div>
+                    <span class="text-lg font-black block">동화 보정</span>
+                    <span class="text-[10px] opacity-75 font-normal">인비트윈 & 클린업</span>
+                </div>
             </div>
             <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 05</span>
-                <span class="text-lg font-black mt-4">움직임</span>
+                <div>
+                    <span class="text-lg font-black block">움직임 검증</span>
+                    <span class="text-[10px] opacity-75 font-normal">모션 체크 & 튜닝</span>
+                </div>
             </div>
             <div class="border-2 border-yellowframe-yellow bg-yellowframe-yellow text-yellowframe-dark p-4 flex flex-col justify-between">
                 <span class="text-[10px] font-bold">STEP 06</span>
-                <span class="text-lg font-black mt-4">완성</span>
+                <div>
+                    <span class="text-lg font-black block">최종 완성</span>
+                    <span class="text-[10px] opacity-75 font-normal">컴포지팅 & 마스터링</span>
+                </div>
             </div>
         </div>
     </div>
@@ -493,7 +514,7 @@
                 </p>
                 <p>
                     기획 단계부터 캐릭터 디자인, 원동화 작업에 이르기까지 애니메이션 제작 전반에 높은 이해도를 갖추고 있으며, 
-                    동료들과의 활발한 소통을 통해 최고의 결과물을 완성해내는 리듬감을 중시합니다.
+                    동료들과의 활발한 소통을 통해 최고의 결과물을 완성합니다.
                 </p>
             </div>
         </div>
@@ -526,7 +547,7 @@
     </div>
 </footer>
 
-<!-- PLAN MODAL (반응형 안전 처리) -->
+<!-- PLAN MODAL -->
 <div id="planModal" class="fixed inset-0 z-[100] hidden bg-black/70 p-4 md:p-6 flex items-center justify-center">
     <div class="max-w-3xl w-full max-h-[85vh] flex flex-col bg-yellowframe-bg border-2 border-yellowframe-dark shadow-frame">
         <div class="flex-none flex justify-between items-center bg-yellowframe-yellow border-b-2 border-yellowframe-dark p-3 md:p-4">
@@ -539,7 +560,7 @@
     </div>
 </div>
 
-<!-- IMAGE MODAL (반응형 및 화면 밖 이탈 방지) -->
+<!-- IMAGE MODAL -->
 <div id="imageModal" class="fixed inset-0 z-[110] hidden bg-black/90 p-4 flex items-center justify-center">
     <button onclick="closeImageModal()" aria-label="닫기" class="absolute top-4 right-4 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
         <i class="fa-solid fa-xmark text-lg"></i>
@@ -586,7 +607,7 @@
         el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
     });
 
-    // 갤러리 데이터 (기존 외적 링크 유지)
+    // 갤러리 데이터
     const galleryData = {
         character: [
             { src: 'https://lh3.googleusercontent.com/d/13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov', title: 'CHARACTER #01' },
@@ -663,16 +684,15 @@
 
     const planData = {
         saerom: {
-            title: 'PITCH DECK / 천재? 탐정 새롬',
+            title: 'TEAM PITCH DECK / 천재? 탐정 새롬',
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / CONCEPT</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / CONCEPT (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">천재? 탐정 새롬</h3>
-                        <p class="mt-3 leading-relaxed text-xs md:text-sm">자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 살인사건을 수사한다. 하지만 연이은 잘못된 추리에 용의자가 하나, 둘씩 죽어 나가며 수사는 미궁에 빠진다. 과연 새롬이는 범인을 잡을 수 있을까?</p>
+                        <p class="mt-3 leading-relaxed text-xs md:text-sm">팀 협업 단편 애니메이션. 자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 살인사건을 수사한다. 연이은 잘못된 추리에 용의자가 하나둘씩 죽어가며 수사는 미궁에 빠진다.</p>
                     </div>
 
-                    <!-- BACKGROUND ART SECTION -->
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">BACKGROUND ART (배경 이미지 5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -709,7 +729,6 @@
                         </div>
                     </div>
 
-                    <!-- ANIMATION IN-BETWEEN CUTS -->
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">ANIMATION / IN-BETWEEN CUTS (동화 움짤 5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -753,27 +772,26 @@
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">FORMAT</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">단편 애니메이션 (상영시간 5분)</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">팀 단편 애니메이션 (5분)</p>
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card md:col-span-2">
-                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">ROLE</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">원동화 작화 · 배경 · 캐릭터 디자인 · 기획</p>
+                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">MY ROLE IN TEAM</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">원동화 작화 · 배경 아트 · 캐릭터 디자인 참여</p>
                         </div>
                     </div>
                 </div>
             `
         },
         vicky: {
-            title: 'PITCH DECK / 괴짜과학자 비키',
+            title: 'TEAM PITCH DECK / 괴짜과학자 비키',
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / LOGLINE</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / LOGLINE (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">괴짜과학자 비키</h3>
                         <p class="mt-3 text-xs md:text-sm leading-relaxed font-medium">음모론으로 뒤덮인 현대 사회에서 괴짜 과학자 ‘비키’는 지구 음모론을 증명할 수 있을 것인가?</p>
                     </div>
 
-                    <!-- LIP-SYNC SECTION -->
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">LIP-SYNC / 립싱크 (5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -810,7 +828,6 @@
                         </div>
                     </div>
 
-                    <!-- ANIMATION IN-BETWEEN CUTS SECTION -->
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">ANIMATION / IN-BETWEEN CUTS (동화 움짤 8종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -876,11 +893,11 @@
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">RUNNING TIME / CATEGORY</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">10분 이내 / TV 애니메이션 시리즈 에피소드</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">10분 이내 / TV 시리즈 에피소드</p>
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
-                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">ROLE</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">원동화 작화</p>
+                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">MY ROLE IN TEAM</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">원동화 작화 파트 담당</p>
                         </div>
                     </div>
                 </div>
