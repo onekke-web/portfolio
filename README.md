@@ -116,11 +116,216 @@
         max-width: 2300px !important;
     }
 }    
+
+        /* =========================================
+           PAPER INTRO ANIMATION (고도화 버전)
+        ========================================= */
+        #paper-intro {
+            position: fixed;
+            inset: 0;
+            z-index: 99999;
+            background: #F5F1E8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        /* 처음에는 작은 종이 */
+        .paper-sheet {
+            width: min(48vw, 720px);
+            height: min(68vw, 980px);
+            max-height: 82vh;
+            background: #FFFDF5;
+            border: 3px solid #111111;
+            box-shadow: 10px 10px 0 #111111;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            transform-origin: bottom center;
+            transform: perspective(1200px) rotateX(70deg) scale(0.55);
+            opacity: 0;
+
+            animation: paperOpen 1.8s cubic-bezier(.16,1,.3,1) forwards;
+        }
+
+        /* 종이 우측 상단 모서리가 살짝 말리는(Fold) 효과 연출 */
+        .paper-sheet::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            width: 0;
+            height: 0;
+            background: linear-gradient(135deg, transparent 50%, #E6E1D5 50%);
+            border-bottom: 2px solid #111111;
+            border-left: 2px solid #111111;
+            box-shadow: -3px 3px 3px rgba(0,0,0,0.1);
+            opacity: 0;
+            animation: cornerCurl 0.4s ease-out 1.5s forwards;
+        }
+
+        @keyframes cornerCurl {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            100% {
+                width: 50px;
+                height: 50px;
+                opacity: 1;
+            }
+        }
+
+        .paper-content {
+            text-align: center;
+            color: #111111;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: paperText 0.7s ease-out 0.8s forwards;
+        }
+
+        .paper-small {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            letter-spacing: 0.2em;
+            margin-bottom: 20px;
+        }
+
+        .paper-content strong {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(32px, 5vw, 72px);
+            line-height: 0.95;
+            letter-spacing: -0.06em;
+        }
+
+        .paper-year {
+            display: block;
+            margin-top: 24px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            letter-spacing: 0.15em;
+        }
+
+        /* 종이가 펼쳐지는 애니메이션 */
+        @keyframes paperOpen {
+            0% {
+                opacity: 0;
+                transform:
+                    perspective(1200px)
+                    rotateX(70deg)
+                    scale(0.55)
+                    translateY(80px);
+            }
+            20% {
+                opacity: 1;
+            }
+            55% {
+                transform:
+                    perspective(1200px)
+                    rotateX(0deg)
+                    scale(0.72)
+                    translateY(0);
+            }
+            100% {
+                opacity: 1;
+                transform:
+                    perspective(1200px)
+                    rotateX(0deg)
+                    scale(1)
+                    translateY(0);
+            }
+        }
+
+        /* 종이 위 글씨 */
+        @keyframes paperText {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 마지막에 종이가 위로 빠져나가고 홈페이지 등장 */
+        #paper-intro.hide {
+            animation: introExit 0.9s cubic-bezier(.76,0,.24,1) forwards;
+        }
+
+        @keyframes introExit {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+
+        /* 모바일 대응 */
+        @media (max-width: 768px) {
+            .paper-sheet {
+                width: 72vw;
+                height: 105vw;
+                max-height: 78vh;
+                transform:
+                    perspective(900px)
+                    rotateX(70deg)
+                    scale(0.55);
+            }
+            .paper-content strong {
+                font-size: 11vw;
+            }
+            .paper-small {
+                font-size: 10px;
+            }
+            .paper-year {
+                font-size: 11px;
+            }
+        }
+
+        /* 애니메이션 줄이기 설정을 사용하는 경우 */
+        @media (prefers-reduced-motion: reduce) {
+            #paper-intro,
+            .paper-sheet,
+            .paper-content {
+                animation: none !important;
+            }
+            .paper-sheet {
+                opacity: 1;
+                transform: none;
+            }
+            .paper-content {
+                opacity: 1;
+                transform: none;
+            }
+        }
     </style>
-    
 </head>
 
 <body>
+
+<!-- PAPER INTRO -->
+<div id="paper-intro">
+    <div class="paper-sheet">
+        <div class="paper-content">
+            <span class="paper-small">KIM GOEUN</span>
+            <strong>ANIMATION<br>PORTFOLIO</strong>
+            <span class="paper-year">2026</span>
+        </div>
+    </div>
+</div>
+
 <div class="noise"></div>
 <div id="cursor" class="custom-cursor"></div>
 
@@ -610,25 +815,24 @@
     </div>
 </div>
 
-/* =========================================
-   PAPER INTRO
-========================================= */
-
-window.addEventListener('load', () => {
-    const intro = document.getElementById('paper-intro');
-
-    // 종이가 펼쳐지는 시간
-    setTimeout(() => {
-        intro.classList.add('hide');
-    }, 2400);
-
-    // 애니메이션이 끝난 뒤 완전히 제거
-    setTimeout(() => {
-        intro.remove();
-    }, 3400);
-});
-
 <script>
+    /* =========================================
+       PAPER INTRO
+    ========================================= */
+    window.addEventListener('load', () => {
+        const intro = document.getElementById('paper-intro');
+
+        // 종이가 펼쳐지는 시간
+        setTimeout(() => {
+            intro.classList.add('hide');
+        }, 2400);
+
+        // 애니메이션이 끝난 뒤 완전히 제거
+        setTimeout(() => {
+            intro.remove();
+        }, 3400);
+    });
+
     // 모바일 메뉴 토글
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
