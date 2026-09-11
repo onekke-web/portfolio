@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 모바일 브라우저 상단바 및 스크롤 여백 색상 일치 -->
+    <meta name="theme-color" content="#F5F1E8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#F5F1E8">
+
     <title>김고은 | ANIMATION PORTFOLIO</title>
 
     <!-- Tailwind CSS (CDN) -->
@@ -42,7 +46,10 @@
 
     <style>
         * { box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        html { 
+            scroll-behavior: smooth; 
+            overscroll-behavior-y: none; /* 최상단/최하단 스크롤 바운스 방지 */
+        }
         body {
             margin: 0;
             background: #F5F1E8;
@@ -50,6 +57,7 @@
             font-family: 'Noto Sans KR', sans-serif;
             overflow-x: hidden;
             width: 100%;
+            overscroll-behavior-y: none; /* 최상단 바운스 방지 */
         }
         ::selection { background: #FFE500; color: #111; }
         
