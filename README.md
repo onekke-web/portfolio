@@ -42,24 +42,15 @@
 
     <style>
         * { box-sizing: border-box; }
-        
-        /* 1. html, body 반응형 및 너비 넘침 방지 설정 보강 */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             background: #F5F1E8;
             color: #111;
             font-family: 'Noto Sans KR', sans-serif;
+            overflow-x: hidden;
+            width: 100%;
         }
-
         ::selection { background: #FFE500; color: #111; }
         
         /* Custom Cursor */
@@ -107,8 +98,7 @@
 
 <!-- HEADER -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-yellowframe-bg/95 backdrop-blur border-b-2 border-yellowframe-dark">
-    <!-- 2. 공통 컨테이너 클래스 적용 (w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8) -->
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8 h-14 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
         <a href="#top" class="font-mono font-black text-lg tracking-tight">GKEUN<span class="text-yellowframe-dark">.</span></a>
 
         <nav class="hidden md:flex items-center gap-6 font-mono text-xs font-bold">
@@ -140,7 +130,7 @@
 
 <!-- HERO -->
 <section class="pt-14 border-b-2 border-yellowframe-dark">
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8 py-12 md:py-20">
+    <div class="max-w-7xl mx-auto w-full px-5 md:px-8 py-12 md:py-20">
         <div class="grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-end">
             <div>
                 <p class="font-mono text-xs font-bold mb-4">2D ANIMATOR / PORTFOLIO / 2026</p>
@@ -176,7 +166,7 @@
 
 <!-- SELECTED WORK (팀 프로젝트) -->
 <section id="work" class="py-12 md:py-20">
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="flex items-end justify-between mb-8 md:mb-12">
             <div>
                 <p class="font-mono text-xs font-bold mb-2">01 / TEAM PROJECTS</p>
@@ -289,7 +279,7 @@
 
 <!-- PROCESS (개인 프로젝트) -->
 <section id="process" class="py-12 md:py-20 bg-yellowframe-dark text-yellowframe-bg">
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-12">
             <p class="font-mono text-xs font-bold mb-2 text-yellowframe-yellow">02 / PERSONAL WORKFLOW</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">PROCESS<span class="text-yellowframe-yellow">.</span></h2>
@@ -298,8 +288,7 @@
             </p>
         </div>
 
-        <!-- 4. PROCESS 반응형 그리드 수정 (모바일:2열 -> 태블릿:3열 -> PC:6열) -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 font-mono">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-3 font-mono">
             <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01</span>
                 <div>
@@ -348,7 +337,7 @@
 
 <!-- GALLERY -->
 <section id="gallery" class="py-12 md:py-20">
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-10">
             <p class="font-mono text-xs font-bold mb-2">03 / GALLERY</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">GALLERY<span class="text-yellowframe-yellow">.</span></h2>
@@ -360,10 +349,9 @@
             <button onclick="switchCategory('croquis')" class="category-btn font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-card" data-category="croquis">CROQUIS / DRAWING</button>
         </div>
 
-        <!-- 3. GALLERY 반응형 그리드 수정 (grid-cols-2 sm:grid-cols-3 lg:grid-cols-4) -->
         <!-- CHARACTER DESIGN -->
         <div id="cat-character" class="category-content">
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov" alt="캐릭터 일러스트 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -414,7 +402,7 @@
 
         <!-- ANIMATION -->
         <div id="cat-animating" class="category-content hidden">
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
                         <img src="https://lh3.googleusercontent.com/d/1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc" alt="애니메이션 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -474,7 +462,7 @@
 
         <!-- CROQUIS / DRAWING -->
         <div id="cat-croquis" class="category-content hidden">
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://cdn.phototourl.com/free/2026-09-10-dcce84bb-b990-4b63-87ca-85afbc07950f.png" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -509,7 +497,7 @@
 
 <!-- ABOUT -->
 <section id="about" class="py-12 md:py-20 bg-yellowframe-yellow border-y-2 border-yellowframe-dark">
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <p class="font-mono text-xs font-bold mb-2">04 / ABOUT ME</p>
         <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 md:mb-10">ABOUT<span class="text-yellowframe-dark">.</span></h2>
 
@@ -535,7 +523,7 @@
 
 <!-- CONTACT -->
 <section id="contact" class="py-12 md:py-20">
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
         <p class="font-mono text-xs font-bold mb-2">05 / CONTACT</p>
         <div class="grid md:grid-cols-[1fr_auto] gap-8 items-end">
             <div>
@@ -553,16 +541,15 @@
 </main>
 
 <footer class="border-t-2 border-yellowframe-dark bg-yellowframe-card">
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8 py-5 flex flex-col md:flex-row justify-between gap-2 font-mono text-[10px] font-bold">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row justify-between gap-2 font-mono text-[10px] font-bold">
         <span>© 2026 KIM GOEUN</span>
         <span>ANIMATION PORTFOLIO / FRAME BY FRAME</span>
     </div>
 </footer>
 
 <!-- PLAN MODAL -->
-<!-- 5. 모달 내부 패딩 및 높이 기준 수정 (p-2 sm:p-4 md:p-6 / max-h-[92vh] sm:max-h-[88vh]) -->
-<div id="planModal" class="fixed inset-0 z-[100] hidden bg-black/70 p-2 sm:p-4 md:p-6 flex items-center justify-center">
-    <div class="w-full max-w-3xl max-h-[92vh] sm:max-h-[88vh] flex flex-col bg-yellowframe-bg border-2 border-yellowframe-dark shadow-frame">
+<div id="planModal" class="fixed inset-0 z-[100] hidden bg-black/70 p-4 md:p-6 flex items-center justify-center">
+    <div class="max-w-3xl w-full max-h-[85vh] flex flex-col bg-yellowframe-bg border-2 border-yellowframe-dark shadow-frame">
         <div class="flex-none flex justify-between items-center bg-yellowframe-yellow border-b-2 border-yellowframe-dark p-3 md:p-4">
             <span id="planModalTitle" class="font-mono font-black text-xs md:text-sm">PITCH DECK</span>
             <button onclick="closePlanModal()" aria-label="닫기" class="w-7 h-7 md:w-8 md:h-8 border-2 border-yellowframe-dark bg-yellowframe-card hover:bg-yellowframe-dark hover:text-white transition-colors flex items-center justify-center">
