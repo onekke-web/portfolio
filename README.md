@@ -258,7 +258,7 @@
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
                        class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
                         <div class="aspect-video bg-yellowframe-dark relative w-full">
-                            <img src="https://lh3.googleusercontent.com/d/1m__l6P90ifoH0b1IDoFtEL8qNTmgx-yY"
+                            <img src="https://drive.google.com/thumbnail?id=1m__l6P90ifoH0b1IDoFtEL8qNTmgx-yY&sz=w1200"
                                  alt="괴짜과학자 비키 썸네일" loading="lazy" referrerpolicy="no-referrer"
                                  class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center">
