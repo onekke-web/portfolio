@@ -311,13 +311,14 @@
             <p class="font-mono text-xs font-bold mb-2 text-yellowframe-yellow">02 / PERSONAL WORKFLOW</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">PROCESS<span class="text-yellowframe-yellow">.</span></h2>
             <p class="mt-3 text-xs md:text-sm text-yellowframe-bg/70 max-w-2xl font-mono">
-                개인 프로젝트 구상 시 아이디어 스케치부터 최종 프레임 완성까지 전 과정을 자체 수립한 6단계 파이프라인입니다.
+                개인 프로젝트 구상 시 아이디어 스케치부터 최종 프레임 완성까지 전 과정을 자체 수립한 6단계 파이프라인입니다. (STEP 01 클릭 시 상세 기획서 확인 가능)
             </p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-6 gap-3 font-mono">
-            <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
-                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01</span>
+            <!-- STEP 01: 클릭 가능하도록 수정됨 -->
+            <div onclick="openPlanModal('hero')" class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group cursor-pointer shadow-[2px_2px_0_#FFE500]">
+                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01 (CLICK)</span>
                 <div>
                     <span class="text-lg font-black block">개인 기획</span>
                     <span class="text-[10px] opacity-75 font-normal">컨셉 & 콘티</span>
@@ -727,6 +728,65 @@
     }
 
     const planData = {
+        // 개인 기획 (STEP 01) 추가 데이터
+        hero: {
+            title: '개인 기획 / 길 잃은 용사 (가제)',
+            body: `
+                <div class="space-y-6 text-xs md:text-sm leading-relaxed">
+                    <div>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / PERSONAL PROJECT CONCEPT</p>
+                        <h3 class="text-2xl md:text-3xl font-black mt-1">길 잃은 용사 (가제)</h3>
+                        <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 font-mono">
+                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                                <span class="block text-yellowframe-muted font-bold text-[11px]">장르</span>
+                                <span class="font-bold">판타지, 일상 / 2D 단편 애니메이션</span>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                                <span class="block text-yellowframe-muted font-bold text-[11px]">타깃</span>
+                                <span class="font-bold">20~30대 직장인 및 보편적 성인 관객</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">로그라인 (한 줄 요약)</p>
+                        <p class="font-bold text-base">던전(회사) 보스를 해치운 후 복귀하는 길 잃은 용사(가장)의 이야기</p>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">주요 캐릭터</p>
+                        <div class="space-y-3">
+                            <div class="border-l-4 border-yellowframe-dark pl-3">
+                                <p class="font-black text-sm">용사 (남 / 30대 후반, 회사원)</p>
+                                <p class="mt-1 text-xs text-yellowframe-muted">어둠이 지배하는 거대한 요새와 미궁 속을 헤쳐 나가는 베테랑 용사이자, 현실에서는 가족의 평화를 지키기 위해 매일 야근과 사투를 벌이는 10년 차 가장. "가족이 웃는 세상"을 만들기 위해 열심히 일을 한다. 오늘도 완벽한 퇴근을 위해 노력한다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">줄거리 요약 (Synopsis)</p>
+                        <div class="space-y-4 font-medium">
+                            <div>
+                                <span class="font-black block text-xs font-mono mb-1 text-yellowframe-dark">[발단]</span>
+                                <p>어둠이 지배하는 거대한 요새 타르타로스. 대마왕의 옥좌 앞에서 온몸이 짓무른 갑옷을 입은 용사는 마법의 힘으로 빛나는 서류 봉인 검을 쥐고 숨을 몰아쉰다. 마침내 최후의 일격을 날려 마왕을 쓰러뜨린다. 사방으로 흩어지는 마력의 파편 속에서 승리의 포효를 내지른다.</p>
+                            </div>
+                            <div>
+                                <span class="font-black block text-xs font-mono mb-1 text-yellowframe-dark">[전개]</span>
+                                <p>마왕을 무찔렀다는 해방감도 잠시, 요새의 구조가 요동치며 무너져 내리기 시작한다. 용사는 성채를 빠져나가기 위해 탈출로를 찾지만, 눈앞에는 끝없이 이어지는 미로 같은 회랑과 수백 개의 비상계단뿐이다. 지옥의 미궁이 형태를 바꾸는 동안 손에 든 ‘마법 나침반(스마트폰 GPS)’은 차가운 자줏빛 오류 신호만 내뿜으며 사방으로 핑글핑글 돈다.</p>
+                            </div>
+                            <div>
+                                <span class="font-black block text-xs font-mono mb-1 text-yellowframe-dark">[위기 및 절정]</span>
+                                <p>탈출구는 보이지 않고 체력은 바닥을 친다. 이때 어둠 속에서 ‘막차의 시간’, ‘끝나지 않는 내일의 업무’, ‘차가운 야간의 찬 바람’이라는 수많은 망령과 마물들이 사방에서 몰려와 용사를 짓누른다. 결국 무릎을 꿇고 만 용사의 손에서 검이 떨어지고, 성채의 차가운 바닥 위로 축 늘어져 쓰러진다.</p>
+                            </div>
+                            <div>
+                                <span class="font-black block text-xs font-mono mb-1 text-yellowframe-dark">[결말]</span>
+                                <p>바로 그 순간, 어둡고 차가운 미궁의 석벽이 허물어지며 따뜻하고 주황빛 노을이 쏟아진다. 차가운 갑옷과 투구인 줄 알았던 것은 구겨진 정장 코트와 넥타이였고, 거대한 성채와 미궁은 수많은 빌딩 숲과 지하철역이 얽힌 ‘회사와 퇴근길’이었다. 바닥에 엎드려 있던 주인공(가장)의 품으로 아빠의 퇴근을 기다리던 아이의 작은 두 팔이 달려와 안긴다. 아이가 아빠의 헝클어진 머리에 삐뚤빼뚤한 종이 왕관을 씌워주자, 지친 용사의 얼굴에 진정한 평화의 미소가 번지며 화면이 암전된다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        },
         saerom: {
             title: 'TEAM PITCH DECK / 천재? 탐정 새롬',
             body: `
