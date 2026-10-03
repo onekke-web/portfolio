@@ -132,7 +132,6 @@
             <a href="#work" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">WORK</a>
             <a href="#process" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">PROCESS</a>
             <a href="#gallery" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">GALLERY</a>
-            <a href="#personal-project" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">PROJECT</a>
             <a href="#about" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">ABOUT</a>
             <a href="#contact" class="hover:bg-yellowframe-yellow px-2 py-1 transition-colors">CONTACT</a>
         </nav>
@@ -148,7 +147,6 @@
             <a href="#work" class="px-5 py-3 border-b border-yellowframe-dark hover:bg-yellowframe-yellow">WORK</a>
             <a href="#process" class="px-5 py-3 border-b border-yellowframe-dark hover:bg-yellowframe-yellow">PROCESS</a>
             <a href="#gallery" class="px-5 py-3 border-b border-yellowframe-dark hover:bg-yellowframe-yellow">GALLERY</a>
-            <a href="#personal-project" class="px-5 py-3 border-b border-yellowframe-dark hover:bg-yellowframe-yellow">PROJECT</a>
             <a href="#about" class="px-5 py-3 border-b border-yellowframe-dark hover:bg-yellowframe-yellow">ABOUT</a>
             <a href="#contact" class="px-5 py-3 hover:bg-yellowframe-yellow">CONTACT</a>
         </nav>
@@ -306,7 +304,7 @@
     </div>
 </section>
 
-<!-- PROCESS (개인 프로젝트 워크플로우) -->
+<!-- PROCESS (개인 프로젝트) -->
 <section id="process" class="py-12 md:py-20 bg-yellowframe-dark text-yellowframe-bg">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-12">
@@ -492,7 +490,7 @@
         <!-- CROQUIS / DRAWING -->
         <div id="cat-croquis" class="category-content hidden">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
+                                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -533,70 +531,10 @@
     </div>
 </section>
 
-<!-- PERSONAL PROJECT (길 잃은 용사) -->
-<section id="personal-project" class="py-12 md:py-20 bg-yellowframe-card border-y-2 border-yellowframe-dark">
-    <div class="max-w-7xl mx-auto px-5 md:px-8">
-        <div class="mb-8 md:mb-12">
-            <p class="font-mono text-xs font-bold mb-2">04 / PERSONAL PROJECT</p>
-            <h2 class="text-4xl md:text-6xl font-black tracking-tight">길 잃은 용사 <span class="text-yellowframe-muted text-2xl md:text-4xl">(가제)</span></h2>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6 md:gap-8 mb-8">
-            <!-- 기본 정보 카드 -->
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg p-6 shadow-frame">
-                <p class="font-mono text-xs font-bold text-yellowframe-muted mb-2">GENRE & FORMAT</p>
-                <p class="text-lg font-black mb-4">판타지, 일상 / 2D 단편 애니메이션</p>
-                <p class="font-mono text-xs font-bold text-yellowframe-muted mb-2">TARGET</p>
-                <p class="text-sm font-bold">20~30대 직장인 및 보편적 성인 관객</p>
-            </div>
-
-            <!-- 로그라인 카드 -->
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-yellow p-6 shadow-frame md:col-span-2 flex flex-col justify-center">
-                <p class="font-mono text-xs font-bold mb-2">LOGLINE (한 줄 요약)</p>
-                <p class="text-xl md:text-2xl font-black leading-snug">
-                    "던전(회사) 보스를 해치운 후 복귀하는 길 잃은 용사(가장)의 이야기"
-                </p>
-            </div>
-        </div>
-
-        <!-- 주요 캐릭터 -->
-        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg p-6 shadow-frame mb-8">
-            <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">MAIN CHARACTER</p>
-            <h3 class="text-xl font-black mb-2">용사 (남 / 30대 후반, 회사원)</h3>
-            <p class="text-sm leading-relaxed font-medium">
-                어둠이 지배하는 거대한 요새와 미궁 속을 헤쳐 나가는 베테랑 용사이자, 현실에서는 가족의 평화를 지키기 위해 매일 야근과 사투를 벌이는 10년 차 가장. "가족이 웃는 세상"을 만들기 위해 열심히 일을 한다. 오늘도 완벽한 퇴근을 위해 노력한다.
-            </p>
-        </div>
-
-        <!-- 시놉시스 (발단/전개/위기/결말) -->
-        <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-6 md:p-8 shadow-frame">
-            <p class="font-mono text-xs font-bold mb-6">SYNOPSIS (줄거리 요약)</p>
-            <div class="grid md:grid-cols-2 gap-6 font-medium text-sm leading-relaxed">
-                <div class="border-l-4 border-yellowframe-dark pl-4">
-                    <p class="font-mono font-bold text-xs text-yellowframe-muted mb-1">[발단]</p>
-                    <p>어둠이 지배하는 거대한 요새 타르타로스. 대마왕의 옥좌 앞에서 온몸이 짓무른 갑옷을 입은 용사는 마법의 힘으로 빛나는 서류 봉인 검을 쥐고 숨을 몰아쉰다. 마침내 최후의 일격을 날려 마왕을 쓰러뜨린다. 사방으로 흩어지는 마력의 파편 속에서 승리의 포효를 내지른다.</p>
-                </div>
-                <div class="border-l-4 border-yellowframe-dark pl-4">
-                    <p class="font-mono font-bold text-xs text-yellowframe-muted mb-1">[전개]</p>
-                    <p>마왕을 무찔렀다는 해방감도 잠시, 요새의 구조가 요동치며 무너져 내리기 시작한다. 용사는 성채를 빠져나가기 위해 탈출로를 찾지만, 눈앞에는 끝없이 이어지는 미로 같은 회랑과 수백 개의 비상계단뿐이다. 지옥의 미궁이 형태를 바꾸는 동안 손에 든 ‘마법 나침반(스마트폰 GPS)’은 차가운 자줏빛 오류 신호만 내뿜으며 사방으로 핑글핑글 돈다.</p>
-                </div>
-                <div class="border-l-4 border-yellowframe-dark pl-4">
-                    <p class="font-mono font-bold text-xs text-yellowframe-muted mb-1">[위기 및 절정]</p>
-                    <p>탈출구는 보이지 않고 체력은 바닥을 친다. 이때 어둠 속에서 ‘막차의 시간’, ‘끝나지 않는 내일의 업무’, ‘차가운 야간의 찬 바람’이라는 수많은 망령과 마물들이 사방에서 몰려와 용사를 짓누른다. 결국 무릎을 꿇고 만 용사의 손에서 검이 떨어지고, 성채의 차가운 바닥 위로 축 늘어져 쓰러진다.</p>
-                </div>
-                <div class="border-l-4 border-yellowframe-yellow bg-yellowframe-yellow/20 pl-4 py-2">
-                    <p class="font-mono font-bold text-xs text-yellowframe-dark mb-1">[결말]</p>
-                    <p>바로 그 순간, 어둡고 차가운 미궁의 석벽이 허물어지며 따뜻하고 주황빛 노을이 쏟아진다. 차가운 갑옷과 투구인 줄 알았던 것은 구겨진 정장 코트와 넥타이였고, 거대한 성채와 미궁은 수많은 빌딩 숲과 지하철역이 얽힌 ‘회사와 퇴근길’이었다. 바닥에 엎드려 있던 주인공(가장)의 품으로 아빠의 퇴근을 기다리던 아이의 작은 두 팔이 달려와 안긴다. 아이가 아빠의 헝클어진 머리에 삐뚤빼뚤한 종이 왕관을 씌워주자, 지친 용사의 얼굴에 진정한 평화의 미소가 번지며 화면이 암전된다.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- ABOUT -->
-<section id="about" class="py-12 md:py-20 bg-yellowframe-yellow border-b-2 border-yellowframe-dark">
+<section id="about" class="py-12 md:py-20 bg-yellowframe-yellow border-y-2 border-yellowframe-dark">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
-        <p class="font-mono text-xs font-bold mb-2">05 / ABOUT ME</p>
+        <p class="font-mono text-xs font-bold mb-2">04 / ABOUT ME</p>
         <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 md:mb-10">ABOUT<span class="text-yellowframe-dark">.</span></h2>
 
         <div class="grid md:grid-cols-[1fr_2fr] gap-8 md:gap-12">
@@ -622,7 +560,7 @@
 <!-- CONTACT -->
 <section id="contact" class="py-12 md:py-20">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
-        <p class="font-mono text-xs font-bold mb-2">06 / CONTACT</p>
+        <p class="font-mono text-xs font-bold mb-2">05 / CONTACT</p>
         <div class="grid md:grid-cols-[1fr_auto] gap-8 items-end">
             <div>
                 <h2 class="text-4xl md:text-7xl font-black tracking-tight">LET'S<br><span class="yellow-marker">WORK TOGETHER.</span></h2>
