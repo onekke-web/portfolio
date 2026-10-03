@@ -80,7 +80,7 @@
             inset: 0;
             pointer-events: none;
             opacity: .035;
-            z-index: 9998;
+            z-index: 40;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
         }
 
@@ -490,7 +490,7 @@
         <!-- CROQUIS / DRAWING -->
         <div id="cat-croquis" class="category-content hidden">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
+                                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -584,7 +584,7 @@
 </footer>
 
 <!-- PLAN MODAL -->
-<div id="planModal" class="fixed inset-0 z-[100] hidden bg-black/70 p-4 md:p-6 flex items-center justify-center">
+<div id="planModal" role="dialog" aria-modal="true" aria-labelledby="planModalTitle" class="fixed inset-0 z-[10000] hidden bg-black/70 p-4 md:p-6 flex items-center justify-center">
     <div class="max-w-3xl w-full max-h-[85vh] flex flex-col bg-yellowframe-bg border-2 border-yellowframe-dark shadow-frame">
         <div class="flex-none flex justify-between items-center bg-yellowframe-yellow border-b-2 border-yellowframe-dark p-3 md:p-4">
             <span id="planModalTitle" class="font-mono font-black text-xs md:text-sm">PITCH DECK</span>
@@ -597,7 +597,7 @@
 </div>
 
 <!-- IMAGE MODAL -->
-<div id="imageModal" class="fixed inset-0 z-[110] hidden bg-black/90 p-4 flex items-center justify-center">
+<div id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalCaption" class="fixed inset-0 z-[10001] hidden bg-black/90 p-4 flex items-center justify-center">
     <button onclick="closeImageModal()" aria-label="닫기" class="absolute top-4 right-4 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
         <i class="fa-solid fa-xmark text-lg"></i>
     </button>
@@ -669,8 +669,11 @@
     };
 
     function switchCategory(category) {
+        const target = document.getElementById('cat-' + category);
+        if (!target) return;
+
         document.querySelectorAll('.category-content').forEach(el => el.classList.add('hidden'));
-        document.getElementById('cat-' + category).classList.remove('hidden');
+        target.classList.remove('hidden');
 
         document.querySelectorAll('.category-btn').forEach(btn => {
             if (btn.dataset.category === category) {
@@ -695,7 +698,11 @@
     }
 
     function updateModalImage() {
-        const item = galleryData[currentGallery][currentIndex];
+        const gallery = galleryData[currentGallery];
+        if (!gallery || !gallery.length) return;
+
+        currentIndex = Math.max(0, Math.min(currentIndex, gallery.length - 1));
+        const item = gallery[currentIndex];
         const modalImg = document.getElementById('modalImage');
         modalImg.src = item.src;
         modalImg.alt = item.title;
@@ -944,6 +951,8 @@
 
     function openPlanModal(type) {
         const data = planData[type];
+        if (!data) return;
+
         document.getElementById('planModalTitle').textContent = data.title;
         document.getElementById('planModalBody').innerHTML = data.body;
         document.getElementById('planModal').classList.remove('hidden');
