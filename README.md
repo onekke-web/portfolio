@@ -490,7 +490,7 @@
         <!-- CROQUIS / DRAWING -->
         <div id="cat-croquis" class="category-content hidden">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
+                                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -519,7 +519,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 3)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
-                        <img src="https://lh3.googleusercontent.com/d/1uY9ME5MW2rB322OLegcmODWwMHgUq_L" alt="Croquis 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://lh3.googleusercontent.com/d/1uY9ME5MW2rB322OLegcmODWwMHgUq_L_" alt="Croquis 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #04</span>
@@ -527,6 +527,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -664,7 +665,7 @@
             { src: 'https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5', title: 'CROQUIS #01' },
             { src: 'https://lh3.googleusercontent.com/d/1j_pvHD2dAmLXyaDzeRL6eOOKJA0zmJS-', title: 'CROQUIS #02' },
             { src: 'https://lh3.googleusercontent.com/d/1IXmwSbR9auNd5e6_4JvQtG3RlDOwf9JQ', title: 'CROQUIS #03' },
-            { src: 'https://lh3.googleusercontent.com/d/1uY9ME5MW2rB322OLegcmODWwMHgUq_L', title: 'CROQUIS #04' }
+            { src: 'https://lh3.googleusercontent.com/d/1uY9ME5MW2rB322OLegcmODWwMHgUq_L_', title: 'CROQUIS #04' }
         ]
     };
 
