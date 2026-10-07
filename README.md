@@ -897,6 +897,18 @@
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3">CHARACTER DESIGN / 캐릭터 디자인</p>
+                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                            <div class="bg-black/5 w-full">
+                                <img src="https://lh3.googleusercontent.com/d/15rJi9s9pAi5RsarHC9DIulZW8iTVd4hz"
+                                     alt="괴짜과학자 비키 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer"
+                                     class="w-full h-auto object-contain">
+                            </div>
+                            <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">VICKY / CHARACTER DESIGN</div>
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">LIP-SYNC / 립싱크 (5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
