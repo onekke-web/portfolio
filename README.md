@@ -324,8 +324,8 @@
                     <span class="text-[10px] opacity-75 font-normal">컨셉 & 콘티</span>
                 </div>
             </div>
-            <div class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group">
-                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 02</span>
+            <div onclick="openPlanModal('character')" class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group cursor-pointer shadow-[2px_2px_0_#FFE500]">
+                <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 02 (CLICK)</span>
                 <div>
                     <span class="text-lg font-black block">캐릭터</span>
                     <span class="text-[10px] opacity-75 font-normal">디자인 & 턴어라운드</span>
@@ -782,6 +782,32 @@
                                 <span class="font-black block text-xs font-mono mb-1 text-yellowframe-dark">[결말]</span>
                                 <p>바로 그 순간, 어둡고 차가운 미궁의 석벽이 허물어지며 따뜻하고 주황빛 노을이 쏟아진다. 차가운 갑옷과 투구인 줄 알았던 것은 구겨진 정장 코트와 넥타이였고, 거대한 성채와 미궁은 수많은 빌딩 숲과 지하철역이 얽힌 ‘회사와 퇴근길’이었다. 바닥에 엎드려 있던 주인공(가장)의 품으로 아빠의 퇴근을 기다리던 아이의 작은 두 팔이 달려와 안긴다. 아이가 아빠의 헝클어진 머리에 삐뚤빼뚤한 종이 왕관을 씌워주자, 지친 용사의 얼굴에 진정한 평화의 미소가 번지며 화면이 암전된다.</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        },
+        character: {
+            title: 'STEP 02 / 캐릭터 디자인 & 턴어라운드',
+            body: `
+                <div class="space-y-6 text-xs md:text-sm leading-relaxed">
+                    <div>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / PERSONAL WORKFLOW</p>
+                        <h3 class="text-2xl md:text-3xl font-black mt-1">캐릭터 디자인 & 턴어라운드</h3>
+                        <p class="mt-3 text-yellowframe-muted">주인공의 초기 디자인 스케치부터 최종 캐릭터 디자인까지의 작업 과정입니다.</p>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3">CHARACTER DESIGN / 주인공 디자인 스케치</p>
+                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1MvNbCfFRRC27t2J2RG9tFMP3yoiqPyKR" alt="주인공 디자인 스케치" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3">CHARACTER TURNAROUND / 주인공 완성</p>
+                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD" alt="주인공 완성 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
                         </div>
                     </div>
                 </div>
