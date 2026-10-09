@@ -807,7 +807,7 @@
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">CHARACTER TURNAROUND / 주인공 완성</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
-                            <img src="https://lh3.googleusercontent.com/d/1ghXJsg-nvttxgVkPyT0XSIiqR1Aj9_Nt" alt="주인공 완성 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
+                            <img src="https://lh3.googleusercontent.com/d/1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD" alt="주인공 완성 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain">
                         </div>
                     </div>
                 </div>
