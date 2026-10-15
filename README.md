@@ -273,7 +273,105 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 md:gap-8">
-            <!-- TEAM PROJECT 01 -->
+            <!-- TEAM PROJECT 01 (신규 추가: quQ9GGipFd8) -->
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
+                <div>
+                    <a href="https://youtu.be/quQ9GGipFd8?si=HsrWw-7NemKNSwds" target="_blank" rel="noopener noreferrer"
+                       class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
+                        <div class="aspect-video bg-yellowframe-dark relative w-full">
+                            <img src="https://img.youtube.com/vi/quQ9GGipFd8/hqdefault.jpg"
+                                 alt="팀 프로젝트 01 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                                 class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-5 md:p-6">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">팀 프로젝트 01</h3>
+                            </div>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
+                        </div>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 협업 기반의 애니메이션 프로젝트 작업물입니다. 세부 시퀀스 제작 및 애니메이팅에 참여했습니다.</p>
+                        
+                        <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
+                                <span class="font-bold">애니메이션 파트</span>
+                            </div>
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">FORMAT</span>
+                                <span class="font-bold">단편</span>
+                            </div>
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">GENRE</span>
+                                <span class="font-bold">애니메이션</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 md:p-6 pt-0">
+                    <a href="https://youtu.be/quQ9GGipFd8?si=HsrWw-7NemKNSwds" target="_blank" rel="noopener noreferrer" class="block w-full text-center border-2 border-yellowframe-dark py-2.5 font-mono text-xs font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors">
+                        WATCH VIDEO ON YOUTUBE →
+                    </a>
+                </div>
+            </div>
+
+            <!-- TEAM PROJECT 02 (신규 추가: ozSqsGvsF5I) -->
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
+                <div>
+                    <a href="https://youtu.be/ozSqsGvsF5I?si=my8Y81qXT9lfqCfQ" target="_blank" rel="noopener noreferrer"
+                       class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
+                        <div class="aspect-video bg-yellowframe-dark relative w-full">
+                            <img src="https://img.youtube.com/vi/ozSqsGvsF5I/hqdefault.jpg"
+                                 alt="팀 프로젝트 02 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                                 class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-5 md:p-6">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">팀 프로젝트 02</h3>
+                            </div>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
+                        </div>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">공동 파이프라인으로 제작된 팀 프로젝트입니다. 시각적 연출과 액팅 작화에 기여했습니다.</p>
+                        
+                        <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
+                                <span class="font-bold">원동화 작화</span>
+                            </div>
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">FORMAT</span>
+                                <span class="font-bold">단편</span>
+                            </div>
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">GENRE</span>
+                                <span class="font-bold">애니메이션</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 md:p-6 pt-0">
+                    <a href="https://youtu.be/ozSqsGvsF5I?si=my8Y81qXT9lfqCfQ" target="_blank" rel="noopener noreferrer" class="block w-full text-center border-2 border-yellowframe-dark py-2.5 font-mono text-xs font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors">
+                        WATCH VIDEO ON YOUTUBE →
+                    </a>
+                </div>
+            </div>
+
+            <!-- TEAM PROJECT 03 (천재? 탐정 새롬) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/imD6U6dVes8?si=6TZcW1DbJxwKmnde" target="_blank" rel="noopener noreferrer"
@@ -292,7 +390,7 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 03</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">천재? 탐정 새롬</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
@@ -322,7 +420,7 @@
                 </div>
             </div>
 
-            <!-- TEAM PROJECT 02 (괴짜과학자 비키) -->
+            <!-- TEAM PROJECT 04 (괴짜과학자 비키) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
@@ -341,7 +439,7 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 04</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">괴짜과학자 비키</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
@@ -386,7 +484,7 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-6 gap-3 font-mono">
-            <!-- STEP 01: 클릭 가능하도록 수정됨 -->
+            <!-- STEP 01 -->
             <div onclick="openPlanModal('hero')" class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group cursor-pointer shadow-[2px_2px_0_#FFE500]">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01 (CLICK)</span>
                 <div>
@@ -561,7 +659,7 @@
         <!-- CROQUIS / DRAWING -->
         <div id="cat-croquis" class="category-content hidden">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-                                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
+                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
                         <img src="https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5=w1600" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5';this.onerror=function(){this.style.display='none'}">
                     </div>
@@ -667,7 +765,7 @@
     </div>
 </div>
 
-<!-- IMAGE MODAL (확대 및 슬라이드 기능 포함) -->
+<!-- IMAGE MODAL -->
 <div id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalCaption" class="fixed inset-0 z-[10001] hidden bg-black/90 p-4 flex items-center justify-center">
     <button onclick="closeImageModal()" aria-label="닫기" class="absolute top-4 right-4 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors flex items-center justify-center">
         <i class="fa-solid fa-xmark text-lg"></i>
@@ -801,19 +899,13 @@
         document.body.style.overflow = '';
     }
 
-    // 모달창 내외부 클릭 및 슬라이드 연동 자동 수집 (모달 내부에 포함된 상세 이미지/움짤 그룹화 자동 처리)
     document.addEventListener('click', function (event) {
         const img = event.target.closest('img');
         if (!img || img.id === 'modalImage' || img.closest('#imageModal')) return;
-
-        // 동영상 링크의 썸네일은 제외
         if (img.closest('a[href]')) return;
-
-        // 1. 메인 갤러리 카드인 경우
         const galleryCard = img.closest('[onclick*="openGalleryModal"]');
-        if (galleryCard) return; // openGalleryModal에서 이미 처리함
+        if (galleryCard) return;
 
-        // 2. 모달창(피치덱 등) 내부나 페이지 내에 있는 이미지/움짤(GIF)들을 그룹 단위로 자동 수집하여 슬라이드 지원
         const container = img.closest('.grid, #planModalBody') || document.body;
         const imgs = Array.from(container.querySelectorAll('img')).filter(i => {
             return i.id !== 'modalImage' && !i.closest('a[href]') && !i.closest('[onclick*="openGalleryModal"]');
@@ -834,7 +926,6 @@
         }
     });
 
-    // 키보드 방향키 및 ESC 제어
     document.addEventListener('keydown', function (event) {
         const modal = document.getElementById('imageModal');
         if (!modal || modal.classList.contains('hidden')) return;
@@ -844,7 +935,6 @@
     });
 
     const planData = {
-        // 개인 기획 (STEP 01) 추가 데이터
         hero: {
             title: '개인 기획 / 길 잃은 용사 (가제)',
             body: `
@@ -937,7 +1027,7 @@
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / CONCEPT (TEAM PROJECT)</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">03 / CONCEPT (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">천재? 탐정 새롬</h3>
                         <p class="mt-3 leading-relaxed text-xs md:text-sm">팀 협업 단편 애니메이션. 자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 살인사건을 수사한다. 연이은 잘못된 추리에 용의자가 하나둘씩 죽어가며 수사는 미궁에 빠진다.</p>
                     </div>
@@ -1036,7 +1126,7 @@
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / LOGLINE (TEAM PROJECT)</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">04 / LOGLINE (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">괴짜과학자 비키</h3>
                         <p class="mt-3 text-xs md:text-sm leading-relaxed font-medium">음모론으로 뒤덮인 현대 사회에서 괴짜 과학자 ‘비키’는 지구 음모론을 증명할 수 있을 것인가?</p>
                     </div>
