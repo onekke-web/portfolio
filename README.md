@@ -150,12 +150,12 @@
         .border-yellowframe-dark { border-color: var(--memo-line) !important; }
         .shadow-frame { box-shadow: 5px 5px 0 rgba(41,39,31,.14) !important; }
         .shadow-frameHover { box-shadow: 8px 8px 0 rgba(41,39,31,.2) !important; }
-        #work, #gallery, #contact { position: relative; }
-        #work .grid > div, #gallery .grid > div {
+        #work, #teamwork, #gallery, #contact { position: relative; }
+        #work .grid > div, #teamwork .grid > div, #gallery .grid > div {
             border-radius: 14px; overflow: hidden; box-shadow: 4px 5px 0 rgba(41,39,31,.09);
             transition: transform .22s ease, box-shadow .22s ease;
         }
-        #work .grid > div:hover, #gallery .grid > div:hover {
+        #work .grid > div:hover, #teamwork .grid > div:hover, #gallery .grid > div:hover {
             transform: translateY(-4px) rotate(-.25deg); box-shadow: 7px 9px 0 rgba(41,39,31,.12);
         }
         #process { background: #29271f !important; }
@@ -261,26 +261,26 @@
     </div>
 </section>
 
-<!-- SELECTED WORK (팀 프로젝트) -->
+<!-- PERSONAL PROJECTS (기존 01, 02 분리) -->
 <section id="work" class="py-12 md:py-20">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="flex items-end justify-between mb-8 md:mb-12">
             <div>
-                <p class="font-mono text-xs font-bold mb-2">01 / TEAM PROJECTS</p>
-                <h2 class="text-4xl md:text-6xl font-black tracking-tight">SELECTED WORK<span class="text-yellowframe-yellow">.</span></h2>
+                <p class="font-mono text-xs font-bold mb-2">01 / PERSONAL PROJECTS</p>
+                <h2 class="text-4xl md:text-6xl font-black tracking-tight">PERSONAL WORK<span class="text-yellowframe-yellow">.</span></h2>
             </div>
-            <span class="hidden md:block font-mono text-xs font-bold">TEAM WORK (2025 — 2026)</span>
+            <span class="hidden md:block font-mono text-xs font-bold">PERSONAL WORK (2025 — 2026)</span>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 md:gap-8">
-            <!-- TEAM PROJECT 01 (신규 추가: quQ9GGipFd8) -->
+            <!-- PERSONAL PROJECT 01 -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/quQ9GGipFd8?si=HsrWw-7NemKNSwds" target="_blank" rel="noopener noreferrer"
                        class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
                         <div class="aspect-video bg-yellowframe-dark relative w-full">
                             <img src="https://img.youtube.com/vi/quQ9GGipFd8/hqdefault.jpg"
-                                 alt="팀 프로젝트 01 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                                 alt="개인 프로젝트 01 썸네일" loading="lazy" referrerpolicy="no-referrer"
                                  class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
@@ -292,17 +292,17 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
-                                <h3 class="text-xl md:text-2xl font-black mt-1">팀 프로젝트 01</h3>
+                                <p class="font-mono text-xs font-bold">PERSONAL PROJECT 01</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">개인 프로젝트 01</h3>
                             </div>
-                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">PERSONAL</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 협업 기반의 애니메이션 프로젝트 작업물입니다. 세부 시퀀스 제작 및 애니메이팅에 참여했습니다.</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">개인 역량 강화를 위해 기획부터 제작까지 독자적으로 진행한 애니메이션 프로젝트 작업물입니다.</p>
                         
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
-                                <span class="font-bold">애니메이션 파트</span>
+                                <span class="font-bold">전체 제작</span>
                             </div>
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">FORMAT</span>
@@ -322,14 +322,14 @@
                 </div>
             </div>
 
-            <!-- TEAM PROJECT 02 (신규 추가: ozSqsGvsF5I) -->
+            <!-- PERSONAL PROJECT 02 -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/ozSqsGvsF5I?si=my8Y81qXT9lfqCfQ" target="_blank" rel="noopener noreferrer"
                        class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
                         <div class="aspect-video bg-yellowframe-dark relative w-full">
                             <img src="https://img.youtube.com/vi/ozSqsGvsF5I/hqdefault.jpg"
-                                 alt="팀 프로젝트 02 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                                 alt="개인 프로젝트 02 썸네일" loading="lazy" referrerpolicy="no-referrer"
                                  class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
@@ -341,17 +341,17 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
-                                <h3 class="text-xl md:text-2xl font-black mt-1">팀 프로젝트 02</h3>
+                                <p class="font-mono text-xs font-bold">PERSONAL PROJECT 02</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">개인 프로젝트 02</h3>
                             </div>
-                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">PERSONAL</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">공동 파이프라인으로 제작된 팀 프로젝트입니다. 시각적 연출과 액팅 작화에 기여했습니다.</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">독창적인 세계관과 캐릭터 액팅을 담아낸 개인 제작 애니메이션 포트폴리오입니다.</p>
                         
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
-                                <span class="font-bold">원동화 작화</span>
+                                <span class="font-bold">전체 제작</span>
                             </div>
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">FORMAT</span>
@@ -370,7 +370,22 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
 
+<!-- TEAM PROJECTS (기존 03, 04) -->
+<section id="teamwork" class="py-12 md:py-20 bg-yellowframe-card/50 border-t-2 border-yellowframe-dark">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="flex items-end justify-between mb-8 md:mb-12">
+            <div>
+                <p class="font-mono text-xs font-bold mb-2">02 / TEAM PROJECTS</p>
+                <h2 class="text-4xl md:text-6xl font-black tracking-tight">TEAM WORK<span class="text-yellowframe-yellow">.</span></h2>
+            </div>
+            <span class="hidden md:block font-mono text-xs font-bold">TEAM COLLABORATION (2025 — 2026)</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8">
             <!-- TEAM PROJECT 03 (천재? 탐정 새롬) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
@@ -476,7 +491,7 @@
 <section id="process" class="py-12 md:py-20 bg-yellowframe-dark text-yellowframe-bg">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-12">
-            <p class="font-mono text-xs font-bold mb-2 text-yellowframe-yellow">02 / PERSONAL WORKFLOW</p>
+            <p class="font-mono text-xs font-bold mb-2 text-yellowframe-yellow">03 / PERSONAL WORKFLOW</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">PROCESS<span class="text-yellowframe-yellow">.</span></h2>
             <p class="mt-3 text-xs md:text-sm text-yellowframe-bg/70 max-w-2xl font-mono">
                 개인 프로젝트 구상 시 아이디어 스케치부터 최종 프레임 완성까지 전 과정을 자체 수립한 6단계 파이프라인입니다. (STEP 클릭 시 상세 기획서 확인 가능)
@@ -535,7 +550,7 @@
 <section id="gallery" class="py-12 md:py-20">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-10">
-            <p class="font-mono text-xs font-bold mb-2">03 / GALLERY</p>
+            <p class="font-mono text-xs font-bold mb-2">04 / GALLERY</p>
             <h2 class="text-4xl md:text-6xl font-black tracking-tight">GALLERY<span class="text-yellowframe-yellow">.</span></h2>
         </div>
 
@@ -703,7 +718,7 @@
 <!-- ABOUT -->
 <section id="about" class="py-12 md:py-20 bg-yellowframe-yellow border-y-2 border-yellowframe-dark">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
-        <p class="font-mono text-xs font-bold mb-2">04 / ABOUT ME</p>
+        <p class="font-mono text-xs font-bold mb-2">05 / ABOUT ME</p>
         <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 md:mb-10">ABOUT<span class="text-yellowframe-dark">.</span></h2>
 
         <div class="grid md:grid-cols-[1fr_2fr] gap-8 md:gap-12">
@@ -729,7 +744,7 @@
 <!-- CONTACT -->
 <section id="contact" class="py-12 md:py-20">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
-        <p class="font-mono text-xs font-bold mb-2">05 / CONTACT</p>
+        <p class="font-mono text-xs font-bold mb-2">06 / CONTACT</p>
         <div class="grid md:grid-cols-[1fr_auto] gap-8 items-end">
             <div>
                 <h2 class="text-4xl md:text-7xl font-black tracking-tight">LET'S<br><span class="yellow-marker">WORK TOGETHER.</span></h2>
@@ -940,7 +955,7 @@
             body: `
                 <div class="space-y-6 text-xs md:text-sm leading-relaxed">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">01 / PERSONAL PROJECT CONCEPT</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">03 / PERSONAL PROJECT CONCEPT</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">길 잃은 용사 (가제)</h3>
                         <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 font-mono">
                             <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
@@ -994,11 +1009,11 @@
             `
         },
         character: {
-            title: 'STEP 02 / 캐릭터 디자인 & 턴어라운드',
+            title: 'STEP 03 / 캐릭터 디자인 & 턴어라운드',
             body: `
                 <div class="space-y-6 text-xs md:text-sm leading-relaxed">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / PERSONAL WORKFLOW</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">03 / PERSONAL WORKFLOW</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">캐릭터 디자인 & 턴어라운드</h3>
                         <p class="mt-3 text-yellowframe-muted">주인공의 초기 디자인 스케치부터 최종 캐릭터 디자인까지의 작업 과정입니다.</p>
                     </div>
@@ -1027,7 +1042,7 @@
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">03 / CONCEPT (TEAM PROJECT)</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / CONCEPT (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">천재? 탐정 새롬</h3>
                         <p class="mt-3 leading-relaxed text-xs md:text-sm">팀 협업 단편 애니메이션. 자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 살인사건을 수사한다. 연이은 잘못된 추리에 용의자가 하나둘씩 죽어가며 수사는 미궁에 빠진다.</p>
                     </div>
@@ -1126,7 +1141,7 @@
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">04 / LOGLINE (TEAM PROJECT)</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / LOGLINE (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">괴짜과학자 비키</h3>
                         <p class="mt-3 text-xs md:text-sm leading-relaxed font-medium">음모론으로 뒤덮인 현대 사회에서 괴짜 과학자 ‘비키’는 지구 음모론을 증명할 수 있을 것인가?</p>
                     </div>
