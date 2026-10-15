@@ -273,49 +273,6 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 md:gap-8">
-            <!-- TEAM PROJECT VIDEO 01 -->
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col">
-                <a href="https://youtu.be/quQ9GGipFd8" target="_blank" rel="noopener noreferrer"
-                   class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
-                    <div class="aspect-video bg-yellowframe-dark relative w-full">
-                        <img src="https://img.youtube.com/vi/quQ9GGipFd8/hqdefault.jpg"
-                             alt="TEAM PROJECT 01 영상 썸네일" loading="lazy" referrerpolicy="no-referrer"
-                             class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-sm"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="p-5 md:p-6">
-                    <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
-                    <a href="https://youtu.be/quQ9GGipFd8" target="_blank" rel="noopener noreferrer"
-                       class="inline-block text-sm font-bold mt-3 underline decoration-2 underline-offset-4 hover:bg-yellowframe-yellow">영상 보러 가기 ↗</a>
-                </div>
-            </div>
-
-            <!-- TEAM PROJECT VIDEO 02 -->
-            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col">
-                <a href="https://youtu.be/ozSqsGvsF5I?si=wzMC0kMoBtjW9T6G" target="_blank" rel="noopener noreferrer"
-                   class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
-                    <div class="aspect-video bg-yellowframe-dark relative w-full">
-                        <img src="https://img.youtube.com/vi/ozSqsGvsF5I/hqdefault.jpg"
-                             alt="TEAM PROJECT 02 영상 썸네일" loading="lazy" referrerpolicy="no-referrer"
-                             class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-sm"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="p-5 md:p-6">
-                    <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
-                    <a href="https://youtu.be/ozSqsGvsF5I?si=wzMC0kMoBtjW9T6G" target="_blank" rel="noopener noreferrer"
-                       class="inline-block text-sm font-bold mt-3 underline decoration-2 underline-offset-4 hover:bg-yellowframe-yellow">영상 보러 가기 ↗</a>
-                </div>
-            </div>
             <!-- TEAM PROJECT 01 -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
@@ -335,8 +292,8 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">PROJECT PROFILE</p>
-                                <h3 class="text-xl md:text-2xl font-black mt-1">천재 탐정 새롬</h3>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">천재? 탐정 새롬</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
@@ -371,9 +328,9 @@
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
                        class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
                         <div class="aspect-video bg-yellowframe-dark relative w-full">
-                            <img src="https://drive.google.com/uc?export=view&id=1m__l6P90ifoH0b1IDoFtEL8qNTmgx-yY"
+                            <img src="https://lh3.googleusercontent.com/d/1m__l6P90ifoH0b1IDoFtEL8qNTmgx-yY=w1600"
                                  alt="괴짜과학자 비키 썸네일" loading="lazy" referrerpolicy="no-referrer"
-                                 class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1m__l6P90ifoH0b1IDoFtEL8qNTmgx-yY=w1600'">
+                                 class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1m__l6P90ifoH0b1IDoFtEL8qNTmgx-yY';this.onerror=function(){this.style.display='none'}">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
                                     <i class="fa-solid fa-play text-sm"></i>
@@ -384,7 +341,7 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">PROJECT PROFILE</p>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">괴짜과학자 비키</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
@@ -495,7 +452,7 @@
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov" alt="캐릭터 일러스트 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov=w1600" alt="캐릭터 일러스트 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #01</span>
@@ -504,7 +461,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 1)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU" alt="캐릭터 일러스트 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU=w1600" alt="캐릭터 일러스트 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #02</span>
@@ -513,7 +470,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 2)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD" alt="캐릭터 일러스트 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD=w1600" alt="캐릭터 일러스트 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #03</span>
@@ -522,7 +479,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 3)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg" alt="캐릭터 일러스트 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg=w1600" alt="캐릭터 일러스트 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #04</span>
@@ -531,7 +488,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 4)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98" alt="캐릭터 일러스트 5" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98=w1600" alt="캐릭터 일러스트 5" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CHARACTER #05</span>
@@ -546,7 +503,7 @@
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc" alt="애니메이션 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc=w1600" alt="애니메이션 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #01</span>
@@ -555,7 +512,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 1)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1RRU-LhcxPEWFOwaHwVI_XUXcBeTXTuUY" alt="애니메이션 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1RRU-LhcxPEWFOwaHwVI_XUXcBeTXTuUY=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1RRU-LhcxPEWFOwaHwVI_XUXcBeTXTuUY=w1600" alt="애니메이션 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1RRU-LhcxPEWFOwaHwVI_XUXcBeTXTuUY';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #02</span>
@@ -564,7 +521,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 2)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl" alt="애니메이션 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl=w1600" alt="애니메이션 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #03</span>
@@ -573,7 +530,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 3)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE" alt="애니메이션 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE=w1600" alt="애니메이션 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #04</span>
@@ -582,7 +539,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 4)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e" alt="애니메이션 5" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e=w1600" alt="애니메이션 5" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #05</span>
@@ -591,7 +548,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 5)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
-                        <img src="https://drive.google.com/uc?export=view&id=1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO" alt="애니메이션 6" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO=w1600" alt="애니메이션 6" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>ANIMATION #06</span>
@@ -606,7 +563,7 @@
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
-                        <img src="https://drive.google.com/uc?export=view&id=19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5=w1600" alt="Croquis 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #01</span>
@@ -615,7 +572,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 1)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
-                        <img src="https://drive.google.com/uc?export=view&id=1j_pvHD2dAmLXyaDzeRL6eOOKJA0zmJS-" alt="Croquis 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1j_pvHD2dAmLXyaDzeRL6eOOKJA0zmJS-=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1j_pvHD2dAmLXyaDzeRL6eOOKJA0zmJS-=w1600" alt="Croquis 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1j_pvHD2dAmLXyaDzeRL6eOOKJA0zmJS-';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #02</span>
@@ -624,7 +581,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 2)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
-                        <img src="https://drive.google.com/uc?export=view&id=1IXmwSbR9auNd5e6_4JvQtG3RlDOwf9JQ" alt="Croquis 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1IXmwSbR9auNd5e6_4JvQtG3RlDOwf9JQ=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1IXmwSbR9auNd5e6_4JvQtG3RlDOwf9JQ=w1600" alt="Croquis 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1IXmwSbR9auNd5e6_4JvQtG3RlDOwf9JQ';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #03</span>
@@ -633,7 +590,7 @@
                 </div>
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 3)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
-                        <img src="https://drive.google.com/uc?export=view&id=1uY9ME5MW2rB322OLegcmODWwMHgUq_L_" alt="Croquis 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1uY9ME5MW2rB322OLegcmODWwMHgUq_L_=w1600'">
+                        <img src="https://lh3.googleusercontent.com/d/1uY9ME5MW2rB322OLegcmODWwMHgUq_L_=w1600" alt="Croquis 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1uY9ME5MW2rB322OLegcmODWwMHgUq_L_';this.onerror=function(){this.style.display='none'}">
                     </div>
                     <div class="p-2.5 font-mono text-[11px] font-bold flex items-center justify-between">
                         <span>CROQUIS #04</span>
@@ -726,7 +683,7 @@
 
     <div class="w-full h-full flex items-center justify-center p-2">
         <div class="max-w-5xl max-h-[90vh] flex flex-col items-center justify-center">
-            <img id="modalImage" src="" alt="" class="max-w-full max-h-[75vh] object-contain border-2 border-white">
+            <img id="modalImage" src="" alt="" class="max-w-full max-h-[82vh] object-contain border-2 border-white">
             <div id="modalCaption" class="mt-3 bg-yellowframe-yellow border-2 border-yellowframe-dark px-3 py-1 font-mono text-xs font-black"></div>
         </div>
     </div>
@@ -760,25 +717,25 @@
     // 갤러리 데이터
     const galleryData = {
         character: [
-            { src: 'https://drive.google.com/uc?export=view&id=13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov', title: 'CHARACTER #01' },
-            { src: 'https://drive.google.com/uc?export=view&id=1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU', title: 'CHARACTER #02' },
-            { src: 'https://drive.google.com/uc?export=view&id=1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD', title: 'CHARACTER #03' },
-            { src: 'https://drive.google.com/uc?export=view&id=1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg', title: 'CHARACTER #04' },
-            { src: 'https://drive.google.com/uc?export=view&id=15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98', title: 'CHARACTER #05' }
+            { src: 'https://lh3.googleusercontent.com/d/13qbdDvmqw4yxpk42hn9zEjYbGpdqoAov=w1600', title: 'CHARACTER #01' },
+            { src: 'https://lh3.googleusercontent.com/d/1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU=w1600', title: 'CHARACTER #02' },
+            { src: 'https://lh3.googleusercontent.com/d/1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD=w1600', title: 'CHARACTER #03' },
+            { src: 'https://lh3.googleusercontent.com/d/1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg=w1600', title: 'CHARACTER #04' },
+            { src: 'https://lh3.googleusercontent.com/d/15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98=w1600', title: 'CHARACTER #05' }
         ],
         animating: [
-            { src: 'https://drive.google.com/uc?export=view&id=1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc', title: 'ANIMATION #01' },
-            { src: 'https://drive.google.com/uc?export=view&id=1RRU-LhcxPEWFOwaHwVI_XUXcBeTXTuUY', title: 'ANIMATION #02' },
-            { src: 'https://drive.google.com/uc?export=view&id=1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl', title: 'ANIMATION #03' },
-            { src: 'https://drive.google.com/uc?export=view&id=1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE', title: 'ANIMATION #04' },
-            { src: 'https://drive.google.com/uc?export=view&id=1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e', title: 'ANIMATION #05' },
-            { src: 'https://drive.google.com/uc?export=view&id=1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO', title: 'ANIMATION #06' }
+            { src: 'https://lh3.googleusercontent.com/d/1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc=w1600', title: 'ANIMATION #01' },
+            { src: 'https://lh3.googleusercontent.com/d/1RRU-LhcxPEWFOwaHwVI_XUXcBeTXTuUY=w1600', title: 'ANIMATION #02' },
+            { src: 'https://lh3.googleusercontent.com/d/1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl=w1600', title: 'ANIMATION #03' },
+            { src: 'https://lh3.googleusercontent.com/d/1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE=w1600', title: 'ANIMATION #04' },
+            { src: 'https://lh3.googleusercontent.com/d/1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e=w1600', title: 'ANIMATION #05' },
+            { src: 'https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO=w1600', title: 'ANIMATION #06' }
         ],
         croquis: [
-            { src: 'https://drive.google.com/uc?export=view&id=19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5', title: 'CROQUIS #01' },
-            { src: 'https://drive.google.com/uc?export=view&id=1j_pvHD2dAmLXyaDzeRL6eOOKJA0zmJS-', title: 'CROQUIS #02' },
-            { src: 'https://drive.google.com/uc?export=view&id=1IXmwSbR9auNd5e6_4JvQtG3RlDOwf9JQ', title: 'CROQUIS #03' },
-            { src: 'https://drive.google.com/uc?export=view&id=1uY9ME5MW2rB322OLegcmODWwMHgUq_L_', title: 'CROQUIS #04' }
+            { src: 'https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5=w1600', title: 'CROQUIS #01' },
+            { src: 'https://lh3.googleusercontent.com/d/1j_pvHD2dAmLXyaDzeRL6eOOKJA0zmJS-=w1600', title: 'CROQUIS #02' },
+            { src: 'https://lh3.googleusercontent.com/d/1IXmwSbR9auNd5e6_4JvQtG3RlDOwf9JQ=w1600', title: 'CROQUIS #03' },
+            { src: 'https://lh3.googleusercontent.com/d/1uY9ME5MW2rB322OLegcmODWwMHgUq_L_=w1600', title: 'CROQUIS #04' }
         ]
     };
 
@@ -839,6 +796,39 @@
         document.getElementById('imageModal').classList.add('hidden');
         document.body.style.overflow = '';
     }
+
+    // 페이지 내 이미지와 GIF는 클릭하면 원본 크기에 가깝게 확대해서 보여줍니다.
+    // 기존 갤러리 카드의 클릭 동작은 유지하고, 일반 이미지에는 단일 이미지 뷰어를 적용합니다.
+    document.addEventListener('click', function (event) {
+        const img = event.target.closest('img');
+        if (!img || img.id === 'modalImage' || img.closest('#imageModal')) return;
+
+        // 갤러리 카드에 이미 연결된 이미지는 기존 갤러리 모달을 사용합니다.
+        const galleryCard = img.closest('[onclick*="openGalleryModal"]');
+        if (galleryCard) return;
+
+        // 동영상 링크의 썸네일은 동영상 이동 기능을 유지합니다.
+        if (img.closest('a[href]')) return;
+
+        const modal = document.getElementById('imageModal');
+        if (!modal) return;
+        event.preventDefault();
+        currentGallery = '__single__';
+        currentIndex = 0;
+        galleryData.__single__ = [{ src: img.currentSrc || img.src, title: img.alt || 'IMAGE PREVIEW' }];
+        updateModalImage();
+        document.getElementById('modalCaption').textContent = img.alt || 'IMAGE PREVIEW';
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    });
+
+    document.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('imageModal');
+        if (!modal || modal.classList.contains('hidden')) return;
+        if (event.key === 'Escape') closeImageModal();
+        if (event.key === 'ArrowRight') nextImage();
+        if (event.key === 'ArrowLeft') prevImage();
+    });
 
     const planData = {
         // 개인 기획 (STEP 01) 추가 데이터
@@ -913,17 +903,17 @@
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">CHARACTER DESIGN / 주인공 디자인 스케치</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
-                            <img src="https://drive.google.com/uc?export=view&id=1MvNbCfFRRC27t2J2RG9tFMP3yoiqPyKR" alt="주인공 디자인 스케치" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1MvNbCfFRRC27t2J2RG9tFMP3yoiqPyKR=w1600'">
+                            <img src="https://lh3.googleusercontent.com/d/1MvNbCfFRRC27t2J2RG9tFMP3yoiqPyKR=w1600" alt="주인공 디자인 스케치" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1MvNbCfFRRC27t2J2RG9tFMP3yoiqPyKR';this.onerror=function(){this.style.display='none'}">
                         </div>
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">CHARACTER TURNAROUND / 주인공 완성</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
-                            <img src="https://drive.google.com/uc?export=view&id=1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD" alt="주인공 완성 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD=w1600'">
+                            <img src="https://lh3.googleusercontent.com/d/1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD=w1600" alt="주인공 완성 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD';this.onerror=function(){this.style.display='none'}">
                         </div>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden mt-4">
-                            <img src="https://drive.google.com/uc?export=view&id=1ghXJsg-nvttxgVkPyT0XSIiqR1Aj9_Nt" alt="주인공 완성 캐릭터 디자인 추가 이미지" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1ghXJsg-nvttxgVkPyT0XSIiqR1Aj9_Nt=w1600'">
+                            <img src="https://lh3.googleusercontent.com/d/1ghXJsg-nvttxgVkPyT0XSIiqR1Aj9_Nt=w1600" alt="주인공 완성 캐릭터 디자인 추가 이미지" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1ghXJsg-nvttxgVkPyT0XSIiqR1Aj9_Nt';this.onerror=function(){this.style.display='none'}">
                         </div>
                     </div>
                 </div>
@@ -944,31 +934,31 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1LXumIbeHjTUz8aAS6bjZh3v52RWOoEMW" alt="배경 아트 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1LXumIbeHjTUz8aAS6bjZh3v52RWOoEMW=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1LXumIbeHjTUz8aAS6bjZh3v52RWOoEMW=w1600" alt="배경 아트 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1LXumIbeHjTUz8aAS6bjZh3v52RWOoEMW';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #01</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1-ubKYR5xMFeHbg_6Y7gddcka5jLWEM9q" alt="배경 아트 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1-ubKYR5xMFeHbg_6Y7gddcka5jLWEM9q=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1-ubKYR5xMFeHbg_6Y7gddcka5jLWEM9q=w1600" alt="배경 아트 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1-ubKYR5xMFeHbg_6Y7gddcka5jLWEM9q';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #02</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=10mmvwCc_74_-p8z9xKCySAU3_JH7pjdO" alt="배경 아트 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/10mmvwCc_74_-p8z9xKCySAU3_JH7pjdO=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/10mmvwCc_74_-p8z9xKCySAU3_JH7pjdO=w1600" alt="배경 아트 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=10mmvwCc_74_-p8z9xKCySAU3_JH7pjdO';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #03</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1YY2UZUxPaLMkFIcJlpzsltrRzqnw7R69" alt="배경 아트 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1YY2UZUxPaLMkFIcJlpzsltrRzqnw7R69=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1YY2UZUxPaLMkFIcJlpzsltrRzqnw7R69=w1600" alt="배경 아트 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1YY2UZUxPaLMkFIcJlpzsltrRzqnw7R69';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #04</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=13Dc7NsLSV36nrh6JIwwbgEzuoD_hMs1a" alt="배경 아트 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/13Dc7NsLSV36nrh6JIwwbgEzuoD_hMs1a=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/13Dc7NsLSV36nrh6JIwwbgEzuoD_hMs1a=w1600" alt="배경 아트 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=13Dc7NsLSV36nrh6JIwwbgEzuoD_hMs1a';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #05</div>
                             </div>
@@ -980,31 +970,31 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1CYIklhtcfj2EoGbcEZ1waY8ijcxf0IcA" alt="동화 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1CYIklhtcfj2EoGbcEZ1waY8ijcxf0IcA=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1CYIklhtcfj2EoGbcEZ1waY8ijcxf0IcA=w1600" alt="동화 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1CYIklhtcfj2EoGbcEZ1waY8ijcxf0IcA';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #01</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1x41DDfgXecIDOK6X0P0e-tmHzQWHjYFq" alt="동화 움짤 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1x41DDfgXecIDOK6X0P0e-tmHzQWHjYFq=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1x41DDfgXecIDOK6X0P0e-tmHzQWHjYFq=w1600" alt="동화 움짤 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1x41DDfgXecIDOK6X0P0e-tmHzQWHjYFq';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #02</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1ecpLwwo0lZZajYKKdxHoTIiAH1KGpLXJ" alt="동화 움짤 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1ecpLwwo0lZZajYKKdxHoTIiAH1KGpLXJ=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1ecpLwwo0lZZajYKKdxHoTIiAH1KGpLXJ=w1600" alt="동화 움짤 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1ecpLwwo0lZZajYKKdxHoTIiAH1KGpLXJ';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #03</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1Ie4RV-lnIk12t1h2AsOR7tSpvFWGr3Ro" alt="동화 움짤 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1Ie4RV-lnIk12t1h2AsOR7tSpvFWGr3Ro=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1Ie4RV-lnIk12t1h2AsOR7tSpvFWGr3Ro=w1600" alt="동화 움짤 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1Ie4RV-lnIk12t1h2AsOR7tSpvFWGr3Ro';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #04</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=16QYsW3Ugi2SiW900ZPqbKiR2K1IB5An0" alt="동화 움짤 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/16QYsW3Ugi2SiW900ZPqbKiR2K1IB5An0=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/16QYsW3Ugi2SiW900ZPqbKiR2K1IB5An0=w1600" alt="동화 움짤 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=16QYsW3Ugi2SiW900ZPqbKiR2K1IB5An0';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #05</div>
                             </div>
@@ -1042,9 +1032,9 @@
                         <p class="font-mono text-xs font-bold mb-3">CHARACTER DESIGN / 캐릭터 디자인</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                             <div class="bg-black/5 w-full">
-                                <img src="https://drive.google.com/uc?export=view&id=15rJi9s9pAi5RsarHC9DIulZW8iTVd4hz"
+                                <img src="https://lh3.googleusercontent.com/d/15rJi9s9pAi5RsarHC9DIulZW8iTVd4hz=w1600"
                                      alt="괴짜과학자 비키 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer"
-                                     class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/15rJi9s9pAi5RsarHC9DIulZW8iTVd4hz=w1600'">
+                                     class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=15rJi9s9pAi5RsarHC9DIulZW8iTVd4hz';this.onerror=function(){this.style.display='none'}">
                             </div>
                             <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">VICKY / CHARACTER DESIGN</div>
                         </div>
@@ -1055,31 +1045,31 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1dYrvTygXIBc5PNWlceu0Rd7a2eXotvVe" alt="립싱크 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1dYrvTygXIBc5PNWlceu0Rd7a2eXotvVe=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1dYrvTygXIBc5PNWlceu0Rd7a2eXotvVe=w1600" alt="립싱크 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1dYrvTygXIBc5PNWlceu0Rd7a2eXotvVe';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">LIP-SYNC #01</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1FlLRTI3FEBk4RPc48OI5dTRBGtYO_Nwg" alt="립싱크 움짤 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1FlLRTI3FEBk4RPc48OI5dTRBGtYO_Nwg=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1FlLRTI3FEBk4RPc48OI5dTRBGtYO_Nwg=w1600" alt="립싱크 움짤 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1FlLRTI3FEBk4RPc48OI5dTRBGtYO_Nwg';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">LIP-SYNC #02</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1k32aVMMIg9y27nH4CggydZL1DYjcFYyf" alt="립싱크 움짤 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1k32aVMMIg9y27nH4CggydZL1DYjcFYyf=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1k32aVMMIg9y27nH4CggydZL1DYjcFYyf=w1600" alt="립싱크 움짤 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1k32aVMMIg9y27nH4CggydZL1DYjcFYyf';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">LIP-SYNC #03</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1jqtDmOPNxWycaHrTvuQUJC2Q2R8my4Kj" alt="립싱크 움짤 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1jqtDmOPNxWycaHrTvuQUJC2Q2R8my4Kj=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1jqtDmOPNxWycaHrTvuQUJC2Q2R8my4Kj=w1600" alt="립싱크 움짤 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1jqtDmOPNxWycaHrTvuQUJC2Q2R8my4Kj';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">LIP-SYNC #04</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1O3AIMtevQF_GH6qVqcMvn_w3GLQuypPF" alt="립싱크 움짤 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1O3AIMtevQF_GH6qVqcMvn_w3GLQuypPF=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1O3AIMtevQF_GH6qVqcMvn_w3GLQuypPF=w1600" alt="립싱크 움짤 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1O3AIMtevQF_GH6qVqcMvn_w3GLQuypPF';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">LIP-SYNC #05</div>
                             </div>
@@ -1091,49 +1081,49 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1T5oJ9b5pOL-sbcYyIdVmUqM5tc2kiVN7" alt="동화 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1T5oJ9b5pOL-sbcYyIdVmUqM5tc2kiVN7=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1T5oJ9b5pOL-sbcYyIdVmUqM5tc2kiVN7=w1600" alt="동화 움짤 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1T5oJ9b5pOL-sbcYyIdVmUqM5tc2kiVN7';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #01</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1OK4tGmJL3Dok8BU7cPAMp7Y1oCNiEFEd" alt="동화 움짤 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1OK4tGmJL3Dok8BU7cPAMp7Y1oCNiEFEd=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1OK4tGmJL3Dok8BU7cPAMp7Y1oCNiEFEd=w1600" alt="동화 움짤 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1OK4tGmJL3Dok8BU7cPAMp7Y1oCNiEFEd';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #02</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1AN4VS31l08W4dENZjZP51svneu8yre6B" alt="동화 움짤 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1AN4VS31l08W4dENZjZP51svneu8yre6B=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1AN4VS31l08W4dENZjZP51svneu8yre6B=w1600" alt="동화 움짤 #03" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1AN4VS31l08W4dENZjZP51svneu8yre6B';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #03</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1M72tG7KZgiWVzntbpnihrIJ7bl2BWBYf" alt="동화 움짤 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1M72tG7KZgiWVzntbpnihrIJ7bl2BWBYf=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1M72tG7KZgiWVzntbpnihrIJ7bl2BWBYf=w1600" alt="동화 움짤 #04" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1M72tG7KZgiWVzntbpnihrIJ7bl2BWBYf';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #04</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1L6XQ0qA39Sj6Jy_Cf5rbyE1uTjnY-UM-" alt="동화 움짤 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1L6XQ0qA39Sj6Jy_Cf5rbyE1uTjnY-UM-=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1L6XQ0qA39Sj6Jy_Cf5rbyE1uTjnY-UM-=w1600" alt="동화 움짤 #05" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1L6XQ0qA39Sj6Jy_Cf5rbyE1uTjnY-UM-';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #05</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1" alt="동화 움짤 #06" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1=w1600" alt="동화 움짤 #06" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #06</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1ZE06yY3FhJi2nEtu_MNyCRHrTrTnxBAw" alt="동화 움짤 #07" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1ZE06yY3FhJi2nEtu_MNyCRHrTrTnxBAw=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1ZE06yY3FhJi2nEtu_MNyCRHrTrTnxBAw=w1600" alt="동화 움짤 #07" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1ZE06yY3FhJi2nEtu_MNyCRHrTrTnxBAw';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #07</div>
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://drive.google.com/uc?export=view&id=1ylLc9s-tjJIF_YbTX1qdK8UqPmZjacBA" alt="동화 움짤 #08" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/d/1ylLc9s-tjJIF_YbTX1qdK8UqPmZjacBA=w1600'">
+                                    <img src="https://lh3.googleusercontent.com/d/1ylLc9s-tjJIF_YbTX1qdK8UqPmZjacBA=w1600" alt="동화 움짤 #08" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1ylLc9s-tjJIF_YbTX1qdK8UqPmZjacBA';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #08</div>
                             </div>
