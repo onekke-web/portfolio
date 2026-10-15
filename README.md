@@ -667,17 +667,17 @@
     </div>
 </div>
 
-<!-- IMAGE MODAL -->
+<!-- IMAGE MODAL (확대 및 슬라이드 기능 포함) -->
 <div id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalCaption" class="fixed inset-0 z-[10001] hidden bg-black/90 p-4 flex items-center justify-center">
-    <button onclick="closeImageModal()" aria-label="닫기" class="absolute top-4 right-4 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
+    <button onclick="closeImageModal()" aria-label="닫기" class="absolute top-4 right-4 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors flex items-center justify-center">
         <i class="fa-solid fa-xmark text-lg"></i>
     </button>
 
-    <button onclick="prevImage()" aria-label="이전 이미지" class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
+    <button onclick="prevImage()" aria-label="이전 이미지" class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors flex items-center justify-center">
         <i class="fa-solid fa-chevron-left"></i>
     </button>
 
-    <button onclick="nextImage()" aria-label="다음 이미지" class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors">
+    <button onclick="nextImage()" aria-label="다음 이미지" class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border-2 border-white text-white hover:bg-yellowframe-yellow hover:text-black hover:border-black transition-colors flex items-center justify-center">
         <i class="fa-solid fa-chevron-right"></i>
     </button>
 
@@ -779,16 +779,20 @@
         modalImg.alt = item.title;
         modalImg.setAttribute('referrerpolicy', 'no-referrer');
         document.getElementById('modalCaption').textContent =
-            `${item.title}   (${currentIndex + 1} / ${galleryData[currentGallery].length})`;
+            `${item.title}   (${currentIndex + 1} / ${gallery.length})`;
     }
 
     function nextImage() {
-        currentIndex = (currentIndex + 1) % galleryData[currentGallery].length;
+        const gallery = galleryData[currentGallery];
+        if (!gallery || !gallery.length) return;
+        currentIndex = (currentIndex + 1) % gallery.length;
         updateModalImage();
     }
 
     function prevImage() {
-        currentIndex = (currentIndex - 1 + galleryData[currentGallery].length) % galleryData[currentGallery].length;
+        const gallery = galleryData[currentGallery];
+        if (!gallery || !gallery.length) return;
+        currentIndex = (currentIndex - 1 + gallery.length) % gallery.length;
         updateModalImage();
     }
 
@@ -797,31 +801,40 @@
         document.body.style.overflow = '';
     }
 
-    // 페이지 내 이미지와 GIF는 클릭하면 원본 크기에 가깝게 확대해서 보여줍니다.
-    // 기존 갤러리 카드의 클릭 동작은 유지하고, 일반 이미지에는 단일 이미지 뷰어를 적용합니다.
+    // 모달창 내외부 클릭 및 슬라이드 연동 자동 수집 (모달 내부에 포함된 상세 이미지/움짤 그룹화 자동 처리)
     document.addEventListener('click', function (event) {
         const img = event.target.closest('img');
         if (!img || img.id === 'modalImage' || img.closest('#imageModal')) return;
 
-        // 갤러리 카드에 이미 연결된 이미지는 기존 갤러리 모달을 사용합니다.
-        const galleryCard = img.closest('[onclick*="openGalleryModal"]');
-        if (galleryCard) return;
-
-        // 동영상 링크의 썸네일은 동영상 이동 기능을 유지합니다.
+        // 동영상 링크의 썸네일은 제외
         if (img.closest('a[href]')) return;
 
-        const modal = document.getElementById('imageModal');
-        if (!modal) return;
-        event.preventDefault();
-        currentGallery = '__single__';
-        currentIndex = 0;
-        galleryData.__single__ = [{ src: img.currentSrc || img.src, title: img.alt || 'IMAGE PREVIEW' }];
-        updateModalImage();
-        document.getElementById('modalCaption').textContent = img.alt || 'IMAGE PREVIEW';
-        modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
+        // 1. 메인 갤러리 카드인 경우
+        const galleryCard = img.closest('[onclick*="openGalleryModal"]');
+        if (galleryCard) return; // openGalleryModal에서 이미 처리함
+
+        // 2. 모달창(피치덱 등) 내부나 페이지 내에 있는 이미지/움짤(GIF)들을 그룹 단위로 자동 수집하여 슬라이드 지원
+        const container = img.closest('.grid, #planModalBody') || document.body;
+        const imgs = Array.from(container.querySelectorAll('img')).filter(i => {
+            return i.id !== 'modalImage' && !i.closest('a[href]') && !i.closest('[onclick*="openGalleryModal"]');
+        });
+
+        const index = imgs.indexOf(img);
+        if (index !== -1) {
+            currentGallery = '__dynamic_group__';
+            galleryData.__dynamic_group__ = imgs.map(i => ({
+                src: i.currentSrc || i.src,
+                title: i.alt || 'PREVIEW IMAGE'
+            }));
+            currentIndex = index;
+            updateModalImage();
+            document.getElementById('imageModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            event.preventDefault();
+        }
     });
 
+    // 키보드 방향키 및 ESC 제어
     document.addEventListener('keydown', function (event) {
         const modal = document.getElementById('imageModal');
         if (!modal || modal.classList.contains('hidden')) return;
