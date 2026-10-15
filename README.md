@@ -273,6 +273,49 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+            <!-- TEAM PROJECT VIDEO 01 -->
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col">
+                <a href="https://youtu.be/quQ9GGipFd8" target="_blank" rel="noopener noreferrer"
+                   class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
+                    <div class="aspect-video bg-yellowframe-dark relative w-full">
+                        <img src="https://img.youtube.com/vi/quQ9GGipFd8/hqdefault.jpg"
+                             alt="TEAM PROJECT 01 영상 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                             class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-play text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="p-5 md:p-6">
+                    <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
+                    <a href="https://youtu.be/quQ9GGipFd8" target="_blank" rel="noopener noreferrer"
+                       class="inline-block text-sm font-bold mt-3 underline decoration-2 underline-offset-4 hover:bg-yellowframe-yellow">영상 보러 가기 ↗</a>
+                </div>
+            </div>
+
+            <!-- TEAM PROJECT VIDEO 02 -->
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col">
+                <a href="https://youtu.be/ozSqsGvsF5I?si=wzMC0kMoBtjW9T6G" target="_blank" rel="noopener noreferrer"
+                   class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
+                    <div class="aspect-video bg-yellowframe-dark relative w-full">
+                        <img src="https://img.youtube.com/vi/ozSqsGvsF5I/hqdefault.jpg"
+                             alt="TEAM PROJECT 02 영상 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                             class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-play text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="p-5 md:p-6">
+                    <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
+                    <a href="https://youtu.be/ozSqsGvsF5I?si=wzMC0kMoBtjW9T6G" target="_blank" rel="noopener noreferrer"
+                       class="inline-block text-sm font-bold mt-3 underline decoration-2 underline-offset-4 hover:bg-yellowframe-yellow">영상 보러 가기 ↗</a>
+                </div>
+            </div>
             <!-- TEAM PROJECT 01 -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
@@ -292,8 +335,8 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT 01</p>
-                                <h3 class="text-xl md:text-2xl font-black mt-1">천재? 탐정 새롬</h3>
+                                <p class="font-mono text-xs font-bold">PROJECT PROFILE</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">천재 탐정 새롬</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
@@ -341,7 +384,7 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT 02</p>
+                                <p class="font-mono text-xs font-bold">PROJECT PROFILE</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">괴짜과학자 비키</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
