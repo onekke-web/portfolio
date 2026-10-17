@@ -374,7 +374,7 @@
     </div>
 </section>
 
-<!-- TEAM PROJECTS (기존 03, 04 및 신규 2학년 1학기 콘텐츠 프로젝트 추가) -->
+<!-- TEAM PROJECTS (2학년 1학기 콘텐츠 프로젝트, 천재? 탐정 새롬, 괴짜과학자 비키) -->
 <section id="teamwork" class="py-12 md:py-20 bg-yellowframe-card/50 border-t-2 border-yellowframe-dark">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="flex items-end justify-between mb-8 md:mb-12">
@@ -386,17 +386,18 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <!-- TEAM PROJECT A (2학년 1학기 콘텐츠 프로젝트 - 신규 추가) -->
+            <!-- TEAM PROJECT 01 (2학년 1학기 콘텐츠 프로젝트 - Love ya!) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
-                    <a href="https://youtu.be/cjik4BfnpvI?si=9kz1EA25mTu78wGV" target="_blank" rel="noopener noreferrer"
+                    <a href="https://drive.google.com/file/d/1Ijqfe8Cvp-r01aJI1TnE4F6MWGDLBNpz/view" target="_blank" rel="noopener noreferrer"
                        class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
-                        <div class="aspect-video bg-yellowframe-dark relative w-full">
-                            <img src="https://img.youtube.com/vi/cjik4BfnpvI/hqdefault.jpg"
-                                 alt="2학년 1학기 콘텐츠 프로젝트 썸네일" loading="lazy" referrerpolicy="no-referrer"
-                                 class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <div class="aspect-video bg-yellowframe-dark relative w-full flex items-center justify-center">
+                            <!-- 드라이브 영상 썸네일 대체 또는 기본 비디오 프레임 -->
+                            <div class="absolute inset-0 bg-yellowframe-dark/80 flex items-center justify-center p-4 text-center">
+                                <span class="font-mono text-xs font-bold text-yellowframe-yellow">GOOGLE DRIVE VIDEO LINK</span>
+                            </div>
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform z-10">
                                     <i class="fa-solid fa-play text-sm"></i>
                                 </div>
                             </div>
@@ -405,12 +406,12 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT</p>
-                                <h3 class="text-xl md:text-2xl font-black mt-1">2학년 1학기 콘텐츠 프로젝트</h3>
+                                <p class="font-mono text-xs font-bold">2학년 1학기 콘텐츠 프로젝트</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">Love ya!</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀원들과 함께 기획 및 제작을 진행한 2학년 1학기 정규 콘텐츠 프로젝트 작업물입니다.</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">평행 우주 속 다양한 사랑 이야기. 총 다섯 파트로 구성되어 있으며, 여러 그림체의 주인공들이 지나가는 연출로 다중 우주를 표현했습니다.</p>
                         
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
@@ -419,11 +420,11 @@
                             </div>
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">FORMAT</span>
-                                <span class="font-bold">단편 콘텐츠</span>
+                                <span class="font-bold">단편 애니메이션</span>
                             </div>
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">GENRE</span>
-                                <span class="font-bold">애니메이션</span>
+                                <span class="font-bold">로맨스, 판타지</span>
                             </div>
                         </div>
                     </div>
@@ -435,7 +436,7 @@
                 </div>
             </div>
 
-            <!-- TEAM PROJECT B (천재? 탐정 새롬) -->
+            <!-- TEAM PROJECT 02 (천재? 탐정 새롬) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/imD6U6dVes8?si=6TZcW1DbJxwKmnde" target="_blank" rel="noopener noreferrer"
@@ -484,7 +485,7 @@
                 </div>
             </div>
 
-            <!-- TEAM PROJECT C (괴짜과학자 비키) -->
+            <!-- TEAM PROJECT 03 (괴짜과학자 비키) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
@@ -1087,27 +1088,34 @@
             `
         },
         contentProject: {
-            title: 'TEAM PITCH DECK / 2학년 1학기 콘텐츠 프로젝트',
+            title: 'TEAM PITCH DECK / 2학년 1학기 콘텐츠 프로젝트 - Love ya!',
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / CONCEPT (TEAM PROJECT)</p>
-                        <h3 class="text-2xl md:text-3xl font-black mt-1">2학년 1학기 콘텐츠 프로젝트</h3>
-                        <p class="mt-3 leading-relaxed text-xs md:text-sm">팀원들과 함께 협력하여 기획부터 최종 영상 제작까지 완성한 2학년 1학기 정규 콘텐츠 프로젝트입니다. 탄탄한 팀워크를 바탕으로 크리에이티브한 비주얼과 스토리라인을 구축했습니다.</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / TEAM PROJECT PITCH DECK</p>
+                        <h3 class="text-2xl md:text-3xl font-black mt-1">Love ya!</h3>
+                        <p class="mt-3 leading-relaxed text-xs md:text-sm font-bold text-yellowframe-dark">평행 우주 속 다양한 사랑 이야기</p>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">작품 소개 (Synopsis & Direction)</p>
+                        <p class="text-xs md:text-sm leading-relaxed font-medium">
+                            총 다섯 파트로 구성되어 있으며, 마지막 파트에서 일러스트를 삽입하여 모든 사랑이 이루어지는 것으로 연출하였습니다. 특히 여러 그림체의 주인공들이 지나가는 것으로 다중 우주를 효과적으로 표현하였습니다.
+                        </p>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-4">
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
-                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">PROJECT TYPE</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">팀 정규 과제 및 콘텐츠 제작</p>
+                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">PROJECT</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">2학년 1학기 콘텐츠 프로젝트</p>
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
-                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">FORMAT</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">단편 영상 콘텐츠</p>
+                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">STRUCTURE</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">총 5개 파트 구성</p>
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card md:col-span-2">
-                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">MY ROLE IN TEAM</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">기획 및 제작 전반 참여</p>
+                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">KEY FEATURE</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">다양한 그림체의 주인공들이 지나가는 연출을 통한 멀티버스 표현</p>
                         </div>
                     </div>
                 </div>
