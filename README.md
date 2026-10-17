@@ -386,7 +386,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <!-- TEAM PROJECT 01 (2학년 1학기 콘텐츠 프로젝트 - Love ya!) -->
+            <!-- TEAM PROJECT 01 (Love ya!) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/cjik4BfnpvI?si=9kz1EA25mTu78wGV" target="_blank" rel="noopener noreferrer"
