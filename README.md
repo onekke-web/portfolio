@@ -1104,7 +1104,7 @@
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
-                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">PROJECT IMAGES (클릭 시 크게 보기)</p>
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">PROJECT IMAGES (일러스트 이미지)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden cursor-pointer group">
                                 <div class="bg-black/5 w-full">
