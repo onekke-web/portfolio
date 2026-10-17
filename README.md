@@ -1087,7 +1087,7 @@
             `
         },
         contentProject: {
-            title: 'TEAM PITCH DECK / 2학년 1학기 콘텐츠 프로젝트 - Love ya!',
+            title: 'TEAM PITCH DECK / Love ya!',
             body: `
                 <div class="space-y-6">
                     <div>
