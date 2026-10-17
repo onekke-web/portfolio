@@ -261,7 +261,7 @@
     </div>
 </section>
 
-<!-- PERSONAL PROJECTS (기존 01, 02 분리) -->
+<!-- PERSONAL PROJECTS -->
 <section id="work" class="py-12 md:py-20">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="flex items-end justify-between mb-8 md:mb-12">
@@ -389,15 +389,14 @@
             <!-- TEAM PROJECT 01 (2학년 1학기 콘텐츠 프로젝트 - Love ya!) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
-                    <a href="https://drive.google.com/file/d/1Ijqfe8Cvp-r01aJI1TnE4F6MWGDLBNpz/view" target="_blank" rel="noopener noreferrer"
+                    <a href="https://youtu.be/cjik4BfnpvI?si=9kz1EA25mTu78wGV" target="_blank" rel="noopener noreferrer"
                        class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
-                        <div class="aspect-video bg-yellowframe-dark relative w-full flex items-center justify-center">
-                            <!-- 드라이브 영상 썸네일 대체 또는 기본 비디오 프레임 -->
-                            <div class="absolute inset-0 bg-yellowframe-dark/80 flex items-center justify-center p-4 text-center">
-                                <span class="font-mono text-xs font-bold text-yellowframe-yellow">GOOGLE DRIVE VIDEO LINK</span>
-                            </div>
+                        <div class="aspect-video bg-yellowframe-dark relative w-full">
+                            <img src="https://img.youtube.com/vi/cjik4BfnpvI/hqdefault.jpg"
+                                 alt="2학년 1학기 콘텐츠 프로젝트 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                                 class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform z-10">
+                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
                                     <i class="fa-solid fa-play text-sm"></i>
                                 </div>
                             </div>
@@ -411,7 +410,7 @@
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
-                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">평행 우주 속 다양한 사랑 이야기. 총 다섯 파트로 구성되어 있으며, 여러 그림체의 주인공들이 지나가는 연출로 다중 우주를 표현했습니다.</p>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">평행 우주 속 다양한 사랑 이야기. 총 다섯 파트로 구성되며, 여러 그림체의 주인공들이 지나가는 연출로 다중 우주를 표현했습니다.</p>
                         
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
@@ -537,7 +536,7 @@
     </div>
 </section>
 
-<!-- PROCESS (개인 프로젝트) -->
+<!-- PROCESS -->
 <section id="process" class="py-12 md:py-20 bg-yellowframe-dark text-yellowframe-bg">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="mb-8 md:mb-12">
@@ -1104,6 +1103,13 @@
                         </p>
                     </div>
 
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">GOOGLE DRIVE VIDEO FILE</p>
+                        <a href="https://drive.google.com/file/d/1Ijqfe8Cvp-r01aJI1TnE4F6MWGDLBNpz/view" target="_blank" rel="noopener noreferrer" class="block w-full text-center border-2 border-yellowframe-dark py-3 font-mono text-xs font-bold bg-yellowframe-yellow hover:bg-yellowframe-dark hover:text-white transition-colors shadow-[2px_2px_0_#111]">
+                            OPEN VIDEO FILE IN GOOGLE DRIVE →
+                        </a>
+                    </div>
+
                     <div class="grid md:grid-cols-2 gap-4">
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">PROJECT</p>
@@ -1112,10 +1118,6 @@
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">STRUCTURE</p>
                             <p class="mt-1 text-xs md:text-sm font-bold">총 5개 파트 구성</p>
-                        </div>
-                        <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card md:col-span-2">
-                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">KEY FEATURE</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">다양한 그림체의 주인공들이 지나가는 연출을 통한 멀티버스 표현</p>
                         </div>
                     </div>
                 </div>
