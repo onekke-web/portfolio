@@ -374,7 +374,7 @@
     </div>
 </section>
 
-<!-- TEAM PROJECTS (2학년 1학기 콘텐츠 프로젝트, 천재? 탐정 새롬, 괴짜과학자 비키) -->
+<!-- TEAM PROJECTS -->
 <section id="teamwork" class="py-12 md:py-20 bg-yellowframe-card/50 border-t-2 border-yellowframe-dark">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
         <div class="flex items-end justify-between mb-8 md:mb-12">
@@ -1104,10 +1104,27 @@
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
-                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">GOOGLE DRIVE VIDEO FILE</p>
-                        <a href="https://drive.google.com/file/d/1Ijqfe8Cvp-r01aJI1TnE4F6MWGDLBNpz/view" target="_blank" rel="noopener noreferrer" class="block w-full text-center border-2 border-yellowframe-dark py-3 font-mono text-xs font-bold bg-yellowframe-yellow hover:bg-yellowframe-dark hover:text-white transition-colors shadow-[2px_2px_0_#111]">
-                            OPEN VIDEO FILE IN GOOGLE DRIVE →
-                        </a>
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">PROJECT IMAGES (클릭 시 크게 보기)</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden cursor-pointer group">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1wl_XqWht2laZQAwLFpK2vkmJkpUNSUqr=w1600" alt="콘텐츠 프로젝트 이미지 #01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1wl_XqWht2laZQAwLFpK2vkmJkpUNSUqr';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card flex justify-between items-center">
+                                    <span>PROJECT IMAGE #01</span>
+                                    <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                                </div>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden cursor-pointer group">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1vV9Wfv3JWX4i1UVNNSQyk2XgPjdpJ4AA=w1600" alt="콘텐츠 프로젝트 이미지 #02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1vV9Wfv3JWX4i1UVNNSQyk2XgPjdpJ4AA';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card flex justify-between items-center">
+                                    <span>PROJECT IMAGE #02</span>
+                                    <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-4">
