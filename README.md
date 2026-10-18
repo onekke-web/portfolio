@@ -1345,7 +1345,6 @@
                         <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">핵심 특징 및 레퍼런스</p>
                         <ul class="list-disc list-inside space-y-1 font-medium">
                             <li><strong>키워드:</strong> 상담, 공포, 약 고어</li>
-                            <li><strong>화면 비율과 크기:</strong> 1920*1080 & 72픽셀 & 16배수</li>
                             <li><strong>핵심 재미 요소:</strong> 자신의 선택지에 따라 달라지는 진행과 엔딩</li>
                             <li><strong>레퍼런스:</strong> Help Me(게임), 위를 보지 마시오(영상), 히스테리아(컨셉영상)</li>
                         </ul>
@@ -1354,13 +1353,13 @@
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">시대 배경 및 세계관</p>
                         <p class="font-medium mb-3"><strong>시대 배경:</strong> 현대 시대 유럽, 정신병원 & 단독주택</p>
-                        <p class="font-medium"><strong>세계관:</strong> 알 수 없는 현상으로 달이 커지고 있다. 달이 커질 때마다 달빛의 영향도 커져 미쳐가는 사람들의 수가 많아지고, 초반에 헛소리만 하던 사람들이 점점 난폭해져 사람을 죽이기까지 한다.</p>
+                        <p class="font-medium"><strong>세계관:</strong> 원인 불명의 현상으로 달이 점점 커지면서, 강해진 달빛의 영향으로 미쳐가는 사람들이 급증한다.</p>
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">시놉시스 (Synopsis)</p>
                         <p class="font-medium leading-relaxed">
-                            달이 커지기 시작했다. 초반엔 아무도 관심이 없었지만 점차 달이 커질수록 사람들이 미쳐 사람을 살해, 피해자들이 하나둘씩 늘기 시작했다. 걷잡을 수 없이 피해자들이 늘어나고 있지만, 정부는 현상에 대해 잘 알지 못해 사람들에게는 밤엔 밖으로 나가지 말라는 말밖에 못 하고, 친절했던 이웃이 언제 돌변해 본인을 살해할지도 모르는 세상... 사람들은 자신이 언제 미칠지 모르는 불안감에 정신병원을 찾고 있다.
+                          환각과 헛소리에 시달리던 이들이 점차 난폭해져 살인을 저지르기 시작하고, 사태는 손쓸 수 없이 악화된다. 정확한 원인을 모르는 정부는 그저 "야간 외출을 금지하라"는 무력한 경고만 되풀이할 뿐이다. 평화롭던 이웃이 언제 연쇄 살인마로 바뀔지 모르는 극한의 기강 속에서, 사람들은 자기 자신마저 광기에 물들지 모른다는 공포에 떨며 정신병원을 찾고 있다.
                         </p>
                     </div>
                 </div>
