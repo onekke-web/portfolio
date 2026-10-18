@@ -485,7 +485,56 @@
                 </div>
             </div>
 
-            <!-- TEAM PROJECT 03 (괴짜과학자 비키) -->
+            <!-- TEAM PROJECT 03 (happy family) - 새로 추가된 칸 -->
+            <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
+                <div>
+                    <a href="https://youtu.be/IGrS1fc0sq8?si=S0pVyoD9yZpM-QAh" target="_blank" rel="noopener noreferrer"
+                       class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
+                        <div class="aspect-video bg-yellowframe-dark relative w-full">
+                            <img src="https://img.youtube.com/vi/IGrS1fc0sq8/hqdefault.jpg"
+                                 alt="happy family 썸네일" loading="lazy" referrerpolicy="no-referrer"
+                                 class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-yellowframe-yellow border-2 border-yellowframe-dark flex items-center justify-center shadow-frame group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-5 md:p-6">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT</p>
+                                <h3 class="text-xl md:text-2xl font-black mt-1">happy family (행복한 가족)</h3>
+                            </div>
+                            <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
+                        </div>
+                        <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">알 수 없는 현상으로 달이 커지며 미쳐가는 사람들 속에서 정신병원을 찾게 되는 심리 공포 게임 프로젝트입니다.</p>
+                        
+                        <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">ENGINE</span>
+                                <span class="font-bold">유니티</span>
+                            </div>
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">FORMAT</span>
+                                <span class="font-bold">PC 게임</span>
+                            </div>
+                            <div>
+                                <span class="block text-yellowframe-muted font-bold">GENRE</span>
+                                <span class="font-bold">심리, 공포</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 md:p-6 pt-0">
+                    <button onclick="openPlanModal('happyFamily')" class="w-full text-center border-2 border-yellowframe-dark py-2.5 font-mono text-xs font-bold bg-yellowframe-bg hover:bg-yellowframe-yellow transition-colors">
+                        VIEW TEAM PITCH DECK →
+                    </button>
+                </div>
+            </div>
+
+            <!-- TEAM PROJECT 04 (괴짜과학자 비키) - 아래쪽으로 이동 -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
@@ -1261,6 +1310,58 @@
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">MY ROLE IN TEAM</p>
                             <p class="mt-1 text-xs md:text-sm font-bold">원동화 작화 · 배경 아트 · 캐릭터 디자인 참여</p>
                         </div>
+                    </div>
+                </div>
+            `
+        },
+        happyFamily: {
+            title: 'TEAM PITCH DECK / happy family (행복한 가족)',
+            body: `
+                <div class="space-y-6 text-xs md:text-sm leading-relaxed">
+                    <div>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / GAME OVERVIEW & SYNOPSIS</p>
+                        <h3 class="text-2xl md:text-3xl font-black mt-1">happy family (행복한 가족)</h3>
+                        <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 font-mono">
+                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                                <span class="block text-yellowframe-muted font-bold text-[11px]">장르</span>
+                                <span class="font-bold">심리, 공포</span>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                                <span class="block text-yellowframe-muted font-bold text-[11px]">플랫폼 / 엔진</span>
+                                <span class="font-bold">PC / 유니티</span>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                                <span class="block text-yellowframe-muted font-bold text-[11px]">주요 연령 / 등급</span>
+                                <span class="font-bold">10대 중후반 ~ 30대 초 / 15세 이용가</span>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                                <span class="block text-yellowframe-muted font-bold text-[11px]">조작 방식</span>
+                                <span class="font-bold">키보드, 마우스</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">핵심 특징 및 레퍼런스</p>
+                        <ul class="list-disc list-inside space-y-1 font-medium">
+                            <li><strong>키워드:</strong> 상담, 공포, 약 고어</li>
+                            <li><strong>화면 비율과 크기:</strong> 1920*1080 & 72픽셀 & 16배수</li>
+                            <li><strong>핵심 재미 요소:</strong> 자신의 선택지에 따라 달라지는 진행과 엔딩</li>
+                            <li><strong>레퍼런스:</strong> Help Me(게임), 위를 보지 마시오(영상), 히스테리아(컨셉영상)</li>
+                        </ul>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">시대 배경 및 세계관</p>
+                        <p class="font-medium mb-3"><strong>시대 배경:</strong> 현대 시대 유럽, 정신병원 & 단독주택</p>
+                        <p class="font-medium"><strong>세계관:</strong> 알 수 없는 현상으로 달이 커지고 있다. 달이 커질 때마다 달빛의 영향도 커져 미쳐가는 사람들의 수가 많아지고, 초반에 헛소리만 하던 사람들이 점점 난폭해져 사람을 죽이기까지 한다.</p>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">시놉시스 (Synopsis)</p>
+                        <p class="font-medium leading-relaxed">
+                            달이 커지기 시작했다. 초반엔 아무도 관심이 없었지만 점차 달이 커질수록 사람들이 미쳐 사람을 살해, 피해자들이 하나둘씩 늘기 시작했다. 걷잡을 수 없이 피해자들이 늘어나고 있지만, 정부는 현상에 대해 잘 알지 못해 사람들에게는 밤엔 밖으로 나가지 말라는 말밖에 못 하고, 친절했던 이웃이 언제 돌변해 본인을 살해할지도 모르는 세상... 사람들은 자신이 언제 미칠지 모르는 불안감에 정신병원을 찾고 있다.
+                        </p>
                     </div>
                 </div>
             `
