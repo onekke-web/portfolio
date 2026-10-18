@@ -488,7 +488,7 @@
             <!-- TEAM PROJECT 03 (괴짜과학자 비키) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
-                    <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
+                    <a href="https://youtu.be/IGrS1fc0sq8?si=S0pVyoD9yZpM-QAh" target="_blank" rel="noopener noreferrer"
                        class="group block border-b-2 border-yellowframe-dark overflow-hidden relative">
                         <div class="aspect-video bg-yellowframe-dark relative w-full">
                             <img src="https://lh3.googleusercontent.com/d/1m__l6P90ifoH0b1IDoFtEL8qNTmgx-yY=w1600"
@@ -1266,13 +1266,48 @@
             `
         },
         vicky: {
-            title: 'TEAM PITCH DECK / 괴짜과학자 비키',
+            title: 'TEAM PITCH DECK / TEAM PROJECT 괴짜과학자 비키',
             body: `
                 <div class="space-y-6">
                     <div>
-                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / LOGLINE (TEAM PROJECT)</p>
+                        <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / TEAM PROJECT DETAILS</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">괴짜과학자 비키</h3>
-                        <p class="mt-3 text-xs md:text-sm leading-relaxed font-medium">음모론으로 뒤덮인 현대 사회에서 괴짜 과학자 ‘비키’는 지구 음모론을 증명할 수 있을 것인가?</p>
+                        <p class="mt-3 text-xs md:text-sm leading-relaxed font-medium">괴짜 과학자 ‘비키’가 음모론을 증명해 나가는 코믹 SF 애니메이션 / 게임 프로젝트 상세 내용입니다.</p>
+                    </div>
+
+                    <!-- 새로 추가된 게임 개요 및 시놉시스 등 정리 내용 -->
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111] space-y-4">
+                        <div>
+                            <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">🎮 게임 개요</p>
+                            <ul class="text-xs md:text-sm space-y-1 font-medium">
+                                <li><strong class="font-bold">제목:</strong> happy family (행복한 가족)</li>
+                                <li><strong class="font-bold">장르:</strong> 심리, 공포</li>
+                                <li><strong class="font-bold">주 소비 연령층:</strong> 10대 중후반 ~ 30대 초</li>
+                                <li><strong class="font-bold">심의등급:</strong> 15세</li>
+                                <li><strong class="font-bold">키워드:</strong> 상담, 공포, 약 고어</li>
+                                <li><strong class="font-bold">플랫폼:</strong> PC</li>
+                                <li><strong class="font-bold">개발 엔진:</strong> 유니티</li>
+                                <li><strong class="font-bold">화면 비율과 크기:</strong> 1920*1080 & 72픽셀 & 16배수</li>
+                                <li><strong class="font-bold">조작 방식:</strong> 키보드, 마우스 사용</li>
+                                <li><strong class="font-bold">핵심 재미 요소:</strong> 자신의 선택지에 따라 달라지는 진행과 엔딩</li>
+                                <li><strong class="font-bold">레퍼런스:</strong> Help Me(게임), 위를 보지 마시오(영상), 히스테리아(컨셉영상)</li>
+                            </ul>
+                        </div>
+
+                        <div class="pt-3 border-t-2 border-yellowframe-dark/20">
+                            <p class="font-mono text-xs font-bold mb-1 text-yellowframe-muted">📜 시놉시스</p>
+                            <p class="text-xs md:text-sm leading-relaxed font-medium">
+                                달이 커지기 시작했다. 초반엔 아무도 관심이 없었지만 점차 달이 커질수록 사람들이 미쳐 사람을 살해, 피해자들이 하나둘씩 늘기 시작했다. 걷잡을 수 없이 피해자들이 늘어나고 있지만, 정부는 현상에 대해 잘 알지 못해 사람들에겐 밤엔 밖으로 나가지 말라는 말밖에 못 하고, 친절했던 이웃이 언제 돌변해 본인을 살해할지도 모르는 세상.. 사람들은 자신이 언제 미칠지 모르는 불안감에 정신병원을 찾고 있다.
+                            </p>
+                        </div>
+
+                        <div class="pt-3 border-t-2 border-yellowframe-dark/20">
+                            <p class="font-mono text-xs font-bold mb-1 text-yellowframe-muted">🌍 시대 배경 및 세계관</p>
+                            <ul class="text-xs md:text-sm space-y-1 font-medium">
+                                <li><strong class="font-bold">시대 배경:</strong> 현대 시대 유럽, 정신병원 & 단독주택</li>
+                                <li><strong class="font-bold">세계관:</strong> 알 수 없는 현상으로 달이 커지고 있다. 달이 커질 때 마다 달빛의 영향도 커져 미쳐가는 사람들의 수도 많아지고, 초반에 헛소리만 하던 사람들이 점점 난폭해져 사람을 죽이기까지 한다.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
@@ -1380,15 +1415,15 @@
                     <div class="grid md:grid-cols-2 gap-4">
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">GENRE</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">SF, 코미디</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">심리, 공포 (SF, 코미디)</p>
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">TARGET</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">전연령</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">10대 중후반 ~ 30대 초</p>
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
-                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">RUNNING TIME / CATEGORY</p>
-                            <p class="mt-1 text-xs md:text-sm font-bold">10분 이내 / TV 시리즈 에피소드</p>
+                            <p class="font-mono text-[11px] font-bold text-yellowframe-muted">PLATFORM / ENGINE</p>
+                            <p class="mt-1 text-xs md:text-sm font-bold">PC / 유니티</p>
                         </div>
                         <div class="border-2 border-yellowframe-dark p-4 bg-yellowframe-card">
                             <p class="font-mono text-[11px] font-bold text-yellowframe-muted">MY ROLE IN TEAM</p>
