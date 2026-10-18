@@ -1001,7 +1001,7 @@
 
     const planData = {
         hero: {
-            title: '개인 기획 / 길 잃은 용사 (가제)',
+            title: '개인 기획 / 길 잃은 용사 (가제) & 스토리보드',
             body: `
                 <div class="space-y-6 text-xs md:text-sm leading-relaxed">
                     <div>
@@ -1022,6 +1022,24 @@
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">로그라인 (한 줄 요약)</p>
                         <p class="font-bold text-base">던전(회사) 보스를 해치운 후 복귀하는 길 잃은 용사(가장)의 이야기</p>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">STORYBOARD / 스토리보드 (기-승-전-결 분류)</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1JRBSqxnvxs-k-yiSz2IrvrRNZ4zlAZjb=w1600" alt="스토리보드 기 01" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1JRBSqxnvxs-k-yiSz2IrvrRNZ4zlAZjb';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">STORYBOARD - PART 01</div>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1O5kj7xwOhXbTiNAUsJfNptc6_WmAHEBh=w1600" alt="스토리보드 기 02" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1O5kj7xwOhXbTiNAUsJfNptc6_WmAHEBh';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">STORYBOARD - PART 02</div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
@@ -1059,13 +1077,20 @@
             `
         },
         character: {
-            title: 'STEP 03 / 캐릭터 디자인 & 턴어라운드',
+            title: 'STEP 03 / 캐릭터 디자인, 무드보드 & 턴어라운드',
             body: `
                 <div class="space-y-6 text-xs md:text-sm leading-relaxed">
                     <div>
                         <p class="font-mono text-xs font-bold text-yellowframe-muted">03 / PERSONAL WORKFLOW</p>
-                        <h3 class="text-2xl md:text-3xl font-black mt-1">캐릭터 디자인 & 턴어라운드</h3>
-                        <p class="mt-3 text-yellowframe-muted">주인공의 초기 디자인 스케치부터 최종 캐릭터 디자인까지의 작업 과정입니다.</p>
+                        <h3 class="text-2xl md:text-3xl font-black mt-1">캐릭터 디자인, 무드보드 & 턴어라운드</h3>
+                        <p class="mt-3 text-yellowframe-muted">주인공의 무드보드, 초기 디자인 스케치부터 최종 캐릭터 디자인까지의 작업 과정입니다.</p>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3">MOOD BOARD / 무드보드</p>
+                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/13hKSqal381cEjd8z2UUZRYETMMI6mpi0=w1600" alt="캐릭터 무드보드" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=13hKSqal381cEjd8z2UUZRYETMMI6mpi0';this.onerror=function(){this.style.display='none'}">
+                        </div>
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
