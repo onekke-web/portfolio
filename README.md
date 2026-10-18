@@ -1025,7 +1025,7 @@
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
-                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">STORYBOARD / 스토리보드 (기-승-전-결 분류)</p>
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">STORYBOARD / 스토리보드 (기)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
