@@ -485,7 +485,7 @@
                 </div>
             </div>
 
-            <!-- TEAM PROJECT 03 (happy family) - 새로 추가된 칸 -->
+            <!-- TEAM PROJECT 03 (happy family) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/IGrS1fc0sq8?si=S0pVyoD9yZpM-QAh" target="_blank" rel="noopener noreferrer"
@@ -534,7 +534,7 @@
                 </div>
             </div>
 
-            <!-- TEAM PROJECT 04 (괴짜과학자 비키) - 아래쪽으로 이동 -->
+            <!-- TEAM PROJECT 04 (괴짜과학자 비키) -->
             <div class="border-2 border-yellowframe-dark bg-yellowframe-card shadow-frame flex flex-col justify-between">
                 <div>
                     <a href="https://youtu.be/494-k5M4vuY?si=MIRqNVYPDjmymfpr" target="_blank" rel="noopener noreferrer"
@@ -1110,7 +1110,7 @@
                             </div>
                             <div>
                                 <span class="font-black block text-xs font-mono mb-1 text-yellowframe-dark">[전개]</span>
-                                <p>마왕을 무찔렀다는 해방감도 잠시, 요새의 구조가 요동치며 무너져 내리기 시작한다. 용사는 성채를 빠져나가기 위해 탈출로를 찾지만, 눈앞에는 끝없이 이어지는 미로 같은 회랑과 수백 개의 비상계단뿐이다. 지옥의 미궁이 형태를 바꾸는 동안 손에 든 ‘마법 나침반(스마트폰 GPS)’은 차가운 자줏빛 오류 신호만 내뿜으며 사방으로 핑글핑글 돈다.</p>
+                                <p>마왕을 무찔렀다는 해방감도 잠시, 요새의 구조가 요동치며 무너져 내리기 시작한다. 용사는 성채를 빠져나가기 위해 탈출로를 찾지만, 눈앞에는 끝없이 이어지는 미로 같은 회랑과 수백 개의 비상계단뿐이다. 지옥의 미궁이 형태를 바꾸는 동안 손에 든 ‘마법 나침반(스마트폰 GPS)’은 차가운 자줏빛 오류 신호만 내뿜으며 사방으로 핑글핑글 돌다.</p>
                             </div>
                             <div>
                                 <span class="font-black block text-xs font-mono mb-1 text-yellowframe-dark">[위기 및 절정]</span>
@@ -1361,6 +1361,75 @@
                         <p class="font-medium leading-relaxed">
                           환각과 헛소리에 시달리던 이들이 점차 난폭해져 살인을 저지르기 시작하고, 사태는 손쓸 수 없이 악화된다. 정확한 원인을 모르는 정부는 그저 "야간 외출을 금지하라"는 무력한 경고만 되풀이할 뿐이다. 평화롭던 이웃이 언제 연쇄 살인마로 바뀔지 모르는 극한의 기강 속에서, 사람들은 자기 자신마저 광기에 물들지 모른다는 공포에 떨며 정신병원을 찾고 있다.
                         </p>
+                    </div>
+
+                    <!-- 캐릭터 도트 -->
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">캐릭터 도트</p>
+                        <div class="grid grid-cols-1 gap-3">
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1Li_dH7K3eUBMLkiOKqGES3laZxCHZV3w=w1600" alt="캐릭터 도트 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1Li_dH7K3eUBMLkiOKqGES3laZxCHZV3w';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CHARACTER DOT #01</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 애니메이팅 -->
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">애니메이팅</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1t5WY2ehmJwydgZcZzncQu2eIdkzLPw2c=w1600" alt="애니메이팅 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1t5WY2ehmJwydgZcZzncQu2eIdkzLPw2c';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">ANIMATING #01</div>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1aZFfzu1b2tmoxLjRqE-PTMZ_GrVXbHBu=w1600" alt="애니메이팅 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1aZFfzu1b2tmoxLjRqE-PTMZ_GrVXbHBu';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">ANIMATING #02</div>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1phxDUD0Qt76_-XShlEFx1z607od6Wo2V=w1600" alt="애니메이팅 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1phxDUD0Qt76_-XShlEFx1z607od6Wo2V';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">ANIMATING #03</div>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1EpkBOnOb527XedbXWrDAEO7qKOz9KGx9=w1600" alt="애니메이팅 4" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1EpkBOnOb527XedbXWrDAEO7qKOz9KGx9';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">ANIMATING #04</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 배경 -->
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">배경</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/16gvxIfocvzGdun6xMO8XGnze5BnbIcdX=w1600" alt="배경 1" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=16gvxIfocvzGdun6xMO8XGnze5BnbIcdX';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #01</div>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/16OESb5KSvK59NsvOWKD7-YhhX-ZxIW6X=w1600" alt="배경 2" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=16OESb5KSvK59NsvOWKD7-YhhX-ZxIW6X';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #02</div>
+                            </div>
+                            <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden md:col-span-2">
+                                <div class="bg-black/5 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1K6cj7ueAjJSotNNStc2ep1WvVUjGHOAy=w1600" alt="배경 3" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1K6cj7ueAjJSotNNStc2ep1WvVUjGHOAy';this.onerror=function(){this.style.display='none'}">
+                                </div>
+                                <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #03</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             `
