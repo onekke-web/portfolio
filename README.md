@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -175,7 +174,6 @@
         #imageModal button { border-radius: 999px; }
         footer { background: var(--memo-paper) !important; border-color: rgba(41,39,31,.22) !important; }
         .yellow-marker { background: linear-gradient(transparent 58%, var(--memo-yellow) 58%); }
-        /* Paper-note motif */
         .note-chip {
             display: inline-block; background: var(--memo-yellow-soft); padding: .35rem .65rem;
             transform: rotate(-2deg); box-shadow: 2px 3px 0 rgba(41,39,31,.1);
@@ -188,9 +186,7 @@
         }
     </style>
 
-
     <style id="memoji-ui-unification">
-        /* Shared layout rhythm */
         :root {
             --ui-radius: 14px;
             --ui-border: 1.5px solid rgba(41,39,31,.78);
@@ -212,7 +208,6 @@
             padding-bottom: var(--ui-section-space);
         }
 
-        /* Consistent section headings */
         section[id] h2 {
             line-height: 1.05;
             letter-spacing: -.055em;
@@ -224,7 +219,6 @@
             min-width: 0;
         }
 
-        /* Unified project cards */
         #work .grid > div,
         #teamwork .grid > div {
             min-width: 0;
@@ -253,7 +247,6 @@
             border-bottom-width: 1.5px;
         }
 
-        /* Unified interactive controls */
         button, a, [onclick] { -webkit-tap-highlight-color: transparent; }
         button:not(#menuBtn),
         #gallery .category-btn,
@@ -280,7 +273,6 @@
             background: var(--memo-yellow) !important;
         }
 
-        /* Process steps share one visual system */
         #process .grid > div {
             min-width: 0;
             min-height: 140px;
@@ -296,7 +288,6 @@
         }
         #process .grid > div span { overflow-wrap: anywhere; }
 
-        /* Gallery tiles use the same border, radius and shadow */
         #gallery .category-content .grid > div {
             min-width: 0;
             border: var(--ui-border);
@@ -312,14 +303,12 @@
             min-height: 40px;
         }
 
-        /* About, contact and footer */
         #about { border-width: 1.5px; }
         #about .max-w-7xl > div { min-width: 0; }
         #contact { padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(3rem, 6vw, 5rem); }
         footer { border-top-width: 1.5px !important; }
         footer .max-w-7xl { row-gap: .65rem; }
 
-        /* Modal styling and reading comfort */
         #planModal { backdrop-filter: blur(5px); }
         #planModal > div {
             width: min(100%, 900px);
@@ -342,7 +331,6 @@
         #imageModal { backdrop-filter: blur(4px); }
         #imageModal #modalCaption { text-align: center; }
 
-        /* Keyboard focus remains visible */
         a:focus-visible, button:focus-visible, [onclick]:focus-visible {
             outline: 3px solid var(--memo-yellow);
             outline-offset: 3px;
@@ -378,9 +366,7 @@
         }
     </style>
 
-
     <style id="teamwork-layout-unification">
-        /* TEAM WORK: project cards share the same image ratio, spacing and footer alignment */
         #teamwork .grid {
             align-items: stretch;
             grid-auto-rows: 1fr;
@@ -441,7 +427,6 @@
             letter-spacing: .025em;
         }
 
-        /* Every VIEW TEAM PITCH DECK modal uses the same visual system */
         #planModalBody {
             width: 100%;
             max-width: 100%;
@@ -742,7 +727,7 @@
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">MY ROLE</span>
-                                <span class="font-bold">기획 및 제작</span>
+                                <span class="font-bold">3파트(인어공주) 제작</span>
                             </div>
                             <div>
                                 <span class="block text-yellowframe-muted font-bold">FORMAT</span>
@@ -1647,39 +1632,6 @@
                     <div>
                         <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / GAME OVERVIEW & SYNOPSIS</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">happy family (행복한 가족)</h3>
-                        <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 font-mono">
-                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
-                                <span class="block text-yellowframe-muted font-bold text-[11px]">장르</span>
-                                <span class="font-bold">심리, 공포</span>
-                            </div>
-                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
-                                <span class="block text-yellowframe-muted font-bold text-[11px]">플랫폼 / 엔진</span>
-                                <span class="font-bold">PC / 유니티</span>
-                            </div>
-                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
-                                <span class="block text-yellowframe-muted font-bold text-[11px]">주요 연령 / 등급</span>
-                                <span class="font-bold">10대 중후반 ~ 30대 초 / 15세 이용가</span>
-                            </div>
-                            <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
-                                <span class="block text-yellowframe-muted font-bold text-[11px]">조작 방식</span>
-                                <span class="font-bold">키보드, 마우스</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
-                        <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">핵심 특징 및 레퍼런스</p>
-                        <ul class="list-disc list-inside space-y-1 font-medium">
-                            <li><strong>키워드:</strong> 상담, 공포, 약 고어</li>
-                            <li><strong>핵심 재미 요소:</strong> 자신의 선택지에 따라 달라지는 진행과 엔딩</li>
-                            <li><strong>레퍼런스:</strong> Help Me(게임), 위를 보지 마시오(영상), 히스테리아(컨셉영상)</li>
-                        </ul>
-                    </div>
-
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
-                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">시대 배경 및 세계관</p>
-                        <p class="font-medium mb-3"><strong>시대 배경:</strong> 현대 시대 유럽, 정신병원 & 단독주택</p>
-                        <p class="font-medium"><strong>세계관:</strong> 원인 불명의 현상으로 달이 점점 커지면서, 강해진 달빛의 영향으로 미쳐가는 사람들이 급증한다.</p>
                     </div>
 
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
@@ -1755,6 +1707,25 @@
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">BACKGROUND #03</div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 font-mono">
+                        <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                            <span class="block text-yellowframe-muted font-bold text-[11px]">장르</span>
+                            <span class="font-bold">심리, 공포</span>
+                        </div>
+                        <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                            <span class="block text-yellowframe-muted font-bold text-[11px]">플랫폼 / 엔진</span>
+                            <span class="font-bold">PC / 유니티</span>
+                        </div>
+                        <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                            <span class="block text-yellowframe-muted font-bold text-[11px]">주요 연령 / 등급</span>
+                            <span class="font-bold">10대 중후반 ~ 30대 초 / 15세 이용가</span>
+                        </div>
+                        <div class="border-2 border-yellowframe-dark p-3 bg-yellowframe-card">
+                            <span class="block text-yellowframe-muted font-bold text-[11px]">조작 방식</span>
+                            <span class="font-bold">키보드, 마우스</span>
                         </div>
                     </div>
                 </div>
