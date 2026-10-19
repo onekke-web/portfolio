@@ -378,6 +378,142 @@
         }
     </style>
 
+
+    <style id="teamwork-layout-unification">
+        /* TEAM WORK: project cards share the same image ratio, spacing and footer alignment */
+        #teamwork .grid {
+            align-items: stretch;
+            grid-auto-rows: 1fr;
+        }
+        #teamwork .grid > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-width: 0;
+        }
+        #teamwork .grid > div > div:first-child {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            min-width: 0;
+        }
+        #teamwork .grid > div > div:first-child > a {
+            display: block;
+            flex: 0 0 auto;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+        #teamwork .grid > div > div:first-child > a > div {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16 / 9;
+        }
+        #teamwork .grid > div > div:first-child > a img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > p:first-of-type + h3 {
+            min-height: 2.6em;
+            overflow-wrap: anywhere;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > p:nth-of-type(2) {
+            flex: 1 0 auto;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > div:last-child {
+            margin-top: auto;
+            align-items: start;
+        }
+        #teamwork .grid > div > div:last-child {
+            margin-top: auto;
+            padding-top: .75rem;
+        }
+        #teamwork .grid > div > div:last-child button {
+            min-height: 46px;
+            border-width: 1.5px;
+            font-size: .72rem;
+            letter-spacing: .025em;
+        }
+
+        /* Every VIEW TEAM PITCH DECK modal uses the same visual system */
+        #planModalBody {
+            width: 100%;
+            max-width: 100%;
+        }
+        #planModalBody > div {
+            width: 100%;
+            max-width: 100%;
+        }
+        #planModalBody > div > div:first-child {
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid rgba(41,39,31,.18);
+        }
+        #planModalBody > div > div:first-child h3 {
+            font-size: clamp(1.55rem, 3vw, 2.15rem);
+            letter-spacing: -.04em;
+        }
+        #planModalBody > div > div:not(:first-child) {
+            border-radius: 10px;
+            border-width: 1.5px;
+            box-shadow: 3px 3px 0 rgba(41,39,31,.10);
+        }
+        #planModalBody img {
+            display: block;
+            width: 100%;
+            height: clamp(210px, 30vw, 340px);
+            object-fit: contain;
+            object-position: center;
+            background: rgba(41,39,31,.035);
+        }
+        #planModalBody .grid > div {
+            min-width: 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        #planModalBody .grid > div > div:first-child:has(img) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 210px;
+            overflow: hidden;
+            background: rgba(41,39,31,.035);
+        }
+        #planModalBody .grid > div > div:first-child:has(img) img {
+            flex: 0 0 auto;
+        }
+        #planModalBody .grid > div > div:last-child:not(:first-child) {
+            min-height: 34px;
+        }
+        #planModalBody p,
+        #planModalBody li,
+        #planModalBody span { overflow-wrap: anywhere; }
+        #planModalBody .grid { align-items: stretch; }
+        #planModalBody .grid > div:has(> span:first-child) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @media (max-width: 767px) {
+            #teamwork .grid { grid-auto-rows: auto; }
+            #teamwork .grid > div > div:first-child > div:last-child > p:first-of-type + h3 {
+                min-height: 0;
+            }
+            #planModalBody img { height: clamp(190px, 58vw, 280px); }
+            #planModalBody > div { gap: 1rem; }
+            #planModalBody > div > div:not(:first-child) { padding: .9rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            #teamwork .grid > div,
+            #teamwork .grid > div img { transition: none !important; }
+        }
+    </style>
+
 </head>
 
 <body>
