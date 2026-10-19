@@ -1078,6 +1078,15 @@
                         <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
+                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 6)">
+                    <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
+                        <img src="https://lh3.googleusercontent.com/d/1CdWivec2DMagYWJtUo1npMD1PXgDkLpb=w1600" alt="애니메이션 7" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1CdWivec2DMagYWJtUo1npMD1PXgDkLpb';this.onerror=function(){this.style.display='none'}">
+                    </div>
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
+                        <span>ANIMATION #07</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1252,7 +1261,8 @@
             { src: 'https://lh3.googleusercontent.com/d/1mUnVyLHkuivFQUZTVELW_3oIw4tmULdl=w1600', title: 'ANIMATION #03' },
             { src: 'https://lh3.googleusercontent.com/d/1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE=w1600', title: 'ANIMATION #04' },
             { src: 'https://lh3.googleusercontent.com/d/1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e=w1600', title: 'ANIMATION #05' },
-            { src: 'https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO=w1600', title: 'ANIMATION #06' }
+            { src: 'https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO=w1600', title: 'ANIMATION #06' },
+            { src: 'https://lh3.googleusercontent.com/d/1CdWivec2DMagYWJtUo1npMD1PXgDkLpb=w1600', title: 'ANIMATION #07' }
         ],
         croquis: [
             { src: 'https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5=w1600', title: 'CROQUIS #01' },
