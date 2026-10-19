@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -1824,7 +1825,7 @@
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://lh3.googleusercontent.com/d/1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1=w1600" alt="동화 움짤 #06" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1';this.onerror=function(){this.style.display='none'}">
+                                    <img src="https://lh3.googleusercontent.com/d/1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1=w1600" alt="동화 움짤 #06" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1xTv6nrZgM5xbzyTniKlDhupeqlI1';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #06</div>
                             </div>
