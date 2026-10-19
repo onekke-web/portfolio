@@ -188,6 +188,196 @@
         }
     </style>
 
+
+    <style id="memoji-ui-unification">
+        /* Shared layout rhythm */
+        :root {
+            --ui-radius: 14px;
+            --ui-border: 1.5px solid rgba(41,39,31,.78);
+            --ui-shadow: 4px 4px 0 rgba(41,39,31,.12);
+            --ui-shadow-hover: 7px 8px 0 rgba(41,39,31,.16);
+            --ui-section-space: clamp(3.5rem, 7vw, 6.5rem);
+        }
+
+        body { line-height: 1.65; }
+        .max-w-7xl {
+            width: 100% !important;
+            max-width: 1280px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        section[id] { scroll-margin-top: 84px; }
+        #work, #teamwork, #process, #gallery, #about, #contact {
+            padding-top: var(--ui-section-space);
+            padding-bottom: var(--ui-section-space);
+        }
+
+        /* Consistent section headings */
+        section[id] h2 {
+            line-height: 1.05;
+            letter-spacing: -.055em;
+            overflow-wrap: anywhere;
+        }
+        section[id] > .max-w-7xl > div:first-child,
+        #work .max-w-7xl > div:first-child,
+        #teamwork .max-w-7xl > div:first-child {
+            min-width: 0;
+        }
+
+        /* Unified project cards */
+        #work .grid > div,
+        #teamwork .grid > div {
+            min-width: 0;
+            height: 100%;
+            border: var(--ui-border);
+            border-radius: var(--ui-radius);
+            box-shadow: var(--ui-shadow);
+            overflow: hidden;
+            transition: transform .22s ease, box-shadow .22s ease;
+        }
+        #work .grid > div:hover,
+        #teamwork .grid > div:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--ui-shadow-hover);
+        }
+        #work .grid > div > div:first-child,
+        #teamwork .grid > div > div:first-child {
+            min-width: 0;
+        }
+        #work .grid > div p,
+        #teamwork .grid > div p {
+            overflow-wrap: anywhere;
+        }
+        #work .grid > div a.group,
+        #teamwork .grid > div a.group {
+            border-bottom-width: 1.5px;
+        }
+
+        /* Unified interactive controls */
+        button, a, [onclick] { -webkit-tap-highlight-color: transparent; }
+        button:not(#menuBtn),
+        #gallery .category-btn,
+        #work a[href*="youtu"],
+        #teamwork button,
+        #contact a {
+            border-radius: 8px;
+        }
+        #work .grid > div a.block.w-full,
+        #teamwork .grid > div button {
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .75rem 1rem;
+            line-height: 1.4;
+        }
+        #gallery .category-btn {
+            border-width: 1.5px;
+            transition: background-color .2s ease, transform .2s ease;
+        }
+        #gallery .category-btn:hover { transform: translateY(-1px); }
+        #gallery .category-btn.active {
+            background: var(--memo-yellow) !important;
+        }
+
+        /* Process steps share one visual system */
+        #process .grid > div {
+            min-width: 0;
+            min-height: 140px;
+            padding: clamp(.8rem, 1.5vw, 1.2rem);
+            border: 1.5px solid rgba(255,253,244,.85);
+            border-radius: 12px;
+            box-shadow: 3px 3px 0 rgba(255,217,40,.65);
+            transition: transform .2s ease, background-color .2s ease, color .2s ease;
+        }
+        #process .grid > div:last-child {
+            border-color: var(--memo-yellow);
+            box-shadow: 3px 3px 0 rgba(255,217,40,.35);
+        }
+        #process .grid > div span { overflow-wrap: anywhere; }
+
+        /* Gallery tiles use the same border, radius and shadow */
+        #gallery .category-content .grid > div {
+            min-width: 0;
+            border: var(--ui-border);
+            border-radius: 12px;
+            box-shadow: var(--ui-shadow);
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+        #gallery .category-content .grid > div:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--ui-shadow-hover);
+        }
+        #gallery .category-content .grid > div > div:last-child {
+            min-height: 40px;
+        }
+
+        /* About, contact and footer */
+        #about { border-width: 1.5px; }
+        #about .max-w-7xl > div { min-width: 0; }
+        #contact { padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(3rem, 6vw, 5rem); }
+        footer { border-top-width: 1.5px !important; }
+        footer .max-w-7xl { row-gap: .65rem; }
+
+        /* Modal styling and reading comfort */
+        #planModal { backdrop-filter: blur(5px); }
+        #planModal > div {
+            width: min(100%, 900px);
+            max-height: min(88vh, 900px);
+            border-radius: 16px;
+            border-width: 1.5px;
+            box-shadow: 8px 8px 0 rgba(0,0,0,.2);
+        }
+        #planModal > div > div:first-child {
+            min-height: 58px;
+            padding: .85rem 1.1rem;
+        }
+        #planModalBody {
+            line-height: 1.8;
+            overflow-wrap: anywhere;
+        }
+        #planModalBody h3,
+        #planModalBody h4 { line-height: 1.3; }
+        #planModalBody img { max-width: 100%; }
+        #imageModal { backdrop-filter: blur(4px); }
+        #imageModal #modalCaption { text-align: center; }
+
+        /* Keyboard focus remains visible */
+        a:focus-visible, button:focus-visible, [onclick]:focus-visible {
+            outline: 3px solid var(--memo-yellow);
+            outline-offset: 3px;
+        }
+
+        @media (min-width: 769px) {
+            #work .grid > div,
+            #teamwork .grid > div { display: flex; flex-direction: column; }
+            #work .grid > div > div:last-child,
+            #teamwork .grid > div > div:last-child { margin-top: auto; }
+        }
+        @media (max-width: 768px) {
+            .max-w-7xl { width: 100% !important; }
+            #work, #teamwork, #process, #gallery, #about, #contact {
+                padding-top: 3.25rem;
+                padding-bottom: 3.25rem;
+            }
+            section[id] { scroll-margin-top: 68px; }
+            #work .grid, #teamwork .grid { gap: 1.1rem; }
+            #process .grid > div { min-height: 112px; }
+            #planModal { padding: .75rem; }
+            #planModal > div { max-height: 90vh; }
+            #planModalBody { padding: 1rem; }
+            #about .max-w-7xl::after { opacity: .1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
