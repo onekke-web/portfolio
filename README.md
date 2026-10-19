@@ -20,16 +20,16 @@
                 extend: {
                     colors: {
                         yellowframe: {
-                            yellow: '#FFF44F',
-                            dark: '#2E2E2E',
-                            bg: '#F9F9F9',
-                            card: '#FFFFFF',
-                            muted: '#666666'
+                            yellow: '#FFE500',
+                            dark: '#111111',
+                            bg: '#F5F1E8',
+                            card: '#FFFDF5',
+                            muted: '#77736B'
                         }
                     },
                     boxShadow: {
-                        frame: '4px 4px 0 #2E2E2E',
-                        frameHover: '8px 8px 0 #2E2E2E'
+                        frame: '4px 4px 0 #111111',
+                        frameHover: '8px 8px 0 #111111'
                     },
                     fontFamily: {
                         sans: ['Noto Sans KR', 'sans-serif'],
@@ -45,20 +45,20 @@
         html { scroll-behavior: smooth; }
         body {
             margin: 0;
-            background: #F9F9F9;
-            color: #2E2E2E;
+            background: #F5F1E8;
+            color: #111;
             font-family: 'Noto Sans KR', sans-serif;
             overflow-x: hidden;
             width: 100%;
         }
-        ::selection { background: #FFF44F; color: #2E2E2E; }
+        ::selection { background: #FFE500; color: #111; }
         
         /* Custom Cursor */
         .custom-cursor {
             position: fixed;
             width: 16px;
             height: 16px;
-            border: 2px solid #2E2E2E;
+            border: 2px solid #111;
             border-radius: 50%;
             pointer-events: none;
             z-index: 9999;
@@ -68,7 +68,7 @@
         .custom-cursor.hover {
             width: 28px;
             height: 28px;
-            background-color: #FFF44F;
+            background-color: #FFE500;
             opacity: 0.85;
         }
         @media (max-width: 768px) {
@@ -85,10 +85,10 @@
         }
 
         .yellow-marker {
-            background: linear-gradient(transparent 55%, #FFF44F 55%);
+            background: linear-gradient(transparent 55%, #FFE500 55%);
         }
         .modal-scroll::-webkit-scrollbar { width: 6px; }
-        .modal-scroll::-webkit-scrollbar-thumb { background: #2E2E2E; }
+        .modal-scroll::-webkit-scrollbar-thumb { background: #111; }
 
         
 .max-w-7xl {
@@ -120,25 +120,25 @@
 
     <style id="memoji-redesign">
         :root {
-            --memo-yellow: #FFF44F;
-            --memo-yellow-soft: #FFF9C4;
-            --memo-paper: #FFFFFF;
-            --memo-bg: #F9F9F9;
-            --memo-ink: #2E2E2E;
-            --memo-muted: #666666;
-            --memo-line: #2E2E2E;
+            --memo-yellow: #ffd928;
+            --memo-yellow-soft: #fff0a6;
+            --memo-paper: #fffdf4;
+            --memo-bg: #fff9e8;
+            --memo-ink: #29271f;
+            --memo-muted: #777264;
+            --memo-line: #29271f;
         }
         body { background: var(--memo-bg); color: var(--memo-ink); }
         ::selection { background: var(--memo-yellow); color: var(--memo-ink); }
         .noise { opacity: .018; }
-        header { background: rgba(249,249,249,.94) !important; border-bottom: 1px solid rgba(46,46,46,.22) !important; }
+        header { background: rgba(255,249,232,.94) !important; border-bottom: 1px solid rgba(41,39,31,.22) !important; }
         header > div { min-height: 68px; }
         header a:first-child { letter-spacing: -.06em; font-size: 1.25rem; }
         header nav a { border-radius: 999px; padding: .55rem .8rem !important; transition: background .2s, transform .2s; }
         header nav a:hover { background: var(--memo-yellow) !important; transform: translateY(-2px); }
-        #mobileMenu { background: var(--memo-paper) !important; border-color: rgba(46,46,46,.22) !important; }
+        #mobileMenu { background: var(--memo-paper) !important; border-color: rgba(41,39,31,.22) !important; }
         main#top > section:first-child { padding-top: 68px; background:
-            radial-gradient(ellipse at 85% 18%, rgba(255,244,79,.32), transparent 34%),
+            radial-gradient(ellipse at 85% 18%, rgba(255,217,40,.32), transparent 34%),
             var(--memo-bg); }
         main#top > section:first-child .max-w-7xl { padding-top: clamp(3.5rem, 8vw, 7rem); padding-bottom: clamp(3.5rem, 8vw, 7rem); }
         main#top > section:first-child h1 { line-height: .88; letter-spacing: -.075em; }
@@ -148,17 +148,17 @@
         .bg-yellowframe-card { background-color: var(--memo-paper) !important; }
         .text-yellowframe-muted { color: var(--memo-muted) !important; }
         .border-yellowframe-dark { border-color: var(--memo-line) !important; }
-        .shadow-frame { box-shadow: 5px 5px 0 rgba(46,46,46,.14) !important; }
-        .shadow-frameHover { box-shadow: 8px 8px 0 rgba(46,46,46,.2) !important; }
+        .shadow-frame { box-shadow: 5px 5px 0 rgba(41,39,31,.14) !important; }
+        .shadow-frameHover { box-shadow: 8px 8px 0 rgba(41,39,31,.2) !important; }
         #work, #teamwork, #gallery, #contact { position: relative; }
         #work .grid > div, #teamwork .grid > div, #gallery .grid > div {
-            border-radius: 14px; overflow: hidden; box-shadow: 4px 5px 0 rgba(46,46,46,.09);
+            border-radius: 14px; overflow: hidden; box-shadow: 4px 5px 0 rgba(41,39,31,.09);
             transition: transform .22s ease, box-shadow .22s ease;
         }
         #work .grid > div:hover, #teamwork .grid > div:hover, #gallery .grid > div:hover {
-            transform: translateY(-4px) rotate(-.25deg); box-shadow: 7px 9px 0 rgba(46,46,46,.12);
+            transform: translateY(-4px) rotate(-.25deg); box-shadow: 7px 9px 0 rgba(41,39,31,.12);
         }
-        #process { background: #2E2E2E !important; }
+        #process { background: #29271f !important; }
         #process .grid > div { border-radius: 12px; min-height: 132px; }
         #process .grid > div:hover { transform: translateY(-3px); }
         #about { background: var(--memo-yellow) !important; }
@@ -172,11 +172,11 @@
         #planModal > div { border-radius: 16px; overflow: hidden; box-shadow: 8px 8px 0 rgba(0,0,0,.22); }
         #planModal > div > div:first-child { background: var(--memo-yellow) !important; }
         #imageModal button { border-radius: 999px; }
-        footer { background: var(--memo-paper) !important; border-color: rgba(46,46,46,.22) !important; }
+        footer { background: var(--memo-paper) !important; border-color: rgba(41,39,31,.22) !important; }
         .yellow-marker { background: linear-gradient(transparent 58%, var(--memo-yellow) 58%); }
         .note-chip {
             display: inline-block; background: var(--memo-yellow-soft); padding: .35rem .65rem;
-            transform: rotate(-2deg); box-shadow: 2px 3px 0 rgba(46,46,46,.1);
+            transform: rotate(-2deg); box-shadow: 2px 3px 0 rgba(41,39,31,.1);
         }
         @media (max-width: 768px) {
             header > div { min-height: 58px; }
@@ -189,9 +189,9 @@
     <style id="memoji-ui-unification">
         :root {
             --ui-radius: 14px;
-            --ui-border: 1.5px solid rgba(46,46,46,.78);
-            --ui-shadow: 4px 4px 0 rgba(46,46,46,.12);
-            --ui-shadow-hover: 7px 8px 0 rgba(46,46,46,.16);
+            --ui-border: 1.5px solid rgba(41,39,31,.78);
+            --ui-shadow: 4px 4px 0 rgba(41,39,31,.12);
+            --ui-shadow-hover: 7px 8px 0 rgba(41,39,31,.16);
             --ui-section-space: clamp(3.5rem, 7vw, 6.5rem);
         }
 
@@ -277,14 +277,14 @@
             min-width: 0;
             min-height: 140px;
             padding: clamp(.8rem, 1.5vw, 1.2rem);
-            border: 1.5px solid rgba(255,255,255,.85);
+            border: 1.5px solid rgba(255,253,244,.85);
             border-radius: 12px;
-            box-shadow: 3px 3px 0 rgba(255,244,79,.65);
+            box-shadow: 3px 3px 0 rgba(255,217,40,.65);
             transition: transform .2s ease, background-color .2s ease, color .2s ease;
         }
         #process .grid > div:last-child {
             border-color: var(--memo-yellow);
-            box-shadow: 3px 3px 0 rgba(255,244,79,.35);
+            box-shadow: 3px 3px 0 rgba(255,217,40,.35);
         }
         #process .grid > div span { overflow-wrap: anywhere; }
 
@@ -437,7 +437,7 @@
         }
         #planModalBody > div > div:first-child {
             padding-bottom: 1.25rem;
-            border-bottom: 1px solid rgba(46,46,46,.18);
+            border-bottom: 1px solid rgba(41,39,31,.18);
         }
         #planModalBody > div > div:first-child h3 {
             font-size: clamp(1.55rem, 3vw, 2.15rem);
@@ -446,7 +446,7 @@
         #planModalBody > div > div:not(:first-child) {
             border-radius: 10px;
             border-width: 1.5px;
-            box-shadow: 3px 3px 0 rgba(46,46,46,.10);
+            box-shadow: 3px 3px 0 rgba(41,39,31,.10);
         }
         #planModalBody img {
             display: block;
@@ -454,7 +454,7 @@
             height: clamp(210px, 30vw, 340px);
             object-fit: contain;
             object-position: center;
-            background: rgba(46,46,46,.035);
+            background: rgba(41,39,31,.035);
         }
         #planModalBody .grid > div {
             min-width: 0;
@@ -467,7 +467,7 @@
             justify-content: center;
             min-height: 210px;
             overflow: hidden;
-            background: rgba(46,46,46,.035);
+            background: rgba(41,39,31,.035);
         }
         #planModalBody .grid > div > div:first-child:has(img) img {
             flex: 0 0 auto;
@@ -498,110 +498,6 @@
             #teamwork .grid > div img { transition: none !important; }
         }
     </style>
-
-
-<style id="memoji-notebook-redesign">
-:root{
- --memo-yellow:#FFF44F; --memo-yellow-soft:#FFF9C4;
- --memo-paper:#FFFFFF; --memo-bg:#F9F9F9; --memo-ink:#2E2E2E;
- --memo-muted:#666666; --memo-line:#2E2E2E;
- --memo-lilac:#FFF44F; --memo-green:#2E2E2E;
- --ui-radius:5px; --ui-border:1px solid rgba(46,46,46,.22);
- --ui-shadow:0 8px 24px rgba(46,46,46,.08);
- --ui-shadow-hover:0 14px 32px rgba(46,46,46,.15);
- --ui-section-space:clamp(4rem,8vw,7rem);
-}
-html{scroll-padding-top:88px}
-body{background:var(--memo-bg)!important;color:var(--memo-green)!important;font-family:'Noto Sans KR',sans-serif;line-height:1.7}
-::selection{background:var(--memo-yellow);color:var(--memo-green)}
-.noise{opacity:.012}
-.custom-cursor{border-color:var(--memo-green)}
-.custom-cursor.hover{background:var(--memo-yellow)}
-.max-w-7xl{width:min(100% - 64px,1320px)!important;max-width:1320px!important;margin-inline:auto!important}
-header{background:rgba(249,249,249,.92)!important;border:0!important;border-bottom:1px solid rgba(46,46,46,.15)!important;box-shadow:0 4px 18px rgba(46,46,46,.04);backdrop-filter:blur(16px)}
-header>div{min-height:76px!important}
-header a:first-child{color:var(--memo-green)!important;font-size:1.35rem;letter-spacing:-.07em}
-header a:first-child span{color:var(--memo-lilac)!important}
-header nav a{color:var(--memo-green)!important;border-radius:3px;padding:.55rem .85rem!important;letter-spacing:.08em;font-size:.7rem;transition:all .2s}
-header nav a:hover{background:var(--memo-yellow)!important;transform:translateY(-2px)}
-#mobileMenu{background:var(--memo-paper)!important;border-color:#d8dfd9!important}
-#mobileMenu a:hover{background:var(--memo-yellow)!important}
-main#top>section:first-child{padding-top:76px;background:var(--memo-green)!important;color:var(--memo-paper)!important;border:0!important;position:relative;overflow:hidden}
-main#top>section:first-child:before{content:"";position:absolute;inset:0;opacity:.1;background-image:radial-gradient(var(--memo-yellow) .7px,transparent .7px);background-size:17px 17px;pointer-events:none}
-main#top>section:first-child .max-w-7xl{position:relative;padding-top:clamp(5rem,10vw,9rem)!important;padding-bottom:clamp(5rem,10vw,9rem)!important}
-main#top>section:first-child h1{line-height:.92;letter-spacing:-.075em;color:var(--memo-paper)}
-main#top>section:first-child h1 span{color:var(--memo-yellow)!important;-webkit-text-stroke:0!important}
-main#top>section:first-child p{color:inherit}
-.note-chip{background:var(--memo-yellow-soft);color:var(--memo-green);border:1px solid rgba(46,46,46,.12);box-shadow:3px 4px 0 rgba(0,0,0,.12);padding:.45rem .75rem;transform:rotate(-2deg);display:inline-block}
-main#top>section:first-child .grid>div:last-child{background:var(--memo-yellow)!important;color:var(--memo-green)!important;border:0!important;border-radius:3px!important;box-shadow:8px 8px 0 var(--memo-green)!important;transform:rotate(2deg);padding:1.5rem!important}
-main#top>section:first-child .grid>div:last-child *{color:var(--memo-green)!important}
-section[id]{scroll-margin-top:90px}
-#work,#teamwork,#process,#gallery,#about,#contact{padding-top:var(--ui-section-space)!important;padding-bottom:var(--ui-section-space)!important}
-section[id] h2{color:var(--memo-green);letter-spacing:-.065em;line-height:1}
-.text-yellowframe-yellow{color:var(--memo-yellow)!important}
-.bg-yellowframe-yellow{background-color:var(--memo-yellow)!important}
-.bg-yellowframe-bg{background-color:#F9F9F9!important}
-.bg-yellowframe-card{background-color:var(--memo-paper)!important}
-.text-yellowframe-muted{color:var(--memo-muted)!important}
-.border-yellowframe-dark{border-color:rgba(46,46,46,.28)!important}
-.bg-yellowframe-dark{background-color:var(--memo-green)!important}
-.text-yellowframe-dark{color:var(--memo-green)!important}
-.text-yellowframe-bg{color:var(--memo-paper)!important}
-.border-yellowframe-bg{border-color:rgba(255,255,255,.75)!important}
-.shadow-frame{box-shadow:4px 5px 0 rgba(46,46,46,.75)!important}
-.shadow-frameHover{box-shadow:7px 9px 0 rgba(46,46,46,.85)!important}
-#work,#gallery{background:var(--memo-bg)}
-#teamwork{background:#F0F0F0!important;border:0!important}
-#work .grid>div,#teamwork .grid>div,#gallery .category-content .grid>div{
- border:1px solid rgba(46,46,46,.18)!important;border-radius:5px!important;
- background:var(--memo-paper)!important;box-shadow:5px 6px 0 rgba(46,46,46,.62)!important;
- transition:transform .24s ease,box-shadow .24s ease;
-}
-#work .grid>div:hover,#teamwork .grid>div:hover,#gallery .category-content .grid>div:hover{transform:translateY(-5px) rotate(-.2deg);box-shadow:8px 10px 0 rgba(46,46,46,.75)!important}
-#work .grid>div img,#teamwork .grid>div img{filter:saturate(.96)}
-#work .grid>div>div:first-child>a,#teamwork .grid>div>div:first-child>a{border-color:rgba(46,46,46,.16)!important}
-#work .grid>div a.block.w-full,#teamwork .grid>div button{border:1px solid var(--memo-green)!important;border-radius:3px!important;background:transparent!important;color:var(--memo-green)!important;font-size:.72rem;letter-spacing:.03em;transition:all .2s}
-#work .grid>div a.block.w-full:hover,#teamwork .grid>div button:hover{background:var(--memo-yellow)!important}
-#process{background:var(--memo-green)!important;color:var(--memo-paper)!important;position:relative;overflow:hidden}
-#process:after{content:"MEMO / 01";position:absolute;right:4vw;top:2rem;color:rgba(255,244,79,.12);font:800 clamp(2rem,6vw,5rem) 'JetBrains Mono',monospace;letter-spacing:-.08em;pointer-events:none}
-#process h2{color:var(--memo-paper)!important}
-#process .grid>div{border:1px solid rgba(255,255,255,.4)!important;border-radius:4px!important;box-shadow:4px 4px 0 rgba(255,244,79,.55)!important;min-height:150px!important;padding:1.2rem!important;background:rgba(255,255,255,.025)!important;transition:all .2s}
-#process .grid>div:hover{background:var(--memo-yellow)!important;color:var(--memo-green)!important;transform:translateY(-4px)}
-#process .grid>div:hover span{color:var(--memo-green)!important}
-#process .grid>div:last-child{background:var(--memo-yellow)!important;color:var(--memo-green)!important;border-color:var(--memo-yellow)!important;box-shadow:4px 4px 0 rgba(255,255,255,.4)!important}
-#process .grid>div:last-child span{color:var(--memo-green)!important}
-#gallery .category-btn{border:1px solid rgba(46,46,46,.35)!important;border-radius:3px!important;padding:.7rem 1rem!important;background:var(--memo-paper)!important;color:var(--memo-green)!important}
-#gallery .category-btn.active,#gallery .category-btn:hover{background:var(--memo-yellow)!important;color:var(--memo-green)!important}
-#gallery .category-content .grid>div{overflow:hidden}
-#gallery .category-content .grid>div>div:last-child{background:var(--memo-paper)!important;color:var(--memo-green)!important;border-color:rgba(46,46,46,.15)!important}
-#about{background:var(--memo-yellow)!important;color:var(--memo-green)!important;border:0!important;position:relative}
-#about h2,#about h3,#about p,#about span{color:var(--memo-green)!important}
-#about .max-w-7xl:after{content:"✳";color:var(--memo-green);opacity:.12}
-#contact{background:var(--memo-yellow)!important;color:var(--memo-green)!important}
-#contact h2,#contact p,#contact a{color:var(--memo-green)!important}
-#contact a{border:1px solid rgba(46,46,46,.35)!important;background:rgba(255,255,255,.35);padding:.75rem 1rem;border-radius:3px!important;transition:background .2s}
-#contact a:hover{background:var(--memo-paper)!important}
-footer{background:var(--memo-paper)!important;color:var(--memo-green)!important;border-color:rgba(46,46,46,.2)!important}
-footer *{color:var(--memo-green)!important}
-#planModal{backdrop-filter:blur(8px)}
-#planModal>div{border:1px solid rgba(46,46,46,.2)!important;border-radius:5px!important;box-shadow:8px 8px 0 rgba(46,46,46,.8)!important}
-#planModal>div>div:first-child{background:var(--memo-green)!important;color:var(--memo-paper)!important}
-#planModal button{border-radius:3px}
-#imageModal{backdrop-filter:blur(8px)}
-#imageModal button{border-radius:3px}
-a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid var(--memo-yellow)!important;outline-offset:3px}
-@media(max-width:768px){
- .max-w-7xl{width:calc(100% - 32px)!important}
- header>div{min-height:62px!important}
- main#top>section:first-child{padding-top:62px}
- main#top>section:first-child .max-w-7xl{padding-top:4.5rem!important;padding-bottom:4.5rem!important}
- main#top>section:first-child .grid>div:last-child{max-width:240px}
- #work,#teamwork,#process,#gallery,#about,#contact{padding-top:3.75rem!important;padding-bottom:3.75rem!important}
- #process .grid>div{min-height:115px!important}
- #process:after{top:1rem;right:1rem;font-size:2rem}
-}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-</style>
 
 </head>
 
@@ -649,7 +545,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                 <p class="font-mono text-xs font-bold mb-4"><span class="note-chip">✳ MEMOJI'S NOTE</span> &nbsp; 2D ANIMATOR / PORTFOLIO / 2026</p>
                 <h1 class="text-[clamp(2.5rem,7vw,6rem)] leading-[0.9] font-black tracking-[-0.05em]">
                     MEMOJI'S<br>
-                    <span class="text-yellowframe-yellow" style="-webkit-text-stroke:2px #2E2E2E;">NOTEBOOK</span>
+                    <span class="text-yellowframe-yellow" style="-webkit-text-stroke:2px #111;">NOTEBOOK</span>
                 </h1>
                 <div class="mt-6 max-w-xl">
                     <p class="text-base md:text-lg font-bold leading-relaxed">
@@ -657,9 +553,9 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         살아 움직이는 이야기를 그립니다.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#2E2E2E]">Character Acting</span>
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#2E2E2E]">Key Animation</span>
-                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#2E2E2E]">Storytelling</span>
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Character Acting</span>
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Key Animation</span>
+                        <span class="border-2 border-yellowframe-dark bg-yellowframe-card px-2.5 py-1 shadow-[2px_2px_0_#111]">Storytelling</span>
                     </div>
                 </div>
             </div>
@@ -1014,14 +910,14 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
 
         <div class="grid grid-cols-2 md:grid-cols-6 gap-3 font-mono">
             <!-- STEP 01 -->
-            <div onclick="openPlanModal('hero')" class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group cursor-pointer shadow-[2px_2px_0_#FFF44F]">
+            <div onclick="openPlanModal('hero')" class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group cursor-pointer shadow-[2px_2px_0_#FFE500]">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 01 (CLICK)</span>
                 <div>
                     <span class="text-lg font-black block">개인 기획</span>
                     <span class="text-[10px] opacity-75 font-normal">컨셉 & 콘티</span>
                 </div>
             </div>
-            <div onclick="openPlanModal('character')" class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group cursor-pointer shadow-[2px_2px_0_#FFF44F]">
+            <div onclick="openPlanModal('character')" class="border-2 border-yellowframe-bg p-4 flex flex-col justify-between bg-yellowframe-dark hover:bg-yellowframe-yellow hover:text-yellowframe-dark transition-colors group cursor-pointer shadow-[2px_2px_0_#FFE500]">
                 <span class="text-[10px] font-bold text-yellowframe-yellow group-hover:text-yellowframe-dark">STEP 02 (CLICK)</span>
                 <div>
                     <span class="text-lg font-black block">캐릭터</span>
@@ -1483,12 +1379,12 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">로그라인 (한 줄 요약)</p>
                         <p class="font-bold text-base">던전(회사) 보스를 해치운 후 복귀하는 길 잃은 용사(가장)의 이야기</p>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">STORYBOARD / 스토리보드 (기)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1506,7 +1402,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">주요 캐릭터</p>
                         <div class="space-y-3">
                             <div class="border-l-4 border-yellowframe-dark pl-3">
@@ -1516,7 +1412,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">줄거리 요약 (Synopsis)</p>
                         <div class="space-y-4 font-medium">
                             <div>
@@ -1550,21 +1446,21 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         <p class="mt-3 text-yellowframe-muted">주인공의 무드보드, 초기 디자인 스케치부터 최종 캐릭터 디자인까지의 작업 과정입니다.</p>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">MOOD BOARD / 무드보드</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/13hKSqal381cEjd8z2UUZRYETMMI6mpi0=w1600" alt="캐릭터 무드보드" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=13hKSqal381cEjd8z2UUZRYETMMI6mpi0';this.onerror=function(){this.style.display='none'}">
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">CHARACTER DESIGN / 주인공 디자인 스케치</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1MvNbCfFRRC27t2J2RG9tFMP3yoiqPyKR=w1600" alt="주인공 디자인 스케치" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1MvNbCfFRRC27t2J2RG9tFMP3yoiqPyKR';this.onerror=function(){this.style.display='none'}">
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">CHARACTER TURNAROUND / 주인공 완성</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD=w1600" alt="주인공 완성 캐릭터 디자인" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1OEPlrtVFspo8AfhT13xMuqbAiHwTYdOD';this.onerror=function(){this.style.display='none'}">
@@ -1586,14 +1482,14 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         <p class="mt-3 leading-relaxed text-xs md:text-sm font-bold text-yellowframe-dark">평행 우주 속 다양한 사랑 이야기</p>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-2 text-yellowframe-muted">작품 소개 (Synopsis & Direction)</p>
                         <p class="text-xs md:text-sm leading-relaxed font-medium">
                             총 다섯 파트로 구성되어 있으며, 마지막 파트에서 일러스트를 삽입하여 모든 사랑이 이루어지는 것으로 연출하였습니다. 특히 여러 그림체의 주인공들이 지나가는 것으로 다중 우주를 효과적으로 표현하였습니다.
                         </p>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">PROJECT IMAGES (일러스트 이미지)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden cursor-pointer group">
@@ -1640,7 +1536,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         <p class="mt-3 leading-relaxed text-xs md:text-sm">팀 협업 단편 애니메이션. 자칭 천재 탐정 새롬이가 산장에서 일어난 수상한 살인사건을 수사한다. 연이은 잘못된 추리에 용의자가 하나둘씩 죽어가며 수사는 미궁에 빠진다.</p>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">BACKGROUND ART (배경 이미지 5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1676,7 +1572,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">ANIMATION / IN-BETWEEN CUTS (동화 움짤 5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1738,7 +1634,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         <h3 class="text-2xl md:text-3xl font-black mt-1">happy family (행복한 가족)</h3>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">시놉시스 (Synopsis)</p>
                         <p class="font-medium leading-relaxed">
                           환각과 헛소리에 시달리던 이들이 점차 난폭해져 살인을 저지르기 시작하고, 사태는 손쓸 수 없이 악화된다. 정확한 원인을 모르는 정부는 그저 "야간 외출을 금지하라"는 무력한 경고만 되풀이할 뿐이다. 평화롭던 이웃이 언제 연쇄 살인마로 바뀔지 모르는 극한의 기강 속에서, 사람들은 자기 자신마저 광기에 물들지 모른다는 공포에 떨며 정신병원을 찾고 있다.
@@ -1746,7 +1642,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                     </div>
 
                     <!-- 캐릭터 도트 -->
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">캐릭터 도트</p>
                         <div class="grid grid-cols-1 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1759,7 +1655,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                     </div>
 
                     <!-- 애니메이팅 -->
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">애니메이팅</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1790,7 +1686,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                     </div>
 
                     <!-- 배경 -->
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">배경</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1845,7 +1741,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         <p class="mt-3 text-xs md:text-sm leading-relaxed font-medium">음모론으로 뒤덮인 현대 사회에서 괴짜 과학자 ‘비키’는 지구 음모론을 증명할 수 있을 것인가?</p>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">CHARACTER DESIGN / 캐릭터 디자인</p>
                         <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                             <div class="bg-black/5 w-full">
@@ -1857,7 +1753,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">LIP-SYNC / 립싱크 (5종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1893,7 +1789,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                         </div>
                     </div>
 
-                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#2E2E2E]">
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3">ANIMATION / IN-BETWEEN CUTS (동화 움짤 8종)</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
@@ -1928,7 +1824,7 @@ a:focus-visible,button:focus-visible,[onclick]:focus-visible{outline:3px solid v
                             </div>
                             <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
                                 <div class="bg-black/5 w-full">
-                                    <img src="https://lh3.googleusercontent.com/d/1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1=w1600" alt="동화 움짤 #06" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1xTv6nrZgM5xbzyTniKXAdxMEhurqLI1';this.onerror=function(){this.style.display='none'}">
+                                    <img src="https://lh3.googleusercontent.com/d/1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1=w1600" alt="동화 움짤 #06" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1xTv6nrZgM5xbzyTniKXAdxMEhupeqlI1';this.onerror=function(){this.style.display='none'}">
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">CUT #06</div>
                             </div>
