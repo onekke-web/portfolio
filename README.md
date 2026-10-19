@@ -965,13 +965,13 @@
         </div>
 
         <div class="flex flex-wrap gap-2 mb-8">
-            <button onclick="switchCategory('character')" class="category-btn active font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-yellow" data-category="character">CHARACTER DESIGN</button>
-            <button onclick="switchCategory('animating')" class="category-btn font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-card" data-category="animating">ANIMATION</button>
-            <button onclick="switchCategory('croquis')" class="category-btn font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-card" data-category="croquis">CROQUIS / DRAWING</button>
+            <button onclick="switchCategory('character')" aria-pressed="true" class="category-btn active font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-yellow" data-category="character">CHARACTER DESIGN</button>
+            <button onclick="switchCategory('animating')" aria-pressed="false" class="category-btn font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-card" data-category="animating">ANIMATION</button>
+            <button onclick="switchCategory('croquis')" aria-pressed="false" class="category-btn font-mono text-xs font-bold border-2 border-yellowframe-dark px-3 py-1.5 bg-yellowframe-card" data-category="croquis">CROQUIS / DRAWING</button>
         </div>
 
         <!-- CHARACTER DESIGN -->
-        <div id="cat-character" class="category-content">
+        <div id="cat-character" class="category-content" aria-hidden="false">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
@@ -1022,7 +1022,7 @@
         </div>
 
         <!-- ANIMATION -->
-        <div id="cat-animating" class="category-content hidden">
+        <div id="cat-animating" class="category-content hidden" aria-hidden="true">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 0)">
                     <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
@@ -1082,7 +1082,7 @@
         </div>
 
         <!-- CROQUIS / DRAWING -->
-        <div id="cat-croquis" class="category-content hidden">
+        <div id="cat-croquis" class="category-content hidden" aria-hidden="true">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('croquis', 0)">
                     <div class="aspect-square overflow-hidden border-b-2 border-yellowframe-dark">
@@ -1264,19 +1264,22 @@
 
     function switchCategory(category) {
         const target = document.getElementById('cat-' + category);
-        if (!target) return;
+        const buttons = document.querySelectorAll('#gallery .category-btn');
+        if (!target || !buttons.length) return;
 
-        document.querySelectorAll('.category-content').forEach(el => el.classList.add('hidden'));
-        target.classList.remove('hidden');
+        // 선택한 카테고리만 표시하고, 선택된 버튼만 노란색으로 강조합니다.
+        document.querySelectorAll('#gallery .category-content').forEach(panel => {
+            const isVisible = panel === target;
+            panel.classList.toggle('hidden', !isVisible);
+            panel.setAttribute('aria-hidden', String(!isVisible));
+        });
 
-        document.querySelectorAll('.category-btn').forEach(btn => {
-            if (btn.dataset.category === category) {
-                btn.classList.remove('bg-yellowframe-card');
-                btn.classList.add('bg-yellowframe-yellow');
-            } else {
-                btn.classList.remove('bg-yellowframe-yellow');
-                btn.classList.add('bg-yellowframe-card');
-            }
+        buttons.forEach(button => {
+            const isActive = button.dataset.category === category;
+            button.classList.toggle('active', isActive);
+            button.classList.toggle('bg-yellowframe-yellow', isActive);
+            button.classList.toggle('bg-yellowframe-card', !isActive);
+            button.setAttribute('aria-pressed', String(isActive));
         });
     }
 
