@@ -688,6 +688,28 @@
       }
     </style>
 
+    <!-- Remove empty letterbox bands around images and GIFs in project detail panels -->
+    <style id="media-no-empty-space">
+        #planModalBody img {
+            object-fit: cover !important;
+            background: transparent !important;
+        }
+        #planModalBody .grid > div > div:first-child:has(img) {
+            background: transparent !important;
+        }
+        /* Images shown in the project detail cards should occupy their media frame. */
+        #planModalBody .grid > div > div:first-child:has(img) img {
+            width: 100% !important;
+            height: clamp(210px, 30vw, 340px) !important;
+            object-fit: cover !important;
+        }
+        @media (max-width: 767px) {
+            #planModalBody .grid > div > div:first-child:has(img) img {
+                height: clamp(190px, 58vw, 280px) !important;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
