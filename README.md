@@ -1473,7 +1473,9 @@
             { src: 'https://lh3.googleusercontent.com/d/1YQ9-GKC2bv_YnVMY9tPTJihENRykU6zE=w1600', title: 'ANIMATION #04' },
             { src: 'https://lh3.googleusercontent.com/d/1tJJJiFmCo9kRZWDCdJ1K8L4XVZV2Ak-e=w1600', title: 'ANIMATION #05' },
             { src: 'https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO=w1600', title: 'ANIMATION #06' },
-            { src: 'https://lh3.googleusercontent.com/d/1CdWivec2DMagYWJtUo1npMD1PXgDkLpb=w1600', title: 'ANIMATION #07' }
+            { src: 'https://lh3.googleusercontent.com/d/1CdWivec2DMagYWJtUo1npMD1PXgDkLpb=w1600', title: 'ANIMATION #07' },
+            { src: 'https://lh3.googleusercontent.com/d/1i9czxz0NaaX9JmKvNFOXwlTApotlRRdG=w1600', title: 'ANIMATION #08' },
+            { src: 'https://lh3.googleusercontent.com/d/14XkKKN3sRzyHieNb_XJVumUTTE-WGgOg=w1600', title: 'ANIMATION #09' }
         ],
         croquis: [
             { src: 'https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5=w1600', title: 'CROQUIS #01' },
@@ -1623,6 +1625,17 @@
                                 </div>
                                 <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">STORYBOARD - PART 02</div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">TIMING VIDEO / 타이밍 영상</p>
+                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1SXBtZJXqitKLmGrsBNWVDD1PlMR7-lH2=w1600"
+                                 alt="개인 기획 타이밍 영상" loading="lazy" referrerpolicy="no-referrer"
+                                 class="block w-full h-auto object-contain"
+                                 onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1SXBtZJXqitKLmGrsBNWVDD1PlMR7-lH2';">
+                            <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">TIMING VIDEO</div>
                         </div>
                     </div>
 
