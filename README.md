@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -1298,6 +1299,26 @@
                         <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
+                <!-- 추가된 애니메이션 GIF 1 -->
+                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 7)">
+                    <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
+                        <img src="https://lh3.googleusercontent.com/d/1i9czxz0NaaX9JmKvNFOXwlTApotlRRdG=w1600" alt="애니메이션 8" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1i9czxz0NaaX9JmKvNFOXwlTApotlRRdG';this.onerror=function(){this.style.display='none'}">
+                    </div>
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
+                        <span>ANIMATION #08</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                    </div>
+                </div>
+                <!-- 추가된 애니메이션 GIF 2 -->
+                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 8)">
+                    <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
+                        <img src="https://lh3.googleusercontent.com/d/14XkKKN3sRzyHieNb_XJVumUTTE-WGgOg=w1600" alt="애니메이션 9" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=14XkKKN3sRzyHieNb_XJVumUTTE-WGgOg';this.onerror=function(){this.style.display='none'}">
+                    </div>
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
+                        <span>ANIMATION #09</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1628,14 +1649,14 @@
                         </div>
                     </div>
 
+                    <!-- 타이밍 영상 (추가된 부분) -->
                     <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
                         <p class="font-mono text-xs font-bold mb-3 text-yellowframe-muted">TIMING VIDEO / 타이밍 영상</p>
-                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
-                            <img src="https://lh3.googleusercontent.com/d/1SXBtZJXqitKLmGrsBNWVDD1PlMR7-lH2=w1600"
-                                 alt="개인 기획 타이밍 영상" loading="lazy" referrerpolicy="no-referrer"
-                                 class="block w-full h-auto object-contain"
-                                 onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1SXBtZJXqitKLmGrsBNWVDD1PlMR7-lH2';">
-                            <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card">TIMING VIDEO</div>
+                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden max-w-md mx-auto">
+                            <div class="bg-black/5 w-full">
+                                <img src="https://lh3.googleusercontent.com/d/1SXBtZJXqitKLmGrsBNWVDD1PlMR7-lH2=w1600" alt="타이밍 영상" loading="lazy" referrerpolicy="no-referrer" class="w-full h-auto object-contain" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1SXBtZJXqitKLmGrsBNWVDD1PlMR7-lH2';this.onerror=function(){this.style.display='none'}">
+                            </div>
+                            <div class="p-1.5 border-t-2 border-yellowframe-dark font-mono text-[10px] font-bold bg-yellowframe-card text-center">TIMING VIDEO</div>
                         </div>
                     </div>
 
