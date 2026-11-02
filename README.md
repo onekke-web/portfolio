@@ -2149,6 +2149,21 @@
                         </p>
                     </a>
 
+                    <div class="border-2 border-yellowframe-dark bg-yellowframe-card p-4 shadow-[3px_3px_0_#111]">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <p class="font-mono text-xs font-bold">AWARD CERTIFICATE / 수상 상장</p>
+                            <span class="font-mono text-[10px] font-black bg-yellowframe-yellow border border-yellowframe-dark px-2 py-1">BICAF 2026</span>
+                        </div>
+                        <div class="border-2 border-yellowframe-dark bg-yellowframe-bg overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1eYkABGGQwv5AVc1XtexuDY6_9Y6ckE3X=w1600"
+                                 alt="제22회 BICAF 부산국제캐릭터&애니메이션페스티벌 수상 상장"
+                                 loading="lazy" referrerpolicy="no-referrer"
+                                 class="w-full h-auto object-contain cursor-zoom-in"
+                                 onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1eYkABGGQwv5AVc1XtexuDY6_9Y6ckE3X';this.onerror=function(){this.style.display='none'}">
+                        </div>
+                        <p class="mt-2 text-[11px] md:text-xs text-yellowframe-muted font-medium">제22회 부산국제캐릭터&애니메이션페스티벌(BICAF) 수상 상장 · 이미지를 클릭하면 크게 볼 수 있습니다.</p>
+                    </div>
+
                     <div>
                         <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / LOGLINE (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">괴짜과학자 비키</h3>
