@@ -782,6 +782,69 @@
         }
     </style>
 
+
+    <style id="teamwork-readable-layout">
+        /* TEAMWORK: wider cards reduce narrow wrapping and excessive card height */
+        #teamwork .grid {
+            grid-template-columns: minmax(0, 1fr);
+            grid-auto-rows: auto;
+            align-items: stretch;
+            gap: 1.5rem;
+        }
+        #teamwork .grid > div {
+            height: auto;
+            min-height: 0;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > p:nth-of-type(2) {
+            flex: 0 1 auto;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > p,
+        #teamwork .grid > div > div:first-child > div:last-child span {
+            overflow-wrap: normal;
+            word-break: keep-all;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > p.text-xs {
+            font-size: .875rem;
+            line-height: 1.7;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > div:last-child {
+            font-size: .75rem;
+            line-height: 1.5;
+            gap: .75rem;
+        }
+        #teamwork .grid > div > div:first-child > div:last-child > div:last-child > div {
+            min-width: 0;
+        }
+        #teamwork .grid > div > div:last-child button {
+            font-size: .78rem;
+            padding: .7rem 1rem;
+        }
+        @media (min-width: 640px) {
+            #teamwork .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1.5rem;
+            }
+        }
+        @media (min-width: 1600px) {
+            #teamwork .grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        @media (max-width: 639px) {
+            #teamwork .grid {
+                gap: 1rem;
+            }
+            #teamwork .grid > div > div:first-child > div:last-child {
+                padding: 1rem;
+            }
+            #teamwork .grid > div > div:first-child > div:last-child > div:last-child {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                font-size: .68rem;
+                gap: .5rem;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -1153,19 +1216,11 @@
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
                         <a href="https://www.joongang.co.kr/article/25474427" target="_blank" rel="noopener noreferrer"
-                           class="mt-4 block border-2 border-yellowframe-dark bg-yellowframe-yellow p-3 shadow-[3px_3px_0_#111] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
+                           class="mt-3 inline-flex w-full items-center gap-2 border-2 border-yellowframe-dark bg-yellowframe-yellow px-3 py-2 shadow-[2px_2px_0_#111] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
                            aria-label="BICAF 2026 애니메이션 부문 장려상 수상 기사 보기">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 shrink-0 border-2 border-yellowframe-dark bg-yellowframe-card flex items-center justify-center">
-                                    <i class="fa-solid fa-trophy text-lg" aria-hidden="true"></i>
-                                </div>
-                                <div class="min-w-0">
-                                    <p class="font-mono text-[10px] md:text-xs font-black tracking-wide">BICAF 2026 · AWARD</p>
-                                    <p class="text-sm md:text-base font-black leading-snug">애니메이션 부문 장려상</p>
-                                    <p class="text-[10px] md:text-xs font-bold mt-0.5">제22회 부산국제캐릭터&애니메이션페스티벌</p>
-                                </div>
-                                <i class="fa-solid fa-arrow-up-right-from-square ml-auto text-xs shrink-0" aria-hidden="true"></i>
-                            </div>
+                            <i class="fa-solid fa-trophy shrink-0 text-base" aria-hidden="true"></i>
+                            <span class="min-w-0 flex-1 text-xs md:text-sm font-black leading-snug">BICAF 2026 · 애니메이션 부문 장려상</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square shrink-0 text-[10px]" aria-hidden="true"></i>
                         </a>
                         <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 파이프라인으로 제작된 TV 시리즈 프로젝트. 괴짜 과학자 ‘비키’가 음모론을 증명해 나가는 코믹 SF 애니메이션입니다.</p>
                         
