@@ -1147,11 +1147,26 @@
                     <div class="p-5 md:p-6">
                         <div class="flex justify-between items-start gap-4">
                             <div>
-                                <p class="font-mono text-xs font-bold">TEAM PROJECT</p>
+                                <p class="font-mono text-xs font-bold">TEAM PROJECT / AWARD WINNER</p>
                                 <h3 class="text-xl md:text-2xl font-black mt-1">괴짜과학자 비키</h3>
                             </div>
                             <span class="font-mono text-[11px] border-2 border-yellowframe-dark px-2 py-0.5 bg-yellowframe-yellow font-bold">TEAM</span>
                         </div>
+                        <a href="https://www.joongang.co.kr/article/25474427" target="_blank" rel="noopener noreferrer"
+                           class="mt-4 block border-2 border-yellowframe-dark bg-yellowframe-yellow p-3 shadow-[3px_3px_0_#111] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
+                           aria-label="BICAF 2026 애니메이션 부문 장려상 수상 기사 보기">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 shrink-0 border-2 border-yellowframe-dark bg-yellowframe-card flex items-center justify-center">
+                                    <i class="fa-solid fa-trophy text-lg" aria-hidden="true"></i>
+                                </div>
+                                <div class="min-w-0">
+                                    <p class="font-mono text-[10px] md:text-xs font-black tracking-wide">BICAF 2026 · AWARD</p>
+                                    <p class="text-sm md:text-base font-black leading-snug">애니메이션 부문 장려상</p>
+                                    <p class="text-[10px] md:text-xs font-bold mt-0.5">제22회 부산국제캐릭터&애니메이션페스티벌</p>
+                                </div>
+                                <i class="fa-solid fa-arrow-up-right-from-square ml-auto text-xs shrink-0" aria-hidden="true"></i>
+                            </div>
+                        </a>
                         <p class="text-xs md:text-sm text-yellowframe-muted mt-3 leading-relaxed">팀 파이프라인으로 제작된 TV 시리즈 프로젝트. 괴짜 과학자 ‘비키’가 음모론을 증명해 나가는 코믹 SF 애니메이션입니다.</p>
                         
                         <div class="mt-4 pt-4 border-t-2 border-yellowframe-dark/20 grid grid-cols-3 gap-2 font-mono text-[11px]">
@@ -2056,6 +2071,29 @@
             title: 'TEAM PITCH DECK / 괴짜과학자 비키',
             body: `
                 <div class="space-y-6">
+                    <a href="https://www.joongang.co.kr/article/25474427" target="_blank" rel="noopener noreferrer"
+                       class="group block border-2 border-yellowframe-dark bg-yellowframe-yellow p-4 md:p-5 shadow-[4px_4px_0_#111] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#111] transition-all"
+                       aria-label="중앙일보의 BICAF 2026 수상 기사 보기">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                            <div class="w-14 h-14 shrink-0 border-2 border-yellowframe-dark bg-yellowframe-card flex items-center justify-center shadow-[2px_2px_0_#111]">
+                                <i class="fa-solid fa-trophy text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <p class="font-mono text-[10px] md:text-xs font-black tracking-widest">OFFICIAL AWARD / 2026</p>
+                                <h4 class="text-xl md:text-2xl font-black leading-tight mt-1">BICAF 2026 애니메이션 부문 장려상</h4>
+                                <p class="text-xs md:text-sm font-bold mt-1">제22회 부산국제캐릭터&애니메이션페스티벌</p>
+                            </div>
+                            <div class="sm:text-right shrink-0">
+                                <span class="inline-flex items-center gap-2 border-2 border-yellowframe-dark bg-yellowframe-card px-3 py-2 font-mono text-[10px] font-black">
+                                    NEWS <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="text-[11px] md:text-xs leading-relaxed font-medium mt-4 pt-3 border-t-2 border-yellowframe-dark/30">
+                            「괴짜 과학자 비키」 작품의 페스티벌 수상 실적입니다. 중앙일보 기사에서 수상 내용을 확인할 수 있습니다.
+                        </p>
+                    </a>
+
                     <div>
                         <p class="font-mono text-xs font-bold text-yellowframe-muted">02 / LOGLINE (TEAM PROJECT)</p>
                         <h3 class="text-2xl md:text-3xl font-black mt-1">괴짜과학자 비키</h3>
