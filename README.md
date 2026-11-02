@@ -711,6 +711,77 @@
         }
     </style>
 
+
+    <style id="memoji-desktop-width-and-stability-fix">
+        /*
+         * Desktop width:
+         * The previous repeated .max-w-7xl rules capped the whole site at 1240px.
+         * This final rule gives desktop screens more usable horizontal space.
+         */
+        .max-w-7xl {
+            width: calc(100% - 80px) !important;
+            max-width: 1680px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        @media (min-width: 1600px) {
+            .max-w-7xl {
+                width: calc(100% - 120px) !important;
+                max-width: 1680px !important;
+            }
+        }
+
+        @media (min-width: 2200px) {
+            .max-w-7xl {
+                max-width: 1800px !important;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1100px) {
+            .max-w-7xl {
+                width: calc(100% - 48px) !important;
+            }
+
+            #work .grid,
+            #teamwork .grid,
+            #gallery .category-content .grid {
+                min-width: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .max-w-7xl {
+                width: calc(100% - 32px) !important;
+            }
+        }
+
+        /* Prevent grid children and long labels from forcing a narrow/overflowing layout. */
+        main, section, section > .max-w-7xl,
+        #work .grid, #teamwork .grid, #gallery .grid,
+        #process .grid, #about .grid {
+            min-width: 0;
+        }
+
+        img, video, iframe {
+            max-width: 100%;
+        }
+
+        /* Keep the desktop navigation from being squeezed on medium laptop widths. */
+        @media (min-width: 769px) and (max-width: 900px) {
+            header > div {
+                gap: 12px;
+            }
+            header nav {
+                gap: .2rem !important;
+            }
+            header nav a {
+                padding-left: .45rem !important;
+                padding-right: .45rem !important;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -1596,14 +1667,6 @@
             document.body.style.overflow = 'hidden';
             event.preventDefault();
         }
-    });
-
-    document.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('imageModal');
-        if (!modal || modal.classList.contains('hidden')) return;
-        if (event.key === 'Escape') closeImageModal();
-        if (event.key === 'ArrowRight') nextImage();
-        if (event.key === 'ArrowLeft') prevImage();
     });
 
     const planData = {
