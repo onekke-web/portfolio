@@ -1460,6 +1460,26 @@
                         <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
+                <!-- 추가된 애니메이션 GIF 3 -->
+                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 9)">
+                    <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
+                        <img src="https://lh3.googleusercontent.com/d/1rN0ARjscX_eNowr2FAEDtiRKa5HyhG07=w1600" alt="애니메이션 GIF 10" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1rN0ARjscX_eNowr2FAEDtiRKa5HyhG07';this.onerror=function(){this.style.display='none'}">
+                    </div>
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
+                        <span>ANIMATION #10</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                    </div>
+                </div>
+                <!-- 추가된 애니메이션 GIF 4 -->
+                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('animating', 10)">
+                    <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
+                        <img src="https://lh3.googleusercontent.com/d/1tKNGDdfm0ZzZQmo-jyvnQVAQUUDlbF0X=w1600" alt="애니메이션 GIF 11" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1tKNGDdfm0ZzZQmo-jyvnQVAQUUDlbF0X';this.onerror=function(){this.style.display='none'}">
+                    </div>
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
+                        <span>ANIMATION #11</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1637,7 +1657,9 @@
             { src: 'https://lh3.googleusercontent.com/d/1rsqfTtiPjN34ftUIRJMXHcwfAfDOrxwO=w1600', title: 'ANIMATION #06' },
             { src: 'https://lh3.googleusercontent.com/d/1CdWivec2DMagYWJtUo1npMD1PXgDkLpb=w1600', title: 'ANIMATION #07' },
             { src: 'https://lh3.googleusercontent.com/d/1i9czxz0NaaX9JmKvNFOXwlTApotlRRdG=w1600', title: 'ANIMATION #08' },
-            { src: 'https://lh3.googleusercontent.com/d/14XkKKN3sRzyHieNb_XJVumUTTE-WGgOg=w1600', title: 'ANIMATION #09' }
+            { src: 'https://lh3.googleusercontent.com/d/14XkKKN3sRzyHieNb_XJVumUTTE-WGgOg=w1600', title: 'ANIMATION #09' },
+            { src: 'https://lh3.googleusercontent.com/d/1rN0ARjscX_eNowr2FAEDtiRKa5HyhG07=w1600', title: 'ANIMATION #10' },
+            { src: 'https://lh3.googleusercontent.com/d/1tKNGDdfm0ZzZQmo-jyvnQVAQUUDlbF0X=w1600', title: 'ANIMATION #11' }
         ],
         croquis: [
             { src: 'https://lh3.googleusercontent.com/d/19Rxn6CBx42FHnHLxeIXBGxKVfVg7sHl5=w1600', title: 'CROQUIS #01' },
