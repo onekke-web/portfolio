@@ -1371,6 +1371,15 @@
                         <span class="text-[9px] text-yellowframe-muted">VIEW</span>
                     </div>
                 </div>
+                <div class="bg-yellowframe-card border-2 border-yellowframe-dark shadow-frame hover:shadow-frameHover transition-all overflow-hidden group cursor-pointer" onclick="openGalleryModal('character', 5)">
+                    <div class="aspect-square bg-yellowframe-bg overflow-hidden border-b-2 border-yellowframe-dark relative flex items-center justify-center">
+                        <img src="https://lh3.googleusercontent.com/d/1fU3T_TP-z_omD1yUV2_m9YRM9BHliSmg=w1600" alt="캐릭터 일러스트 6" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://drive.google.com/uc?export=view&id=1fU3T_TP-z_omD1yUV2_m9YRM9BHliSmg';this.onerror=function(){this.style.display='none'}">
+                    </div>
+                    <div class="p-2.5 bg-yellowframe-card font-mono text-[11px] font-bold flex items-center justify-between">
+                        <span>CHARACTER #06</span>
+                        <span class="text-[9px] text-yellowframe-muted">VIEW</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1646,7 +1655,8 @@
             { src: 'https://lh3.googleusercontent.com/d/1c8Cu2MGmm0bohhzw_W5jn1aeKxk7mBPU=w1600', title: 'CHARACTER #02' },
             { src: 'https://lh3.googleusercontent.com/d/1TCKegKyIa-fQWd4-uoIGjmqFduLzFhnD=w1600', title: 'CHARACTER #03' },
             { src: 'https://lh3.googleusercontent.com/d/1UDPoCEa3Dt4CywGTbHxZI9GZTNSDLqBg=w1600', title: 'CHARACTER #04' },
-            { src: 'https://lh3.googleusercontent.com/d/15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98=w1600', title: 'CHARACTER #05' }
+            { src: 'https://lh3.googleusercontent.com/d/15JbarnOmtB6w2A9s1-EQ4ldRXq6deH98=w1600', title: 'CHARACTER #05' },
+            { src: 'https://lh3.googleusercontent.com/d/1fU3T_TP-z_omD1yUV2_m9YRM9BHliSmg=w1600', title: 'CHARACTER #06' }
         ],
         animating: [
             { src: 'https://lh3.googleusercontent.com/d/1QBDVOqRDhdWscY-9V1Qr09OETVv6w3dc=w1600', title: 'ANIMATION #01' },
